@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Английский для детей и подростков</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFlVYWc4RsFwAa9wm9ubODoXurDzgLvQ"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="all">
+        <header>
+            <div class="head_wrap">
+                <div><img src="./assets/image/logo.svg" /></div>
+                <div><img src="./assets/image/cambridge.png" /></div>
+                <div class="header-phone desktop"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8 (499) 288-4203</a></div>
+                <div class="header-region desktop">
+                    <div id="header-region-select" class="header-region-select">Москва</div>
+                    <div id="header-region-change" class="header-region-change">
+                        <p id="header-region-change-q">Ваш город - Москва?</p>
+                        <div class="header-region-button">
+                            <a id="header-region-button-yes">Да</a>
+                            <a id="header-region-button-no">Нижний Новгород</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-user_link desktop">Личный кабинет</div>
+                <div class="burger-button">
+                    <input type="checkbox" id="burger" name="burger">
+                    <label for="burger"><span></span></label>
+                </div>
+
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li>
+                        <a class="active" href="#">Для детей и подростков</a>
+                        <ul class="menu-children">
+                            <li><a href="#" class="active">Английский в филиалах школы 3-17 лет</a></li>
+                            <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                            <li><a href="#">Подготовка к международным экзаменам</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Для взрослых</a>
+                        <ul class="menu-children">
+                            <li><a href="#">Разговорный английский в филиалах школы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Онлайн обучение</a>
+                    </li>
+                    <li><a href="#">Корпоративное обучение</a></li>
+                    <li>
+                        <a href="#">Преподавателям английского языка</a>
+                    </li>
+                    <li>
+                        <a href="#">О школе</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile burger-menu" id="burger-menu">
+                <nav class="">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Для детей и подростков</a>
+                            <ul class="menu-children">
+                                <li><a href="#" class="active">Английский в филиалах школы 3-17 лет</a></li>
+                                <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                                <li><a href="#">Подготовка к международным экзаменам</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Для взрослых</a>
+                            <ul class="menu-children">
+                                <li><a href="#">Разговорный английский в филиалах школы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Онлайн обучение</a>
+                        </li>
+                        <li><a href="#">Корпоративное обучение</a></li>
+                        <li>
+                            <a href="#">Преподавателям английского языка</a>
+                        </li>
+                        <li>
+                            <a href="#">О школе</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-bottom" >
+                <div class="header-region">
+                    <div id="header-region-select2" class="header-region-select">Москва</div>
+                    <div id="header-region-change2" class="header-region-change">
+                        <p id="header-region-change-q2">Ваш город - Москва?</p>
+                        <div class="header-region-button">
+                            <a id="header-region-button-yes2">Да</a>
+                            <a id="header-region-button-no2">Нижний Новгород</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-user_link">Личный кабинет</div>
+                <div class="header-phone"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8 (499) 288-4203</a></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Course name -->
+        <div class="course-name">
+            <div class="course-name_wrap">
+                <div class="course-name-desc" data-aos="fade-left">
+                    <h1 class="green">АНГЛИЙСКИЙ ДЛЯ ДЕТЕЙ И ПОДРОСТКОВ</h1>
+                    <h2 class="orange">по методике Кембриджского Университета</h2>
+                    <p>Скидка 10% до 31 августа 2020 года</p>
+                    <p><a meta-item="toFirst" class="button_green">Отправить заявку</a></p>
+                </div>
+                <div class="course-name-img" data-aos="fade-right" data-aos-duration="1000">
+                    <picture>
+                        <source
+                            srcset="./assets/image/children-group/course-name@2.png 2x, ./assets/image/children-group/course-name.png 1x"
+                            type="image/png">
+                        <img src="./assets/image/children-group/course-name.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Advantages  -->
+        <div class="course-advant">
+            <div class="course-advant_wrap">
+                <h2 class="green" data-aos="fade-left" data-aos-offset="200" data-aos-duration="500">Что ваш ребенок получит с Smart Education:</h2>
+                <div class="course-advant-items">
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                        <div><img src="./assets/image/children-group/advantages/1.svg" alt=""></div>
+                        <p>Гарантированно заговорит на английском</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                        <div><img src="./assets/image/children-group/advantages/2.svg" alt=""></div>
+                        <p>Будет знать английский лучше всех в классе</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <div><img src="./assets/image/children-group/advantages/3.svg" alt=""></div>
+                        <p>Общение со сверстниками в дружелюбной, развивающей обстановке </p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                        <div><img src="./assets/image/children-group/advantages/4.svg" alt=""></div>
+                        <p>Свободно будет чувствовать себя в путешествиях</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                        <div><img src="./assets/image/children-group/advantages/5.svg" alt=""></div>
+                        <p>Успешно сдаст ЕГЭ</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <div><img src="./assets/image/children-group/advantages/6.svg" alt=""></div>
+                        <p>Сдаст экзамены в англоязычный вуз</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                        <div><img src="./assets/image/children-group/advantages/7.svg" alt=""></div>
+                        <p>Сможет выбирать обучение по всему миру</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                        <div><img src="./assets/image/children-group/advantages/8.svg" alt=""></div>
+                        <p>Найдет более интересную и высокооплачиваемую работу</p>
+                    </div>
+                    <div class="course-advant-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <div><img src="./assets/image/children-group/advantages/9.svg" alt=""></div>
+                        <p>Будет учиться в современном, креативном и атмосферном пространстве</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course features  -->
+        <div class="course-features">
+            <div class="course-features_wrap">
+                <div>
+                    <h2 class="orange" data-aos="fade-right" data-aos-duration="1000">Особенности обучения в 2020 году</h2>
+                    <h2 class="green" data-aos="fade-left" data-aos-duration="2000">Дети учатся в филиале Smart Education</h2>
+                </div>
+                <div class="course-features-items">
+                    <div class="course-features-item" data-aos="flip-right" data-aos-offset="300" data-aos-duration="1000">
+                        <div><img src="./assets/image/children-group/calendar.svg" alt="" /></div>
+                        <div class="course-features-item-text">
+                            <p>В августе-сентябре мы формируем группы:</p>
+                            <p>Подберем для вас ближайший филиал и удобное расписание</p>
+                        </div>
+                    </div>
+                    <div class="course-features-item" data-aos="flip-left" data-aos-offset="300" data-aos-duration="2000">
+                        <div><img src="./assets/image/children-group/attantion.svg" alt="" /></div>
+                        <div class="course-features-item-text">
+                            <p>Все требования Роспотребнадзора будут соблюдены в полном объеме.</p>
+                            <p>В случае карантина и на его период дети будут переходить на онлайн обучение.</p>
+                            <p>На это время все будет оставаться прежним: состав группы, преподаватель, расписание и
+                                программа.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our school -->
+        <div class="course-video">
+            <h2 class="orange" data-aos="fade-up" data-aos-offset="200">Наши школы</h2>
+            <div class="course-video_frame" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
+
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/JR7V_uhqC3Y" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+        <!-- Course feedback -->
+        <div class="course-feedback">
+            <div class="course-feedback_wrap">
+                <div>
+                    <h2 class="orange" data-aos="fade-right" data-aos-duration="1000">Мы спросили родителей, что их ребенок получает
+                        в Smart Education</h2>
+                    <h2 class="green" data-aos="fade-right" data-aos-duration="2000">Вот основные ответы:</h2>
+                </div>
+                <div class="course-feedback-items">
+                    <div class="course-feedback-item">
+                        <div class="course-feedback-item_avatar" data-aos="flip-left" data-aos-duration="500">
+                            <img src="./assets/image/children-group/feedback/1.png" alt="" />
+                        </div>
+                        <div class="course-feedback-item_text" data-aos="fade-top" data-aos-duration="1000">
+                            <p>Александра Миндубаева, <br />
+                                мама Сони 10 лет</p>
+                            <p>Уроки с Соней учить перестала. Сертификат кембриджский первый она уже получила. В
+                                зарубежных
+                                поездках может поболтать с иностранцами.
+                                Одним словом, будем с вами долго))
+                                Спасибо за прогресс, подход, понимание, гибкость и знания!</p>
+                        </div>
+                    </div>
+                    <div class="course-feedback-item">
+                        <div class="course-feedback-item_avatar" data-aos="flip-left" data-aos-duration="1500">
+                            <img src="./assets/image/children-group/feedback/2.png" alt="" />
+                        </div>
+                        <div class="course-feedback-item_text" data-aos="fade-top" data-aos-duration="2000">
+                            <p>Михаил Рубинштейн, <br />
+                                папа Юлии 9 лет и Леонида 10 лет</p>
+                            <p>Очевидно, что без английского сейчас сложно представить успешное будущее ребенка.
+                                Мои дети учатся в Smart Education, я хочу, чтобы им было доступно всё: образование,
+                                путешествия, друзья, хобби – словом, чтобы для них был открыт весь мир без ограничений и
+                                языковых барьеров.</p>
+                        </div>
+                    </div>
+                    <div class="course-feedback-item">
+                        <div class="course-feedback-item_avatar" data-aos="flip-left" data-aos-duration="2500">
+                            <img src="./assets/image/children-group/feedback/3.png" alt="" />
+                        </div>
+                        <div class="course-feedback-item_text" data-aos="fade-top" data-aos-duration="3000">
+                            <p>Александр Ерлыкин, <br />
+                                папа Полины 6 лет</p>
+                            <p>Я очень рад, что Полина качественно проводит свободное время в школе Smart Education,
+                                общается с друзьями, учится самостоятельности, формирует полезные привычки, а дома
+                                смотрит
+                                мультики на английском вместо бесцельного блуждания по роликам блоггеров в youtube.</p>
+                        </div>
+                    </div>
+                    <div class="course-feedback-item">
+                        <div class="course-feedback-item_avatar" data-aos="flip-left" data-aos-duration="3500">
+                            <img src="./assets/image/children-group/feedback/4.png" alt="" />
+                        </div>
+                        <div class="course-feedback-item_text" data-aos="fade-top" data-aos-duration="4000">
+                            <p>Анна Морева, <br />
+                                мама Ивана 18 лет</p>
+                            <p>Иван – моя гордость! В этом году он осуществил свою мечту: поступил в Высшую Школу
+                                Экономики
+                                в Москве. ЕГЭ по английскому был сдан на высший балл после обучения в Smart Education.
+                                После
+                                сдачи кембриджского экзамена САЕ это было совсем не сложно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Skills -->
+        <div class="course-skills" data-aos="fade-top" data-aos-duration="500">
+            <div class="course-skills_wrap" >
+                <h2 class="red" data-aos="zoom-in" data-aos-duration="1000">Как мы добиваемся всех этих целей:</h2>
+                <div class="course-skills-items">
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/children-group/skills/1.svg" alt=""></p>
+                        <p class="course-skills-item_name">навыки общения</p>
+                        <p>Мы будем разговаривать только на английском языке!</p>
+                        <p>Методика языкового погружения позволяет изучать новую лексику и грамматику без использования
+                            русского языка на уроках.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/children-group/skills/2.svg" alt=""></p>
+                        <p class="course-skills-item_name">soft skills</p>
+                        <p>Мы развиваем аналитические и когнитивные способности, воображение и образное мышление, навыки
+                            работы в команде, личностные качества, такие как лидерство и самостоятельность, и многие
+                            другие
+                            "мягкие" навыки.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/children-group/skills/3.svg" alt=""></p>
+                        <p class="course-skills-item_name">навыки сдачи экзаменов</p>
+                        <p>Итоговая аттестация по английскому языку для учащихся 9-х и 11-х классов проводится в
+                            формате
+                            стандартизированного тестирования. Российские ОГЭ и ЕГЭ ориентированы на общеевропейские
+                            языковые стандарты, а значит, имеют общую с кембриджскими экзаменами структуру и формат.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/children-group/skills/4.svg" alt=""></p>
+                        <p class="course-skills-item_name">расширение кругозора</p>
+                        <p>Мы работаем по коммуникативной методике Кембриджского университета. Во время учебы ребенок
+                            знакомится с другими культурами, , традициями, знакомится с открытиями и трендами,
+                            становится
+                            человеком мира, расширяя границы своих знаний.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course age child -->
+        <div class="course-age">
+            <div class="course-age_wrap">
+                <h2 class="orange" data-aos="fade-up" data-aos-offset="200">Выберите возраст вашего ребенка</h2>
+                <div class="mobile-age-tabs" data-aos="flip-left" data-aos-offset="300" data-aos-duration="1000">
+                    <div class="mobile-age-select mobile">4-6 лет</div>
+                    <div class="course-age-tabs">
+                        <a class="tabs_link active" name="tab_item1" class="active">4-6 лет</a>
+                        <a class="tabs_link" name="tab_item2">7-9 лет</a>
+                        <a class="tabs_link" name="tab_item3">10-13 лет</a>
+                        <a class="tabs_link" name="tab_item4">14-17 лет</a>
+                    </div>
+                </div>
+                <div class="course-age-tab-item" id="tab_item1">
+
+                    <div class="tab-item-desc">
+                        <div data-aos="fade-right" data-aos-offset="300">
+                            <h2 class="red">SMART BEES</h2>
+                            <h2 class="orange">курс английского языка для дошкольников</h2>
+                            <div class="tab-item-table">
+                                <div class="tab-item-table_calendar">2 раза в неделю</div>
+                                <div class="tab-item-table_time">длительность урока – 60 минут</div>
+                            </div>
+                        </div>
+                        <div class="tab-item-text" data-aos="fade-left" data-aos-offset="300">
+                            <p>Курс для самых маленьких — лучший способ подготовить ребенка к школе и привить любовь к
+                                языку. </p>
+                            <p>Общение, первые английские слова, веселые песни, игры – программа настолько продумана,
+                                что не
+                                оставит ни одного ребенка равнодушным.</p>
+                            <p><a class="button_green" href="./assets/pdf/4-6.pdf">Скачать программу</a></p>
+                        </div>
+                    </div>
+                    <div class="tab-item-about">
+                        <h2 class="blue" data-aos="flip-right" data-aos-offset="300">Что мы делаем на курсе:</h2>
+                        <div class="tab-item-about-items">
+                            <div class="teach" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">УЧИМ ОБЩАТЬСЯ НА АНГЛИЙСКОМ</p>
+                                <p>Обучение строится на коммуникативной методике полного физического реагирования</p>
+                                <p>Total Physical Response: маленькие студенты усваивают информацию через все основные
+                                    каналы восприятия: зрительный, слуховой, кинестетический.</p>
+                            </div>
+                            <div class="promotion" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">РАЗВИВАЕМ</p>
+                                <p>Развивающие компоненты курса совершенствуют образное мышление, воображение, моторику.
+                                </p>
+                                <p>Главное при работе с дошкольниками – это искренний интерес и мотивация! </p>
+                            </div>
+                            <div class="know" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">ДАЕМ НОВЫЕ ЗНАНИЯ</p>
+                                <p>Новая лексика и грамматические конструкции запоминаются так, как слова родного языка.
+                                </p>
+                            </div>
+                            <div class="motivation" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">МОТИВИРУЕМ</p>
+                                <p>Игровой компонент превращает процесс обучения в увлекательное приключение и не дает
+                                    ребятам заскучать: мы смотрим мультфильмы, рисуем, поем английские песенки и даже
+                                    танцуем.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="course-age-tab-item" id="tab_item2">
+
+                    <div class="tab-item-desc">
+                        <div data-aos="fade-right" data-aos-offset="300" >
+                            <h2 class="red">SMART EXPLORERS</h2>
+                            <h2 class="orange">курс английского для младших школьников</h2>
+                            <div class="tab-item-table">
+                                <div class="tab-item-table_calendar">2 раза в неделю</div>
+                                <div class="tab-item-table_time">длительность урока – 80 минут</div>
+                            </div>
+                        </div>
+                        <div class="tab-item-text" data-aos="fade-left" data-aos-offset="300" >
+                            <p>Курс для самых маленьких — лучший способ подготовить ребенка к школе и привить любовь к
+                                языку. </p>
+                            <p>Общение, первые английские слова, веселые песни, игры – программа настолько продумана,
+                                что не
+                                оставит ни одного ребенка равнодушным.</p>
+                            <p><a class="button_green" href="./assets/pdf/7-9.pdf">Скачать программу</a></p>
+                        </div>
+                    </div>
+                    <div class="tab-item-about">
+                        <h2 class="blue" data-aos="flip-left" data-aos-offset="300">Что мы делаем на курсе:</h2>
+                        <div class="tab-item-about-items">
+                            <div class="teach" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">УЧИМ ОБЩАТЬСЯ НА АНГЛИЙСКОМ</p>
+                                <p>Развитие навыков свободного общения, чтения, восприятия речи на слух, знакомство с
+                                    новой
+                                    лексикой происходит с применением коммуникативных игровых методик.</p>
+                            </div>
+                            <div class="know" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">ДАЕМ НОВЫЕ ЗНАНИЯ</p>
+                                <p>Ребята регулярно работают над произношением, повторяя слова и предложения за героями
+                                    учебника. Преподаватели знакомят студентов с грамматической системой языка и
+                                    закрепляют новую лексику.</p>
+                            </div>
+                            <div class="promotion" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">РАЗВИВАЕМ</p>
+                                <p>Новая лексика и грамматические конструкции запоминаются так, как слова родного языка.
+                                </p>
+                            </div>
+
+                            <div class="motivation" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">МОТИВИРУЕМ</p>
+                                <p>Игровой компонент превращает процесс обучения в увлекательное приключение
+                                    и не дает ребятам заскучать: мы смотрим мультфильмы, рисуем, поем английские песни
+                                    и
+                                    даже танцуем.</p>
+                            </div>
+                        </div>
+                        <div class="tab-item-about_attantion blue" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1000">На этом этапе ребята готовятся к Кембриджским
+                            экзаменам
+                            <span class="red">YOUNG LEARNERS EXAMS.</span></div>
+                    </div>
+
+                </div>
+
+                <div class="course-age-tab-item" id="tab_item3">
+
+                    <div class="tab-item-desc">
+                        <div data-aos="fade-right" data-aos-offset="300" >
+                            <h2 class="red">SMART TRAVELLERS</h2>
+                            <h2 class="orange">курс английского для младших школьников</h2>
+                            <div class="tab-item-table">
+                                <div class="tab-item-table_calendar">2 раза в неделю</div>
+                                <div class="tab-item-table_time">длительность урока – 100 минут</div>
+                            </div>
+                        </div>
+                        <div class="tab-item-text" data-aos="fade-left" data-aos-offset="300">
+                            <p>Курс поможет привести в систему полученные ранее знания: ребята активно пополняют
+                                словарный
+                                запас, тренируют грамматические конструкции.
+                            </p>
+                            <p>В данном курсе школьники овладевают английским, познавая мир.</p>
+                            <p><a class="button_green" href="./assets/pdf/10-12.pdf">Скачать программу</a></p>
+                        </div>
+                    </div>
+                    <div class="tab-item-about">
+                        <h2 class="blue" data-aos="flip-left" data-aos-offset="300">Что мы делаем на курсе:</h2>
+                        <div class="tab-item-about-items">
+                            <div class="teach" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">УЧИМ ОБЩАТЬСЯ НА АНГЛИЙСКОМ</p>
+                                <p>Навыки разговорной речи развиваются на уроках в созданных преподавателем ситуациях
+                                    реального общения: это методика Task-based Learning - обучение, построенное не на
+                                    правилах, а на коммуникативных задачах.</p>
+                            </div>
+
+                            <div class="know" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">ДАЕМ НОВЫЕ ЗНАНИЯ</p>
+                                <p>Ребята регулярно работают над навыками аудирования, чтения и письма на уроке и дома в
+                                    программе online. Преподаватели отрабатывают грамматику языка и закрепляют новую
+                                    лексику.</p>
+                            </div>
+                            <div class="promotion" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">РАЗВИВАЕМ</p>
+                                <p>Ребята активно развивают свои soft skills (гибкие навыки), работая в группе, а
+                                    дополнительные упражнения курса расширяют знания учеников в других сферах: наука,
+                                    математика, география, история и др.</p>
+                            </div>
+                            <div class="motivation" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">МОТИВИРУЕМ</p>
+                                <p>Созданный в сотрудничестве с Discovery EducationTM, курс содержит увлекательные
+                                    видеоролики, происходит обсуждение мировых новостей и важных тем, чтобы
+                                    стимулировать
+                                    интерес и любопытство у учеников.</p>
+                            </div>
+                        </div>
+                        <div class="tab-item-about_attantion blue" data-aos="flip-left" data-aos-offset="300">На этом этапе ребята готовятся к Кембриджским
+                            экзаменам
+                            <span class="red">PET и KET,</span> а так же <span class="red">ОГЭ.</span></div>
+                    </div>
+
+                </div>
+
+                <div class="course-age-tab-item" id="tab_item4">
+
+                    <div class="tab-item-desc">
+                        <div data-aos="fade-right" data-aos-offset="300">
+                            <h2 class="red">SMART ROVERS</h2>
+                            <h2 class="orange">курс английского для младших школьников</h2>
+                            <div class="tab-item-table">
+                                <div class="tab-item-table_calendar">2 раза в неделю</div>
+                                <div class="tab-item-table_time">длительность урока – 100 минут</div>
+                            </div>
+                        </div>
+                        <div class="tab-item-text" data-aos="fade-left" data-aos-offset="300">
+                            <p>Программы этого возраста дают обширные знания в области грамматики, аудирования, чтения,
+                                отрабатывают практику беглой устной речи.
+                            </p>
+                            <p>Темы для обсуждения наиболее актуальны для подростков, где они могут проявить свою
+                                фантазию и
+                                эффективнее обучаться.</p>
+                            <p><a class="button_green" href="./assets/pdf/13-17.pdf">Скачать программу</a></p>
+                        </div>
+                    </div>
+                    <div class="tab-item-about">
+                        <h2 class="blue" data-aos="flip-left" data-aos-offset="300">Что мы делаем на курсе:</h2>
+                        <div class="tab-item-about-items">
+                            <div class="teach" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">УЧИМ ОБЩАТЬСЯ НА АНГЛИЙСКОМ</p>
+                                <p>Навыки разговорной речи развиваются на уроках в созданных преподавателем ситуациях
+                                    реального общения: это методика Task-based Learning - обучение, построенное не на
+                                    правилах, а на коммуникативных задачах.</p>
+                            </div>
+                            <div class="know" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">ДАЕМ НОВЫЕ ЗНАНИЯ</p>
+                                <p>Ребята регулярно работают над навыками аудирования, чтения и письма на уроке и дома в
+                                    программе online. Преподаватели отрабатывают грамматику языка и закрепляют новую
+                                    лексику.</p>
+                            </div>
+                            <div class="promotion" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                                <p class="tab-item-about-item_name">РАЗВИВАЕМ</p>
+                                <p>Ребята активно развивают свои soft skills (гибкие навыки), работая в группе. Курс
+                                    предлагает целостный подход к обучению: развитие мышления, побуждая школьников
+                                    задуматься о ценностях и повышает самооценку при использовании нового языка.</p>
+                            </div>
+
+                            <div class="motivation" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+                                <p class="tab-item-about-item_name">МОТИВИРУЕМ</p>
+                                <p>Одна из основных задач курса — создать правильную мотивацию, показать студентам, что
+                                    английский нужен им каждый день: для учебы, общения со сверстниками и отдыха.
+                                    Знания,
+                                    полученные во время обучения, помогут при поступлении в институт, а также дадут
+                                    возможность построить успешную карьеру в будущем.</p>
+                            </div>
+                        </div>
+                        <div class="tab-item-about_attantion blue" data-aos="flip-right" data-aos-offset="300">На этом этапе ребята готовятся к Кембриджским
+                            экзаменам
+                            <span class="red">PET и KET,</span> а так же <span class="red">ОГЭ.</span></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Sign up of course -->
+        <div class="course-sign" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" >
+            <div class="course-sign_wrap">
+                <h2>Записаться на курс SMART BEES</h2>
+                <form>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <input id="radio-1" type="radio"  name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                    <label for="radio-1">Москва, ул. Митинская, д. 40</label>
+                    <input id="radio-2" type="radio"  name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                    <label for="radio-2">Москва, ул. Профсоюзная, д.43 к1</label>
+                    <input id="check" type="checkbox" name="check" value="check">
+                    <label for="check">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+        </div>
+
+        <!-- How work -->
+        <div class="course-work" data-aos="fade-up" data-aos-offset="300">
+            <div class="course-work_wrap">
+                <h2 class="green" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">Кто работает с вашими детьми?</h2>
+
+                <div class="course-work-items">
+                    <div class="course-work-column">
+                        <div class="course-work-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+                            <div class="course-work-photo"><img src="./assets/image/children-group/work/1.png" alt="">
+                            </div>
+                            <div class="course-work-text">
+                                <p>Развитие преподавателей – один из важнейших аспектов в работе наших центров. Поэтому
+                                    наши
+                                    методисты ежемесячно проводят тренинги по методике преподавания языка, развивают
+                                    умения
+                                    работы с группой, дают современные инструменты для поддержки групповой динамики и
+                                    формирования языковых навыков студентов.</p>
+                                <div class="course-work-name">ИРИНА БАРКАНОВА</div>
+                                <div class="course-work-post">Академический директор<br />
+                                    Smart Education</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-work-column">
+                        <div class="course-work-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
+                            <div class="course-work-photo"><img src="./assets/image/children-group/work/2.png" alt="">
+                            </div>
+                            <div class="course-work-text">
+                                <p>Все наши преподаватели имеют высшее педагогическое и лингвистическое образование и
+                                    опыт
+                                    работы с детьми.
+                                    Академические директора регулярно посещают занятия и следят за качеством
+                                    преподаванияям
+                                </p>
+                                <div class="course-work-name">ЯНА НЕМЧИНОВА</div>
+                                <div class="course-work-post">Исполнительный директор<br />
+                                    Smart Education</div>
+                            </div>
+                        </div>
+                        <div class="course-work-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
+                            <div class="course-work-photo"><img src="./assets/image/children-group/work/3.png" alt="">
+                            </div>
+                            <div class="course-work-text">
+                                <p>Наши преподаватели - энтузиасты, влюбленные в свое дело. У каждого в активе - тысячи
+                                    учебных часов, государственные дипломы, международные сертификаты, а вместо сердца -
+                                    пламенный мотор.</p>
+                                <div class="course-work-name">ИЛЬЯ АГАФОНОВ</div>
+                                <div class="course-work-post">Старший корпоративный преподаватель<br />
+                                    Smart Education</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- advantages -->
+        <div class="course-advantages">
+            <h2 class="green" data-aos="flip-down" data-aos-duration="500">Чем мы отличаемся от центров и клубов:</h2>
+            <div class="course-advantages-table">
+                <div class="course-advantages-head">
+                    <div></div>
+                    <div>Как обычно учат</div>
+                    <div>Как учим мы в Smart Education</div>
+                </div>
+                <div class="course-advantages-item">
+                    <div class="course-advantages-name" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">Преподаватели</div>
+                    <div class="course-advantages-other" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">Учат детей «читать и переводить» как и 30 лет назад</div>
+                    <div class="course-advantages-list" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <ul>
+                            <li>учат детей <span class="green">ГОВОРИТЬ</span> используя коммуникативную методику</li>
+                            <li>дипломированные педагоги и лингвисты</li>
+                        </ul>
+                        <p>Обладатели международных сертификатов по методике преподавания и уровню знания языка</p>
+                    </div>
+                </div>
+                <div class="course-advantages-item">
+                    <div class="course-advantages-name" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">программы</div>
+                    <div class="course-advantages-other" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">Дети занимаются по ксерокопиям либо по программам русскоязычных
+                        авторов</div>
+                    <div class="course-advantages-list" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <p>Мы работаем по коммуникативной методике Кембриджского университета. На уроках развиваем
+                            разговорные навыки в ситуациях реального общения. Домашнее задание выполняется на ON-LINE
+                            платформе. Прогресс родители видят в личном кабинете.</p>
+                    </div>
+                </div>
+                <div class="course-advantages-item">
+                    <div class="course-advantages-name" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">Контроль результата</div>
+                    <div class="course-advantages-other" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">Нет</div>
+                    <div class="course-advantages-list" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <ul>
+                            <li>отслеживаем прогресс при помощи входного, промежуточных и финального тестирований</li>
+                            <li>есть доступ в личный кабинет с результатами обучения</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-advantages-item">
+                    <div class="course-advantages-name" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">ВОЗРАСТ</div>
+                    <div class="course-advantages-other" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">Деление на 2-3 ВОЗРАСТНЫЕ ГРУППЫ</div>
+                    <div class="course-advantages-list" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <p><span class="green">4 ВОЗРАСТНЫЕ ГРУППЫ</span></p>
+                        <p>Мы учитываем психологические и возрастные особенности, т.к. восприятие информации 12-летнего
+                            и 16-летнего ребенка различны.</p>
+                        <p>При подборе учебных материалов мы ориентируемся на интересы конкретной возрастной группы,
+                            потому что это оказывает огромное влияние на мотивацию ребенка.</p>
+                    </div>
+                </div>
+                <div class="course-advantages-item">
+                    <div class="course-advantages-name" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">КОЛИЧЕСТВОДЕТЕЙ В ГРУППЕ</div>
+                    <div class="course-advantages-other" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">До 15 человек</div>
+                    <div class="course-advantages-list" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+                        <p><span class="green">ДО 9 ЧЕЛОВЕК</span></p>
+                        <p>Методически доказано, что оптимальный размер группы 7-9 человек. Это позволяет эффективно
+                            тренировать разговорные навыки и обеспечивает индивидуальный подход к каждому ребенку.</p>
+                    </div>
+                </div>
+                <div class="course-advantages-item">
+                    <div class="course-advantages-name" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">ПОДГОТОВКАК ЭКЗАМЕНАМ</div>
+                    <div class="course-advantages-other" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">Платный курс</div>
+                    <div class="course-advantages-list" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">Подготовка включена в программу</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gallery -->
+        <div class="gallery">
+            <div class="gallery_wrap">
+                <h2 class="orange">Познакомьтесь с особой атмосферой Smart Education</h2>
+                <div class="gallery-items">
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
+
+                        <picture>
+                            <source
+                                srcset="./assets/image/children-group/gallery/1x2.png 2x, ./assets/image/children-group/gallery/1.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/children-group/gallery/1.png" alt="">
+                        </picture>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="2000">
+                        <picture>
+                            <source
+                                srcset="./assets/image/children-group/gallery/2x2.png 2x, ./assets/image/children-group/gallery/2.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/children-group/gallery/1.png" alt="">
+                        </picture>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="3000">
+                        <picture>
+                            <source
+                                srcset="./assets/image/children-group/gallery/3x2.png 2x, ./assets/image/children-group/gallery/3.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/children-group/gallery/3.png" alt="">
+                        </picture>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
+                        <picture>
+                            <source
+                                srcset="./assets/image/children-group/gallery/4x2.png 2x, ./assets/image/children-group/gallery/4.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/children-group/gallery/4.png" alt="">
+                        </picture>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="2000">
+                        <picture>
+                            <source
+                                srcset="./assets/image/children-group/gallery/5x2.png 2x, ./assets/image/children-group/gallery/5.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/children-group/gallery/5.png" alt="">
+                        </picture>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="3000">
+                        <picture>
+                            <source
+                                srcset="./assets/image/children-group/gallery/6x2.png 2x, ./assets/image/children-group/gallery/6.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/children-group/gallery/6.png" alt="">
+                        </picture>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback form -->
+
+        <div class="feedback" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1000">
+            <h2>Запишитесь на бесплатный открытый урок</h2>
+            <form>
+                <input type="text" placeholder="Фамилия и Имя" />
+                <input type="tel" placeholder="+7 (999) 999-99-99" />
+                <input type="email" placeholder="E-mail" />
+                <input id="radio-3" type="radio"  name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                <label for="radio-3">Москва, ул. Митинская, д. 40</label>
+                <input id="radio-4" type="radio"  name="radio" value="Москва, ул. Профсоюзная, д.43 к1" >
+                <label for="radio-4">Москва, ул. Профсоюзная, д.43 к1</label>
+                <input id="check2" type="checkbox" name="check" value="check">
+                <label for="check2">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии с
+                    Политикой конфиденциальности.</label>
+                <input type="submit" value="Отправить" />
+            </form>
+        </div>
+
+        <!-- Address school -->
+
+        <div class="adress">
+            <div class="adress-tabs mobile">
+                <a class="active" name='list'>Списком</a>
+                <a name='map'>На карте</a>
+            </div>
+            <div id="map" class="arderss-mobile"></div>
+            <div id="list" class="adress-desc arderss-mobile">
+                <h3>Адреса школ</h3>
+
+                <div class="adress-desc_item">
+                    <h4>Филиал Горьковский</h4>
+                    <div class="adress-desc_adres">
+                        Горьковская<br />
+                        ул. Горького 218/22
+                    </div>
+                    <div class="adress-desc_link"><a class="button_green" href="#">Подробнее</a></div>
+                </div>
+
+                <div class="adress-desc_item">
+                    <h4>Филиал Ленинский</h4>
+                    <div class="adress-desc_adres">
+                        Ленинская<br />
+                        пр. Ленина, 17
+                    </div>
+                    <div class="adress-desc_link"><a class="button_green" href="#">Подробнее</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Pop-up window-->
+        <div class="popup">
+            <div class="pop_bg"></div>
+            <div class="pop_window">
+                <a class="close"></a>
+                <form id="application">
+                    <h3>Оставить заявку</h3>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <input id="radio-5" type="radio"  name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                    <label for="radio-5">Москва, ул. Митинская, д. 40</label>
+                    <input id="radio-6" type="radio"  name="radio" value="Москва, ул. Профсоюзная, д.43 к1" >
+                    <label for="radio-6">Москва, ул. Профсоюзная, д.43 к1</label>
+                    <input id="check3" type="checkbox" name="check" value="check">
+                    <label for="check3">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form id="login">
+                    <h3>Войти в систему</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="password" placeholder="Пароль" />
+                    <input id="check4" type="checkbox" name="check" value="check">
+                    <label for="check4">Запомнить</label>
+                    <input type="submit" value="Войти" />
+                    <div class="remember"><a class="form_call" data-item="remember">ЗАБЫЛИ ПАРОЛЬ?</a></div>
+                </form>
+                <form id="remember">
+                    <h3>Востановление пароля</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="submit" value="Выслать пароль" />
+                    <div class="remember"><a class="form_call" data-item="login">Вернуться</a></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div><img src='./assets/image/logo.svg' /></div>
+            <div class="footer-copy">
+                © Смарт Эдьюкейшн, 2007-2020<br>
+                <a href="#">Политика Конфиденциальности</a>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/smartednn" target="_blank"><img src="./img/fb.svg" /></a>
+                    <a href="https://vk.com/smarteducation" target="_blank"><img src="./img/vk.svg" /></a>
+                    <a href="https://www.instagram.com/smart_education_school/" target="_blank"><img
+                            src="./img/ins.svg" /></a>
+                </div>
+                <div class="footer-work">Made in <a href="">Le Design</a></div>
+            </div>
+        </footer>
+        <div class="bottom desktop">
+            <div><img src="./assets/image/logo.svg" /></div>
+            <div class="bottom-phone"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8 (499) 288-4203</a></div>
+            <div class="bottom-sign"><a class="button_green_full">Записаться</a></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

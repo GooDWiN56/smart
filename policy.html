@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Английский для детей и подростков</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFlVYWc4RsFwAa9wm9ubODoXurDzgLvQ"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="all">
+        <header>
+            <div class="head_wrap">
+                <div><img src="./assets/image/logo.svg" /></div>
+                <div><img src="./assets/image/cambridge.png" /></div>
+                <div class="header-phone desktop"><a href="tel:8495149-7021">8 (495) 149-7021</a><a
+                        href="tel:84992884203">8 (499) 288-4203</a></div>
+                <div class="header-region desktop">
+                    <div id="header-region-select" class="header-region-select">Москва</div>
+                    <div id="header-region-change" class="header-region-change">
+                        <p id="header-region-change-q">Ваш город - Москва?</p>
+                        <div class="header-region-button">
+                            <a id="header-region-button-yes">Да</a>
+                            <a id="header-region-button-no">Нижний Новгород</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-user_link desktop">Личный кабинет</div>
+                <div class="burger-button">
+                    <input type="checkbox" id="burger" name="burger">
+                    <label for="burger"><span></span></label>
+                </div>
+
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li>
+                        <a class="active" href="#">Для детей и подростков</a>
+                        <ul class="menu-children">
+                            <li><a href="#" class="active">Английский в филиалах школы 3-17 лет</a></li>
+                            <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                            <li><a href="#">Подготовка к международным экзаменам</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Для взрослых</a>
+                        <ul class="menu-children">
+                            <li><a href="#">Разговорный английский в филиалах школы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Онлайн обучение</a>
+                    </li>
+                    <li><a href="#">Корпоративное обучение</a></li>
+                    <li>
+                        <a href="#">Преподавателям английского языка</a>
+                    </li>
+                    <li>
+                        <a href="#">О школе</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile burger-menu" id="burger-menu">
+                <nav class="">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Для детей и подростков</a>
+                            <ul class="menu-children">
+                                <li><a href="#" class="active">Английский в филиалах школы 3-17 лет</a></li>
+                                <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                                <li><a href="#">Подготовка к международным экзаменам</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Для взрослых</a>
+                            <ul class="menu-children">
+                                <li><a href="#">Разговорный английский в филиалах школы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Онлайн обучение</a>
+                        </li>
+                        <li><a href="#">Корпоративное обучение</a></li>
+                        <li>
+                            <a href="#">Преподавателям английского языка</a>
+                        </li>
+                        <li>
+                            <a href="#">О школе</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-bottom">
+                    <div class="header-region">
+                        <div id="header-region-select2" class="header-region-select">Москва</div>
+                        <div id="header-region-change2" class="header-region-change">
+                            <p id="header-region-change-q2">Ваш город - Москва?</p>
+                            <div class="header-region-button">
+                                <a id="header-region-button-yes2">Да</a>
+                                <a id="header-region-button-no2">Нижний Новгород</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-user_link">Личный кабинет</div>
+                    <div class="header-phone"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8
+                            (499) 288-4203</a></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="policy_wrap">
+            <h1 class="green">Политика конфиденциальности</h1>
+            <p>1) Настоящим Вы подтверждаете, что Вам исполнилось 18 лет, и даете согласие по установленной форме на обработку своих персональных данных в порядке, установленном Федеральным законом РФ от 27.07.2006 N 152-ФЗ "О персональных данных":</p>
+            <p>Настоящим, я (далее – Клиент), даю свое согласие ЧУДО ОЦ "Смарт Эдьюкейшн" (Умное Образование), ОГРН 1085200003723 (Н.Новгород, 603140, пр-т Ленина, д. 17, П2), (далее – Центр) на обработку своих персональных данных, указанных при регистрации на сайте Центра (в т.ч. Ф.И.О.Лица, номера телефонов, адресов электронной почты, результаты тестирования), направляемой (заполненной) с использованием настоящего сайта.</p>
+            <p>Обработка (включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ)) персональных данных Клиента осуществляется в целях регистрации и доступа Клиента на сайт Центра, а также распространения рекламных сообщений (в т.ч. о проводимых акциях и специальных предложениях через любые каналы коммуникации, в том числе по почте, SMS, электронной почте, телефону, иным средствам связи).</p>
+            <p>Центр не несет ответственности за использование (как правомерное, так и неправомерное) третьими лицами информации, размещенной Клиентом на Сайте, включая её воспроизведение и распространение, осуществленные всеми возможными способами.</p>
+            <p>Обработка персональных данных Клиента может осуществляться с помощью средств автоматизации и/или без использования средств автоматизации в соответствии с действующим законодательством РФ и положениями Центра. Настоящее согласие Клиента на обработку его/ее персональных данных, указанных при регистрации Клиента на сайте Центра, направляемых (заполненных) с использованием настоящего сайта, действует в течение 15 (пятнадцати) лет с момента регистрации Клиента на сайте Центра с помощью средств автоматизации. Согласие на обработку персональных данных, указанных при регистрации Клиента на сайте Центра, направляемых (заполненных) с использованием настоящего сайта, может быть отозвано Клиентом при подаче письменного заявления (отзыва) в Центр. Обработка персональных данных Клиента прекращается немедленно с момента получения Центром письменного заявления (отзыва) Клиента и/или в случае достижения цели обработки и уничтожается в срок и на условиях, установленных законом, если не предусмотрено иное.</p>
+            <p>Настоящим Клиент обязуется (1) не представляться чужим именем или от чужого имени (частного лица или организации), (2) не указывать заведомо недостоверную информацию и информацию, идентифицирующую третьих лиц или в отношении третьих лиц.</p>
+            <p>Настоящим Клиент при регистрации на сайте Центра подтверждает достоверность указанной информации и соглашается на ее обработку.</p>
+            <p><br /></p>
+            <p>2) Принимая настоящие условия, Вы соглашаетесь получать информационную и рекламную рассылку (информацию о действующих акциях, скидках, конкурсах, мероприятиях и иных специальных предложениях, а также корпоративные новости, опросы, аналитику) по указанным Вами адресам e-mail и номерам мобильных телефонов.</p>
+            <p>Вы можете отказаться от получения рекламной информации, связавшись с нашим контактным центром по номеру телефона <a href="tel:88314133034">8 (831) 413-30-34</a> или по электронному адресу <a href="mailto:client@smart-education.ru">client@smart-education.ru</a></p>
+            <p>Отзыв согласия на обработку персональных данных может быть осуществлен путем направления Клиентом соответствующего распоряжения в простой письменной форме на адрес электронной почты <a href="mailto:client@smart-education.ru">client@smart-education.ru</a></p>
+        </div>
+
+        <!--Pop-up window-->
+        <div class="popup">
+            <div class="pop_bg"></div>
+            <div class="pop_window">
+                <a class="close"></a>
+                <form id="application">
+                    <h3>Оставить заявку</h3>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <input id="radio-5" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                    <label for="radio-5">Москва, ул. Митинская, д. 40</label>
+                    <input id="radio-6" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                    <label for="radio-6">Москва, ул. Профсоюзная, д.43 к1</label>
+                    <input id="check3" type="checkbox" name="check" value="check">
+                    <label for="check3">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form id="login">
+                    <h3>Войти в систему</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="password" placeholder="Пароль" />
+                    <input id="check4" type="checkbox" name="check" value="check">
+                    <label for="check4">Запомнить</label>
+                    <input type="submit" value="Войти" />
+                    <div class="remember"><a class="form_call" data-item="remember">ЗАБЫЛИ ПАРОЛЬ?</a></div>
+                </form>
+                <form id="remember">
+                    <h3>Востановление пароля</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="submit" value="Выслать пароль" />
+                    <div class="remember"><a class="form_call" data-item="login">Вернуться</a></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div><img src='./assets/image/logo.svg' /></div>
+            <div class="footer-copy">
+                © Смарт Эдьюкейшн, 2007-2020<br>
+                <a href="#">Политика Конфиденциальности</a>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/smartednn" target="_blank"><img src="./img/fb.svg" /></a>
+                    <a href="https://vk.com/smarteducation" target="_blank"><img src="./img/vk.svg" /></a>
+                    <a href="https://www.instagram.com/smart_education_school/" target="_blank"><img
+                            src="./img/ins.svg" /></a>
+                </div>
+                <div class="footer-work">Made in <a href="">Le Design</a></div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

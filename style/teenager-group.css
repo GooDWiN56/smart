@@ -1,0 +1,68 @@
+.teenager .course-name-img::before{
+    width: 120.15px;
+    height: 96.34px;
+    background: url(./../img/course-name-ill_teenager.svg) no-repeat center;
+    top: -20px;
+    right: 0px;
+}
+.course-name-img:after{
+    bottom: 35%;
+    left: -105px;
+}
+
+.course-name-desc p a,
+.course-name-desc p a:visited{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    padding: 15px 60px;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+
+ .course-advantages.teenager{
+    background: #fff;
+    padding: 100px 5% 70px;
+    position: relative;
+}
+.course-advantages.teenager:after{
+    display: none;
+}
+.course-advantages.teenager  h2{
+    position: relative;
+}
+.course-advantages.teenager  h2:after {
+    content: '';
+    position: absolute;
+    width: 215px;
+    height: 162px;
+    top: 50%;
+    right: -65%;
+    transform: translatey(-50%);
+    background: url(./../img/video-illustr.svg) no-repeat center;
+}
+.teenager .course-advantages-list,
+.course-age.teenager {
+    background: #f5f5f5;
+}
+
+
+.teenager .tab-item-desc{
+    background: #fff;
+    border-radius: 20px;
+    padding: 45px 60px;
+    margin-bottom: 70px;
+}
+.teenager .course-age_wrap:after {
+    content: '';
+    position: absolute;
+    right: 4%;
+    top: -6%;
+    width: 273px;
+    height: 247px;
+    background: url(./../img/age_teenager-illustr.svg) no-repeat center;
+}
+.teenager .tab-item-about_attantion{
+    background: #fff;
+}
