@@ -218,9 +218,9 @@
         width: 127px;
         height: 59.38px;
         background-size: contain;
-        bottom: 10%;
-        left: auto;
-        right: 0;
+        bottom: 10% !important;
+        left: auto !important;
+        right: 0 !important;
     }
 
     .course-name-desc p a, .course-name-desc p a:visited{
@@ -244,6 +244,7 @@
     .course-suit-desc{
         padding: 30px 15px;
         margin-bottom: 25px;
+        display: block;
     }
     .course-suit-video iframe{
         height: 315px;
@@ -481,6 +482,7 @@
 .mobile-age-tabs{
     display: block;
     position: relative;
+    z-index: 22;
 }
 .mobile-age-select{
     background-color: #8EB400;
