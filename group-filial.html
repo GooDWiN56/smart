@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Английский для детей и подростков</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/teenager-group.css" />
+    <link rel="stylesheet" type="text/css" href="style/group-filial.css" />
+    <link rel="stylesheet" type="text/css" href="style/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+    
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFlVYWc4RsFwAa9wm9ubODoXurDzgLvQ"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="all">
+
+        <!-- Header -->
+        <header>
+            <div class="head_wrap">
+                <div><img src="./assets/image/logo.svg" /></div>
+                <div><img src="./assets/image/cambridge.png" /></div>
+                <div class="header-phone desktop"><a href="tel:8495149-7021">8 (495) 149-7021</a><a
+                        href="tel:84992884203">8 (499) 288-4203</a></div>
+                <div class="header-region desktop">
+                    <div id="header-region-select" class="header-region-select">Москва</div>
+                    <div id="header-region-change" class="header-region-change">
+                        <p id="header-region-change-q">Ваш город - Москва?</p>
+                        <div class="header-region-button">
+                            <a id="header-region-button-yes">Да</a>
+                            <a id="header-region-button-no">Нижний Новгород</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-user_link desktop">Личный кабинет</div>
+                <div class="burger-button">
+                    <input type="checkbox" id="burger" name="burger">
+                    <label for="burger"><span></span></label>
+                </div>
+
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li>
+                        <a class="active" href="#">Для детей и подростков</a>
+                        <ul class="menu-children">
+                            <li><a href="#" class="active">Английский в филиалах школы 3-17 лет</a></li>
+                            <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                            <li><a href="#">Подготовка к международным экзаменам</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Для взрослых</a>
+                        <ul class="menu-children">
+                            <li><a href="#">Разговорный английский в филиалах школы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Онлайн обучение</a>
+                    </li>
+                    <li><a href="#">Корпоративное обучение</a></li>
+                    <li>
+                        <a href="#">Преподавателям английского языка</a>
+                    </li>
+                    <li>
+                        <a href="#">О школе</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile burger-menu" id="burger-menu">
+                <nav class="">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Для детей и подростков</a>
+                            <ul class="menu-children">
+                                <li><a href="#" class="active">Английский в филиалах школы 3-17 лет</a></li>
+                                <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                                <li><a href="#">Подготовка к международным экзаменам</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Для взрослых</a>
+                            <ul class="menu-children">
+                                <li><a href="#">Разговорный английский в филиалах школы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Онлайн обучение</a>
+                        </li>
+                        <li><a href="#">Корпоративное обучение</a></li>
+                        <li>
+                            <a href="#">Преподавателям английского языка</a>
+                        </li>
+                        <li>
+                            <a href="#">О школе</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-bottom">
+                    <div class="header-region">
+                        <div id="header-region-select2" class="header-region-select">Москва</div>
+                        <div id="header-region-change2" class="header-region-change">
+                            <p id="header-region-change-q2">Ваш город - Москва?</p>
+                            <div class="header-region-button">
+                                <a id="header-region-button-yes2">Да</a>
+                                <a id="header-region-button-no2">Нижний Новгород</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-user_link">Личный кабинет</div>
+                    <div class="header-phone"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8
+                            (499) 288-4203</a></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Course name -->
+        <div class="course-name group-filial">
+            <div class="course-name_wrap">
+                <div class="course-name-desc" data-aos="fade-left">
+                    <h1 class="green"><span class="orange">Разговорный</span><br />
+                        английский</h1>
+                    <p>Курс позволит вам свободно общаться на английском, понимать собеседников и чувствовать себясвободно в любой ситуации!</p>
+                    <p>
+                        <a meta-item="toFirst" class="button_green">Записаться на курс</a>
+                    </p>
+                </div>
+                <div class="course-name-img" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./assets/image/group-filial/course-name.svg" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Course learn -->
+        <div class="course-learn" data-aos="fade-up" data-aos-duration="500">
+            <h2 class="orange">Вы научитесь:</h2>
+            <div class="course-learn-list">
+                <div class="course-learn-item" data-aos="fade-left" data-aos-duration="400" data-aos-offset="400">
+                    <img src="assets/image/group-filial/learn/1.svg" />
+                    <p>Свободно общаться на английском</p>
+                </div>
+                <div class="course-learn-item" data-aos="fade-right" data-aos-duration="400" data-aos-offset="400">
+                    <img src="assets/image/group-filial/learn/2.svg" />
+                    <p>Понимать носителей языка</p>
+                </div>
+                <div class="course-learn-item" data-aos="fade-left" data-aos-duration="400" data-aos-offset="400">
+                    <img src="assets/image/group-filial/learn/3.svg" />
+                    <p>Грамотно строить предложения</p>
+                </div>
+                <div class="course-learn-item" data-aos="fade-right" data-aos-duration="400" data-aos-offset="400">
+                    <img src="assets/image/group-filial/learn/4.svg" />
+                    <p>Ориентироваться в англоязычной среде</p>
+                </div>
+                <div class="course-learn-item" data-aos="fade-left" data-aos-duration="400" data-aos-offset="400">
+                    <img src="assets/image/group-filial/learn/5.svg" />
+                    <p>Серфить в интернете на языке оригинала</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course programm -->
+        <div class="course-programm">
+            <div data-aos="">
+                <h2 class="orange" data-aos="fade-left" data-aos-duration="500" data-aos-offset="300">
+                    <span class="green">Программа от</span> мирового лидера обучения
+                </h2>
+                <p data-aos="fade-right" data-aos-duration="700" data-aos-offset="300">Курс разработан — Cambridge University Press — с учетом многолетнего опыта и новейших тенденций в образовании.</p>
+                <p data-aos="fade-up" data-aos-duration="900" data-aos-offset="300"><a class="button_red_full">Записаться на курс</a></p>
+            </div>
+            <div class="course-programm-video" data-aos="flip-right" data-aos-duration="500" data-aos-offset="300">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/JR7V_uhqC3Y" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Course Skills -->
+        <div class="course-skills group-filial" data-aos="fade-top" data-aos-duration="500">
+            <div class="course-skills_wrap" >
+                <h2 class="blue" data-aos="zoom-in" data-aos-duration="1000">Курс включает в себя:</h2>
+                <div class="course-skills-items">
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/group-filial/skills/1.svg" alt=""></p>
+                        <p>Разговорную практику в группе: диалоги, ролевые игры, ситуации реального общения.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/group-filial/skills/2.svg" alt=""></p>
+                        <p>ON-LINE платформу для самостоятельной работы: видео, аудио материалы, упражнения.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/group-filial/skills/3.svg" alt=""></p>
+                        <p>Отчеты о прогрессе в личном кабинете, общение с преподавателем и одногруппниками.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+                        <p><img src="./assets/image/group-filial/skills/4.svg" alt=""></p>
+                        <p>Развитие всех четырех языковых навыков: говорение, чтение, аудирование, письмо.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course group description -->
+        <div class="course-group-desc group-filial">
+            <div class="course-group-desc-item">
+                <div>120</div>
+                <p>академических часа</p>
+            </div>
+            <div class="course-group-desc-item">
+                <div>12</div>
+                <p>разговорных тем</p>
+            </div>
+            <div class="course-group-desc-item">
+                <div>6-8</div>
+                <p>человек в группе</p>
+            </div>
+            <div class="course-group-desc-item">
+                <div>Офлайн</div>
+                <p>формат обучения</p>
+            </div>
+        </div>
+
+        <!-- Course build learn -->
+        <div class="course-build group-filial" >
+            <h2 class="orange" data-aos="flip-left" data-aos-offset="300">Как мы строим обучение:</h2>
+            <div class="course-build_wrap">
+                <div class="course-build-item" data-aos="fade-down" data-aos-offset="250" data-aos-duration="500">
+                    <img src="./assets/image/group-filial/build/1.svg" alt="">
+                    <h4 class="red">Мы много работаем в группе</h4>
+                    <p>чтобы сформировать такие навыки общения, как аудирование, говорение, чтение и письмо.</p>
+                </div>
+                <div class="course-build-item" data-aos="fade-down" data-aos-offset="250" data-aos-duration="700">
+                    <img src="./assets/image/group-filial/build/2.svg" alt="">
+                    <h4 class="red">У нас индивидуальный подход</h4>
+                    <p>это значит, что мы следим за прогрессом каждого студента, а преподаватель всегда оставляет обратную связь по каждому уроку.</p>
+                </div>
+                <div class="course-build-item" data-aos="fade-down" data-aos-offset="250" data-aos-duration="500">
+                    <img src="./assets/image/group-filial/build/3.svg" alt="">
+                    <h4 class="red">Это не просто курс, а настоящая игра!</h4>
+                    <p>Работая в команде ты сможешь развить навыки общения, снять языковой барьер, и это все возможно в ситуациях реального общения – прямо на наших уроках!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- How work -->
+        <div class="course-work group-filial">
+            <div class="course-work_wrap">
+                <h2 class="green" data-aos="flip-left" data-aos-offset="300" data-aos-duration="1000">Преподаватели курса</h2>
+        
+                <div class="course-work-items">
+
+                    <div class="course-work-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+                        <div class="course-work-photo"><img src="./assets/image/group-filial/work/1.png" alt="">
+                        </div>
+                        <div class="course-work-text">
+                            <div class="course-work-name">ЯНА НЕМЧИНОВА</div>
+                            <div class="course-work-post">Исполнительный директор<br />
+                                Smart Education</div>
+                            <p><span>Международные сертификаты:</span><br />Cambridge English: Advanced (CAE)<br />Cambridge Teaching Knowledge Test
+                            </p>   
+                        </div>
+                    </div>
+        
+                    <div class="course-work-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1300">
+                        <div class="course-work-photo"><img src="./assets/image/group-filial/work/2.png" alt="">
+                        </div>
+                        <div class="course-work-text">
+                            <div class="course-work-name">ИРИНА БАРКАНОВА</div>
+                            <div class="course-work-post">Академический директор<br />
+                                Smart Education</div>
+                            <p><span>Международные сертификаты:</span>Cambridge English: Advanced (CAE)<br />Cambridge Teaching Knowledge Test</p>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="course-work-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1600">
+                        <div class="course-work-photo"><img src="./assets/image/group-filial/work/3.png" alt="">
+                        </div>
+                        <div class="course-work-text">
+                            <div class="course-work-name">ИЛЬЯ АГАФОНОВ</div>
+                            <div class="course-work-post">Старший корпоративный преподаватель<br />
+                                Smart Education</div>
+                            <p><span>Международный сертификат:</span><br />Cambridge Teaching Knowledge Test<br /><span>Лучший корпоративный тренер 2016</span></p>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Course about school -->
+        <div class="course-about_school group-filial" data-aos="flip-left" data-aos-offset="150" data-aos-duration="400">
+            <h2 data-aos="flip-up" data-aos-offset="250" data-aos-duration="1000">Школа Smart Education это:</h2>
+            <div class="course-about_school-wrap">
+                <p data-aos="fade-right" data-aos-offset="300"><span>99%</span>Положительных отзывов в интернете</p>
+                <p data-aos="fade-down" data-aos-offset="300"><span>100%</span>Сертифицированных преподавателей</p>
+                <p data-aos="fade-up" data-aos-offset="300"><span>12 лет</span>Успешкой работы в образовании</p>
+                <p data-aos="fade-left" data-aos-offset="300"><span>6 лет</span>аккредитованный партнер издательства Кембридж</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Sign up of course -->
+        <div class="course-sign group-filial" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" >
+            <div class="course-sign_wrap">
+                <h2 class="green">Оставьте заявку и получите <span class="orange">скидку 25%</span><br /> до 31 августа при разовой оплате всего курса</h2>
+                <img src='./assets/image/group-filial/form.svg' />
+                <form>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <input id="radio-3" type="radio"  name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                    <label for="radio-3">Москва, ул. Митинская, д. 40</label>
+                    <input id="radio-4" type="radio"  name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                    <label for="radio-4">Москва, ул. Профсоюзная, д.43 к1</label>
+                    <input id="check-2" type="checkbox" name="check" value="check">
+                    <label for="check-2">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Course reviews -->
+        <div class="course-reviews">
+            <h2 class="green">Что говорят наши клиенты</h2>
+            <div class="course-rewviews-slider">
+                <div>
+                    <div class="course-reviews-item">
+                        <picture>
+                            <source
+                                srcset="./assets/image/group-filial/reviews/1@2.png 2x, ./assets/image/group-filial/reviews/1.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/group-filial/reviews/1.png" alt="">
+                        </picture>
+                        <div>
+                            <p>Smart Education - школа с отменной репутацией.</p>
+                            <p>Я учу английский со школьной скамьи и результатом никогда не была довольна. Однако я получила
+                                самые положительные отзывы из сети и знакомых и решила найти время и попробовать.</p>
+                            <p>Атмосфера, которая царит в Smart Education, доброжелательность сделали свое дело, и я после
+                                нескольких занятий обнаруживала в себе силы запоминать новые слова, быстро строить предложения и
+                                сходу отвечать на реплики в ролевых ситуациях.</p>
+                            <p>Спасибо за позитивный опыт - и я продолжаю! Продолжаю учить и любить английский!</p>
+                            <div class="course-reviews-name">Анастасия Доронина<br />
+                                <span>филиал Митинский, Москва</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="course-reviews-item">
+                        <picture>
+                            <source
+                                srcset="./assets/image/group-filial/reviews/1@2.png 2x, ./assets/image/group-filial/reviews/1.png 1x"
+                                type="image/png">
+                            <img src="./assets/image/group-filial/reviews/1.png" alt="">
+                        </picture>
+                        <div>
+                            <p>Smart Education - школа с отменной репутацией.</p>
+                            <p>Я учу английский со школьной скамьи и результатом никогда не была довольна. Однако я получила
+                                самые положительные отзывы из сети и знакомых и решила найти время и попробовать.</p>
+                            <p>Атмосфера, которая царит в Smart Education, доброжелательность сделали свое дело, и я после
+                                нескольких занятий обнаруживала в себе силы запоминать новые слова, быстро строить предложения и
+                                сходу отвечать на реплики в ролевых ситуациях.</p>
+                            <p>Спасибо за позитивный опыт - и я продолжаю! Продолжаю учить и любить английский!</p>
+                            <div class="course-reviews-name">Анастасия Доронина<br />
+                                <span>филиал Митинский, Москва</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Feedback form -->
+
+        <div class="feedback group-filial" data-aos="flip-right" data-aos-offset="400" data-aos-duration="1000">
+            <h2>Остались вопросы?</h2>
+            <form>
+                <input type="text" placeholder="Фамилия и Имя" />
+                <input type="tel" placeholder="+7 (999) 999-99-99" />
+                <input type="email" placeholder="E-mail" />
+                <input id="radio-3" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                <label for="radio-3">Москва, ул. Митинская, д. 40</label>
+                <input id="radio-4" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                <label for="radio-4">Москва, ул. Профсоюзная, д.43 к1</label>
+                <input id="check2" type="checkbox" name="check" value="check">
+                <label for="check2">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии с
+                    Политикой конфиденциальности.</label>
+                <input type="submit" value="Отправить" />
+            </form>
+        </div>
+
+
+
+        <!-- Address school -->
+        <div class="adress">
+            <div class="adress-tabs mobile">
+                <a class="active" name='list'>Списком</a>
+                <a name='map'>На карте</a>
+            </div>
+            <div id="map" class="arderss-mobile"></div>
+            <div id="list" class="adress-desc arderss-mobile">
+                <h3>Адреса школ</h3>
+
+                <div class="adress-desc_item">
+                    <h4>Филиал Горьковский</h4>
+                    <div class="adress-desc_adres">
+                        Горьковская<br />
+                        ул. Горького 218/22
+                    </div>
+                    <div class="adress-desc_link"><a class="button_green" href="#">Подробнее</a></div>
+                </div>
+
+                <div class="adress-desc_item">
+                    <h4>Филиал Ленинский</h4>
+                    <div class="adress-desc_adres">
+                        Ленинская<br />
+                        пр. Ленина, 17
+                    </div>
+                    <div class="adress-desc_link"><a class="button_green" href="#">Подробнее</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Pop-up window-->
+        <div class="popup">
+            <div class="pop_bg"></div>
+            <div class="pop_window">
+                <a class="close"></a>
+                <form id="application">
+                    <h3>Оставить заявку</h3>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <input id="radio-5" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                    <label for="radio-5">Москва, ул. Митинская, д. 40</label>
+                    <input id="radio-6" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                    <label for="radio-6">Москва, ул. Профсоюзная, д.43 к1</label>
+                    <input id="check3" type="checkbox" name="check" value="check">
+                    <label for="check3">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form id="rates">
+                    <h3>Оставить заявку</h3>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <input id="radio-r" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                    <label for="radio-r">Москва, ул. Митинская, д. 40</label>
+                    <input id="radio-r" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                    <label for="radio-r">Москва, ул. Профсоюзная, д.43 к1</label>
+                    <input id="check-r" type="checkbox" name="check" value="check">
+                    <label for="check-r">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form id="login">
+                    <h3>Войти в систему</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="password" placeholder="Пароль" />
+                    <input id="check4" type="checkbox" name="check" value="check">
+                    <label for="check4">Запомнить</label>
+                    <input type="submit" value="Войти" />
+                    <div class="remember"><a class="form_call" data-item="remember">ЗАБЫЛИ ПАРОЛЬ?</a></div>
+                </form>
+                <form id="remember">
+                    <h3>Востановление пароля</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="submit" value="Выслать пароль" />
+                    <div class="remember"><a class="form_call" data-item="login">Вернуться</a></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div><img src='./assets/image/logo.svg' /></div>
+            <div class="footer-copy">
+                © Смарт Эдьюкейшн, 2007-2020<br>
+                <a href="#">Политика Конфиденциальности</a>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/smartednn" target="_blank"><img src="./img/fb.svg" /></a>
+                    <a href="https://vk.com/smarteducation" target="_blank"><img src="./img/vk.svg" /></a>
+                    <a href="https://www.instagram.com/smart_education_school/" target="_blank"><img
+                            src="./img/ins.svg" /></a>
+                </div>
+                <div class="footer-work">Made in <a href="">Le Design</a></div>
+            </div>
+        </footer>
+        <div class="bottom desktop">
+            <div><img src="./assets/image/logo.svg" /></div>
+            <div class="bottom-phone"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8 (499)
+                    288-4203</a></div>
+            <div class="bottom-sign"><a class="button_green_full">Записаться</a></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

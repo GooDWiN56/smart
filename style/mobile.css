@@ -836,5 +836,47 @@ footer>div{
 }
 
 
+.course-learn{
+    padding: 0px 5% 50px;
+    display: block;
+}
+.course-learn h2{
+    margin-bottom: 25px;
+}
+
+
+
+.course-programm{
+    display: block;
+}
+.course-programm h2,
+.course-programm p{
+    margin-bottom: 30px !important;
+}
+.course-programm-video{
+    height: 215px;
+}
+
+
+.course-group-desc{
+    display: block;
+    padding: 50px 5% 15px;
+}
+.course-group-desc-item{
+    margin-bottom: 35px;
+}
+.group-filial .course-build-item::after,
+.group-filial .course-build_wrap::after{
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+
+.group-filial .course-work-item{
+    width: 100%;
+}
+
+.course-reviews-item{display: block; padding-bottom: 15px;}
+.course-reviews-item img{margin-bottom: 20px;}
 
 }

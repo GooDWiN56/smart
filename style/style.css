@@ -834,6 +834,73 @@ nav ul>li .menu-children li a.active:visited{
 }
 
 
+/* Course learn */
+.course-learn{
+    padding: 0px 5% 100px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: 10%;
+}
+.course-learn-item{
+    display: grid;
+    grid-template-columns: 35% 55%;
+    grid-column-gap: 5%;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.course-learn-item img{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Course programm */
+.course-programm{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+    padding: 0 5% 50px;
+}
+.course-programm h2{
+    margin-bottom: 60px;
+}
+.course-programm p{
+    margin-bottom: 60px;
+}
+.course-programm div p:last-child{margin-bottom: 0;}
+.course-programm p a,
+.course-programm p a:visited{
+    width: auto;
+    padding: 15px 50px;
+}
+.course-programm-video{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.course-programm-video iframe{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+
+/* Course programm description */
+.course-group-desc{
+    padding: 100px 5%;
+    background: #8EB400;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 24%;
+    grid-column-gap: 4%;
+}
+.course-group-desc-item div{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #fff;
+}
+
 
 /* Whom suit */
 .course-suit{
@@ -957,7 +1024,7 @@ nav ul>li .menu-children li a.active:visited{
     align-items: flex-start;
 }
 .course-about_school-wrap p{
-    width: 25%;
+    width: 24%;
 }
 .course-about_school-wrap p span{
     font-weight: 800;
@@ -1149,7 +1216,7 @@ nav ul>li .menu-children li a.active:visited{
 
 /* Course Skills */
 .course-skills_wrap{
-    padding: 95px 5%;
+    padding: 95px 5% 35px;
     background: #F5F5F5;
     position: relative;
 }
@@ -1469,6 +1536,12 @@ nav ul>li .menu-children li a.active:visited{
 .course-work-item p{
     margin-bottom: 35px;
 }
+.course-work-item p span{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1D1C1C;
+}
 .course-work-name{
     font-weight: bold;
     font-size: 18px;
@@ -1482,6 +1555,44 @@ nav ul>li .menu-children li a.active:visited{
     font-size: 14px;
     line-height: 18px;
 }
+
+
+/* Course reviews */
+.course-reviews{
+    padding: 100px 5%;
+}
+.course-reviews h2{
+    margin-bottom: 60px;
+}
+.course-reviews-item{
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 105px auto;
+    grid-column-gap: 4%;
+}
+.course-reviews-item img{
+    width: 105px;
+    border-radius: 50%;
+}
+.course-reviews-item p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.course-reviews-name{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.course-reviews-name span{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282;
+}
+
 
 /* Feedback form */
 .feedback,
@@ -1745,8 +1856,9 @@ nav ul>li .menu-children li a.active:visited{
     margin-left: 10%;
 }
 .course-build_wrap .course-build-item:nth-child(2n+2){
-    margin-left: 60%;
+    margin-left: 60%;   
 }
+
 .course-build-item img{
     position: absolute;
     width: 90%;

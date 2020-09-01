@@ -161,6 +161,20 @@ $(document).on("ready", function (e) {
             }
         }]
     });
+    $('.course-rewviews-slider').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                dots: true,
+                arrows: false
+            }
+        }]
+    });
 
     
     
