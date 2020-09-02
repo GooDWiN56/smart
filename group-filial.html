@@ -26,6 +26,18 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFlVYWc4RsFwAa9wm9ubODoXurDzgLvQ"></script>
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // Находим плавающий блок и делаем его плавающим
+            $('#sticker').stick_in_parent({
+                // Отступ сверху
+                offset_top: 80 
+            });
+        });
+    </script>
+    
     
 </head>
 
@@ -150,8 +162,11 @@
         </div>
 
         <!-- Course learn -->
-        <div class="course-learn" data-aos="fade-up" data-aos-duration="500">
-            <h2 class="orange">Вы научитесь:</h2>
+        <div class="course-learn" >
+            <div class="airSticky_stop-block">
+                <h2 id="sticker" class="orange" style="position: -webkit-sticky;position: sticky;">Вы научитесь:</h2>
+                
+            </div>
             <div class="course-learn-list">
                 <div class="course-learn-item" data-aos="fade-left" data-aos-duration="400" data-aos-offset="400">
                     <img src="assets/image/group-filial/learn/1.svg" />
@@ -535,6 +550,7 @@
     <script>
         AOS.init();
     </script>
+    
 </body>
 
 </html>
