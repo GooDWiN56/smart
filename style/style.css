@@ -573,12 +573,13 @@ header.fixed{
     margin-bottom: 34px;
     height: auto;
     max-height: 1000px;
-    overflow: hidden;
+    
     transition: all .3s ease-in-out;
 }
 header.fixed .head_wrap{
     max-height: 0;
     margin-bottom: 0;
+    overflow: hidden;
 }
 .header-phone,
 .bottom-phone{
