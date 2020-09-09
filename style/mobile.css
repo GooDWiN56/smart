@@ -182,8 +182,11 @@
         display: block;
         margin-bottom: 15px;
     }
-    .course-name_wrap{
+    .course-name{
         padding: 15px 5% 80px;
+    }
+    .course-name_wrap{
+        
         display: grid;
         grid-template-areas: 
         'image'
@@ -226,11 +229,14 @@
     .course-name-desc p a, .course-name-desc p a:visited{
         margin-bottom: 15px;
     }
-    .course-name-list {
+    .course-name-list{
+        padding: 0 5% 40px;
+    }
+    .course-name-list_wrap{
         display: grid;
         grid-template-columns: 48% 48% ;
         grid-column-gap: 4%;
-        padding: 0 5% 40px;
+        
     }
     .course-name-list_item{
         padding: 20px 15px 20px;
@@ -260,7 +266,7 @@
         width: 100%;
         margin-bottom: 30px;
     }
-    .course-test::after {
+    .course-test_wrap::after {
         position: relative;
         content: '';
         display: block;
@@ -275,7 +281,7 @@
     }
 
 
-    .course-advant_wrap{
+    .course-advant{
         padding: 0 5% 240px;
     }
     .course-advant h2{
@@ -301,8 +307,9 @@
 
 
     /* Course feature */
+    .course-features{
+        padding: 50px 5% 25px;}
 .course-features_wrap{
-    padding: 50px 5% 25px;
     background: #F5F5F5;
     display: block;
 }
@@ -357,8 +364,11 @@
 }
 
 /* Course feedback */
-.course-feedback_wrap{
+.course-feedback{
     padding: 0px 5% 90px;
+}
+.course-feedback_wrap{
+    
     display: block;
 }
 .course-feedback-item:first-child .course-feedback-item_text::after {
@@ -401,9 +411,12 @@
     
 }
 /* Course Skills */
-.course-skills_wrap{
+.course-skills{
     padding: 50px 5%;
     background: #F5F5F5;
+}
+.course-skills_wrap{
+    
     position: relative;
 }
 .course-skills h2 {
@@ -419,7 +432,7 @@
 
 
 /* Gallery */
-.gallery_wrap{
+.gallery{
     padding: 50px 5%;
 }
 .gallery h2{
@@ -447,11 +460,11 @@
 
 
 /* Course age child */
-.course-age_wrap{
+.course-age{
     padding: 50px 5%;
     position: relative;
 }
-.course-age_wrap:after{
+.course-age:after{
     display: none;
 }
 .course-age_wrap h2{
@@ -609,14 +622,17 @@
     left: 0;
 }
 
-
 .feedback,
+.course-sign{
+    padding: 50px 5%;
+}
+.feedback_wrap,
 .course-sign_wrap{
     position: relative;
     display: block;
-    padding: 50px 5%;
+    
 }
-.feedback::after,
+.feedback_wrap::after,
 .course-sign_wrap:after{
     position: relative;
     display: block;
@@ -659,9 +675,12 @@
 }
 
 /* How work */
+.course-work{
+    padding: 50px 5%;
+}
 .course-work_wrap{
     position: relative;
-    padding: 50px 5%;
+    
 }
 .course-work_wrap::before{
     position: absolute;
@@ -675,7 +694,7 @@
 .course-work_wrap:after{
     position: absolute;
     content: '';
-    bottom: 30px;
+    top: 100%;
     left: 4%;
     width: 300px;
     height: 80px;
@@ -727,9 +746,12 @@
 .course-advantages{
     background: #f5f5f5;
     padding: 50px 5% 50px;
+}
+.course-advantages{
+    
     position: relative;
 }
-.course-advantages:after {
+.course-advantages_wrap:after {
     display: none;
 }
 .course-advantages h2 {
@@ -830,7 +852,10 @@ footer{
     text-align: center !important;
     display: block;
 }
-footer>div{
+.footer_wrap{
+    display: block;
+}
+footer .footer_wrap>div{
     text-align: center !important;
     margin-bottom: 15px;
 }
@@ -840,6 +865,9 @@ footer>div{
     padding: 0px 5% 50px;
     display: block;
 }
+.course-learn_wrap{
+    display: block;
+}
 .course-learn h2{
     margin-bottom: 25px;
 }
@@ -847,6 +875,9 @@ footer>div{
 
 
 .course-programm{
+    display: block;
+}
+.course-programm_wrap{
     display: block;
 }
 .course-programm h2,
@@ -862,6 +893,10 @@ footer>div{
     display: block;
     padding: 50px 5% 15px;
 }
+.course-group-desc_wrap{
+    display: block;
+}
+
 .course-group-desc-item{
     margin-bottom: 35px;
 }
@@ -878,5 +913,8 @@ footer>div{
 
 .course-reviews-item{display: block; padding-bottom: 15px;}
 .course-reviews-item img{margin-bottom: 20px;}
+.group-filial.course-build h2 {
+    margin-bottom: 120px;
+}
 
 }

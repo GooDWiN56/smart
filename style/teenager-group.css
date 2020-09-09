@@ -26,7 +26,7 @@
     padding: 100px 5% 70px;
     position: relative;
 }
-.course-advantages.teenager:after{
+.teenager .course-advantages_wrap:after{
     display: none;
 }
 .course-advantages.teenager  h2{
@@ -54,7 +54,7 @@
     padding: 45px 60px;
     margin-bottom: 70px;
 }
-.teenager .course-age_wrap:after {
+.teenager.course-age:after {
     content: '';
     position: absolute;
     right: 4%;

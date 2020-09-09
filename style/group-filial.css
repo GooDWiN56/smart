@@ -54,7 +54,7 @@
 
 
 
-.group-filial .course-work_wrap{
+.group-filial.course-work{
     padding: 0 5% 100px;
 }
 .group-filial .course-work_wrap::before,
@@ -87,13 +87,16 @@
 }
 
 
-
+.group-filial.course-sign{
+    padding: 100px 5%;
+    background: #fff;
+}
 .group-filial .course-sign_wrap{
     grid-template-areas: "head head"
                          "left right";
     grid-template-columns: 44% 54%;
-    padding: 100px 5%;
-    background: #fff;
+    
+   
 }
 .group-filial .course-sign_wrap h2{
     grid-area: head;
