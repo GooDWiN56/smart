@@ -569,7 +569,6 @@ header.fixed{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column-gap: 2%;
     margin-bottom: 34px;
     height: auto;
     max-height: 1000px;
