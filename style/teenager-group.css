@@ -47,6 +47,12 @@
     background: #f5f5f5;
 }
 
+.teenager .course-work_wrap::after{
+    width: 501.01px;
+    height: 187px;
+    background-image: url(./../img/work-illustr_teenager.svg);
+    top: 99%;
+}
 
 .teenager .tab-item-desc{
     background: #fff;

@@ -230,7 +230,7 @@
         margin-bottom: 15px;
     }
     .course-name-list{
-        padding: 0 5% 40px;
+        padding: 40px 0 0;
     }
     .course-name-list_wrap{
         display: grid;
@@ -916,5 +916,7 @@ footer .footer_wrap>div{
 .group-filial.course-build h2 {
     margin-bottom: 120px;
 }
-
+.teenager .course-work_wrap::after{
+    display: none;
+}
 }

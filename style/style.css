@@ -854,7 +854,7 @@ nav ul>li .menu-children li a.active:visited{
     left: 0;
 }
 .course-name-list{
-    padding: 0 5% 130px;
+    padding: 80px 0 0;
 }
 .course-name-list_wrap{
     display: grid;
@@ -962,15 +962,14 @@ nav ul>li .menu-children li a.active:visited{
     margin-bottom: 50px;
 }
 .course-suit-desc{
-    background: #F5F5F5;
+    
     border-radius: 20px;
-    padding: 45px 40px 15px;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-column-gap: 2%;
 }
 .course-suit-desc-item{
-    padding-left: 50px;
+    padding-left: 60px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -978,9 +977,9 @@ nav ul>li .menu-children li a.active:visited{
     position: absolute;
     content: '';
     left: 0;
-    top: 3px;
-    width: 30px;
-    height: 30px;
+    top: 0px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     background: #8EB400 url(./../img/apply.svg) no-repeat center;
 }
@@ -1219,7 +1218,7 @@ nav ul>li .menu-children li a.active:visited{
 .course-feedback-item_text{
     grid-area: text;
     padding: 30px;
-    background: #E5E5E5;
+    background: #F5F5F5;
     border-radius: 20px;
     position: relative;
 }
@@ -1229,7 +1228,7 @@ nav ul>li .menu-children li a.active:visited{
     position: absolute; 
     top: 65px;
     border: 20px solid transparent;	
-    border-top: 20px solid #E5E5E5;
+    border-top: 20px solid #F5F5F5;
 }
 .course-feedback-item:nth-child(2n+1) .course-feedback-item_text::before{
     left: -20px;
@@ -1544,7 +1543,7 @@ nav ul>li .menu-children li a.active:visited{
 .course-work_wrap:after{
     position: absolute;
     content: '';
-    top: 80%;
+    top: calc(100% - 115px);
     left: 4%;
     width: 531px;
     height: 380px;
@@ -1682,7 +1681,7 @@ nav ul>li .menu-children li a.active:visited{
     position: absolute;
     content: '';
     bottom: -10%;
-    left:1.5%;
+    left:-3%;
     width: 566px;
     height: 348px;
     background: url(./../img/feedback_illustr.svg) no-repeat center;
@@ -1769,6 +1768,9 @@ nav ul>li .menu-children li a.active:visited{
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
+}
+.course-advantages-head>div:last-child{
+    padding: 0 35px;
 }
 .course-advantages-name{
     font-weight: bold;
@@ -1877,11 +1879,11 @@ nav ul>li .menu-children li a.active:visited{
 
 /* Course build learn */
 .course-build{
-    padding: 95px 15%;
+    padding: 95px 5%;
     text-align: center;
 }
 .course-build h2{
-    margin-bottom: 180px;
+    margin-bottom: 300px;
 }
 .course-build_wrap{
     position: relative;
@@ -2034,6 +2036,15 @@ nav ul>li .menu-children li a.active:visited{
 .adress{
     position: relative;
 }
+.adress_wrap{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    transform: translateX(-50%);
+    max-width: 1280px;
+}
 
 #map{
     height: 795px;
@@ -2041,7 +2052,7 @@ nav ul>li .menu-children li a.active:visited{
 
 .adress-desc{
     position: absolute;
-    left: 5%;
+    left: 0%;
     top: 50%;
     transform: translateY(-50%);
     background: #fff;

@@ -17,7 +17,7 @@
 
 
 .group-filial.course-build h2{
-    margin-bottom: 240px;
+    margin-bottom: 300px;
 }
 .group-filial .course-build_wrap .course-build-item{
     margin-bottom: 80px;
@@ -134,11 +134,11 @@
 }
 
 
-.group-filial.feedback::after{
+.group-filial .feedback_wrap::after{
     width: 360px;
     height: 390px;
     background-image: url(./../img/feedback-illustr_group.svg);
-    bottom: 8%;
+    bottom: -3%;
     left: 10%;
 }
 .group-filial.feedback form::before{
