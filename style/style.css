@@ -644,6 +644,7 @@ header.fixed .head_wrap{
     border-radius: 10px;
     padding: 9px;
     padding-left: 45px;
+    padding-right: 15px;
     font-size: 14px;
     position: relative;
     z-index: 2;
@@ -704,6 +705,7 @@ header.fixed .head_wrap{
     border-radius: 10px;
     padding: 9px;
     padding-left: 45px;
+    padding-right: 15px;
     color: #fff;
     font-size: 14px;
     position: relative;
@@ -1194,6 +1196,7 @@ nav ul>li .menu-children li a.active:visited{
 }
 .course-feedback_wrap h2{
     margin-bottom: 30px;
+    width: 90%;
 }
 .course-feedback-item{
     display: grid;
@@ -1268,7 +1271,10 @@ nav ul>li .menu-children li a.active:visited{
 }
 .course-feedback-item:nth-child(2) .course-feedback-item_text::after
 .course-feedback-item_text p{margin-bottom: 10px;}
-.course-feedback-item_text p:first-child{font-weight: bold;}
+.course-feedback-item_text p:first-child{
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 20px;}
 
 /* Course Skills */
 .course-skills{
@@ -2052,7 +2058,7 @@ nav ul>li .menu-children li a.active:visited{
 
 .adress-desc{
     position: absolute;
-    left: 0%;
+    left: 5%;
     top: 50%;
     transform: translateY(-50%);
     background: #fff;
@@ -2185,4 +2191,7 @@ footer{
     grid-column-gap: 2%;
     align-items: center;
     
+}
+.novgorod{
+    display: none;
 }

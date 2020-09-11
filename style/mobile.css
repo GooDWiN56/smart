@@ -720,7 +720,8 @@
 
 
 /* Address school */
-.adress{
+.adress,
+.adress_wrap{
     position: relative;
 }
 
@@ -918,5 +919,14 @@ footer .footer_wrap>div{
 }
 .teenager .course-work_wrap::after{
     display: none;
+}
+
+.course-test.group-filial{
+    padding-bottom: 160px;
+}
+.group-filial .course-test_wrap::after{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-20%);
 }
 }

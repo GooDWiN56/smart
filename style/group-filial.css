@@ -144,3 +144,17 @@
 .group-filial.feedback form::before{
     display: none;
 }
+
+
+.course-test.group-filial{
+    background-color: #F5A300;
+    overflow: hidden;
+}
+.group-filial .course-test_wrap::after{
+    background-image: url(./../img/test-illust_group.svg);
+    width: 600px;
+    height: 700px; 
+    background-size: contain;
+    transform: translateY(-16%);
+
+}
