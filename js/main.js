@@ -45,8 +45,8 @@ $(document).on("ready", function (e) {
         $(window).scrollTop() > 50 ? $('header').addClass('fixed') : $('header').removeClass('fixed');
 
         if (($(window).scrollTop() > ($('.course-age-tabs').offset().top - $(window).height()/1.5)) && ageShow ){
-                setTimeout(function(){$(".course-age-tabs a:nth-child(1)").removeClass('active')}, 500);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(2)").addClass('active')}, 500);
+                setTimeout(function(){$(".course-age-tabs a:nth-child(1)").removeClass('active')}, 0);
+                setTimeout(function(){$(".course-age-tabs a:nth-child(2)").addClass('active')}, 0);
                 setTimeout(function(){$(".course-age-tabs a:nth-child(2)").removeClass('active')}, 1000);
                 setTimeout(function(){$(".course-age-tabs a:nth-child(3)").addClass('active')}, 1000);
                 setTimeout(function(){$(".course-age-tabs a:nth-child(3)").removeClass('active')}, 2000);
