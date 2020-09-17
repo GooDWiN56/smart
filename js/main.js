@@ -170,7 +170,7 @@ $(document).on("ready", function (e) {
         $(this).is(':checked') ? $('#burger-menu').addClass('active') : $('#burger-menu').removeClass('active');
     });
 
-    $('.course-name-desc a, .bottom-sign a, .course-programm p a').on('click', function () {
+    $('.course-name-desc a, .bottom-sign a, .course-programm p a, a.subscrive-form').on('click', function () {
         $('.popup').addClass('show');
         $('.popup #application').show();
     });
@@ -203,6 +203,17 @@ $(document).on("ready", function (e) {
 
         $("html, body").animate({ scrollTop: target }, 800);
 
+    });
+
+
+    $('.faq-button').on("click", function () {
+        if ($('#'+$(this).attr('id')+'.course-faq-item').hasClass('active')){
+            $('#'+$(this).attr('id')+'.course-faq-item').removeClass('active');
+        }
+        else{
+            $('.course-faq-item').removeClass('active');
+            $('#'+$(this).attr('id')+'.course-faq-item').addClass('active');
+        }
     });
 
 
@@ -250,12 +261,13 @@ $(document).on("ready", function (e) {
         responsive: [{
             breakpoint: 600,
             settings: {
-                dots: true,
+                dots: false,
                 arrows: false
             }
         }]
     });
 
+    
 
 
 

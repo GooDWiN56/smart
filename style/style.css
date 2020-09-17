@@ -572,7 +572,10 @@ nav ul,
 .course-name-list_wrap,
 .course-suit_all-wrap,
 .course-test_wrap,
-.course-rates_wrap{
+.course-rates_wrap,
+.course-sert-desc_wrap,
+.course-exam-them_wrap,
+.course-faq_wrap{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -924,6 +927,9 @@ nav ul>li .menu-children li a.active:visited{
 .course-programm-video iframe{
     height: 100% !important;
     width: 100% !important;
+}
+.course-programm-video img{
+    width: 100%;
 }
 
 
@@ -1630,6 +1636,145 @@ nav ul>li .menu-children li a.active:visited{
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+}
+
+
+/* Sertificaate description */
+.course-sert-desc{
+    padding: 90px 5%;
+    background-color: #f5f5f5;
+}
+.course-sert-desc h2{
+    width: 60%;
+    margin-bottom: 80px;
+}
+.course-sert-desc-text{
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-column-gap: 5%;
+}
+.course-sert-desc-text img{
+    width: 100%;
+}
+.course-sert-desc-text ul li{
+    font-weight: 400; 
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    padding-left: 100px;
+    position: relative;
+}
+.course-sert-desc-text ul li::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.course-sert-desc-text ul li:nth-child(1)::before{
+    background-image: url(./../img/sert-desc1.svg);
+}
+.course-sert-desc-text ul li:nth-child(2)::before{
+    background-image: url(./../img/sert-desc2.svg);
+}
+.course-sert-desc-text ul li:nth-child(3)::before{
+    background-image: url(./../img/sert-desc3.svg);
+}
+.course-sert-desc .tab-item-about_attantion{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+
+/* Exam themes */
+.course-exam-them{
+    padding: 100px 5%;
+}
+.course-exam-them h2{
+    width: 60%;
+    margin-bottom: 60px;
+}
+.course-exam-them-desc{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+}
+.course-exam-them-desc img{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+.course-exam-them-desc>div p:first-child{
+    margin-bottom: 70px;
+}
+.course-exam-them-desc>div p{
+    margin-bottom: 40px;
+}
+.course-exam-them-desc>div h4{
+    margin-bottom: 15px;
+}
+
+/* F.A.Q. */
+.course-faq{
+    padding: 90px 5% 0;
+}
+.course-faq h2{
+    padding-bottom: 60px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 25px;
+}
+.course-faq-item{
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 25px;
+}
+.course-faq-quest{
+    position: relative;
+    font-weight: 500; 
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 25px;
+    padding-right: 60px;
+}
+.course-faq-text{
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    padding-bottom: 0px;
+    opacity: 0;
+}
+.course-faq-text p{
+    padding-bottom: 40px;
+}
+.active .course-faq-text{
+    
+    max-height: 10000px;
+    opacity: 1;
+}
+.faq-button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 15px);
+    transform: translateY(-50%);
+    right: 1%;
+    background: url(./../img/faq_but.svg) no-repeat center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+.active .faq-button{
+    background-image: url(./../img/faq_but_cl.svg);
+    background-color: #F5A300;
+
+}
+.faq-subscribe{
+    text-align: center;
+    padding-top: 45px;
 }
 
 

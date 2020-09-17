@@ -27,7 +27,20 @@
         line-height: 20px;
     }
 
-    .desktop{
+    .desktop,
+    .tkt-exam .course-programm-video,
+    .course-programm-video img,
+    .course-feedback_wrap,
+    .course-skills_wrap:after,
+    .gallery h2::after,
+    .course-age:after,
+    .course-rates-items::after,
+    .feedback form::before,
+    .course-sign_wrap form:before,
+    .course-advantages_wrap:after,
+    .course-advantages-head,
+    .course-advantages-other,
+    .teenager .course-work_wrap::after{
         display: none;
     }
     header {
@@ -367,10 +380,7 @@
 .course-feedback{
     padding: 0px 5% 90px;
 }
-.course-feedback_wrap{
-    
-    display: block;
-}
+
 .course-feedback-item:first-child .course-feedback-item_text::after {
     top: -80px;
     right: 0;
@@ -423,9 +433,7 @@
     width: 100%;
     margin-bottom: 30px;
 }
-.course-skills_wrap:after{
-    display: none;
-}
+
 .course-skills-items{
     display: block;
 }
@@ -440,9 +448,7 @@
     margin-bottom: 50px;
     position: relative;
 }
-.gallery h2::after{
-    display: none;
-}
+
 .gallery-items{
     display: block
 }
@@ -464,9 +470,7 @@
     padding: 50px 5%;
     position: relative;
 }
-.course-age:after{
-    display: none;
-}
+
 .course-age_wrap h2{
     width: 100%;
     margin-bottom: 40px;
@@ -568,9 +572,7 @@
 .course-rates-items {
     display: block;
 }
-.course-rates-items::after{
-    display: none;
-}
+
 .course-rates-item{
     padding: 30px 25px 140px;
     margin-bottom: 25px;
@@ -657,10 +659,7 @@
 .course-sign_wrap form{
     position: relative;
 }
-.feedback form::before,
-.course-sign_wrap form:before{
-    display: none;
-}
+
 .course-sign_wrap form:before{
     width: 92px;
     height: 57px;
@@ -752,21 +751,14 @@
     
     position: relative;
 }
-.course-advantages_wrap:after {
-    display: none;
-}
 .course-advantages h2 {
     width: 100%;
     margin-bottom: 40px;
-}
-.course-advantages-head{
-    display: none;
 }
 .course-advantages-item {
     display: block;
     border: none;
 }
-.course-advantages-other{display: none;}
 .course-advantages-name{
     padding: 20px 20px 20px 0 !important;
     position: relative;
@@ -912,13 +904,10 @@ footer .footer_wrap>div{
     width: 100%;
 }
 
-.course-reviews-item{display: block; padding-bottom: 15px;}
+.course-reviews-item{display: block; padding-bottom: 15px; position: relative;}
 .course-reviews-item img{margin-bottom: 20px;}
 .group-filial.course-build h2 {
     margin-bottom: 120px;
-}
-.teenager .course-work_wrap::after{
-    display: none;
 }
 
 .course-test.group-filial{
@@ -929,4 +918,78 @@ footer .footer_wrap>div{
     width: 100%;
     transform: translateY(-20%);
 }
+
+.tkt-exam .course-name-img{
+    width: 100%;
+}
+.tkt-exam .course-name-img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.course-sert-desc h2{
+    width: 100%;
+}
+.course-sert-desc-text{
+    display: block;
+}
+.tab-item-about_attantion{
+    padding: 60px 0px 0px 0px;
+    background: transparent !important;
+}
+.tab-item-about_attantion:before {
+    left: 0;
+    top: 0;
+    transform: translateY(0%);
+}
+.course-sert-desc{
+    position: relative;
+    padding-bottom: 300px;
+}
+.course-sert-desc-text img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+}
+
+
+.course-exam-them h2,
+.course-suit.tkt-exam h2{
+    width: 100%;
+}
+.course-exam-them-desc{
+    display: block;
+}
+.course-exam-them-desc>div>div{
+    text-align: center;
+}
+
+.course-rewviews-slider{
+    position: relative;
+}
+.course-rewviews-slider::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 24px;
+    background: url(./../img/swipe.svg) no-repeat center;
+    right: 20%;
+    top: 0;
+    animation: swipe  1.3s infinite ease-in-out;
+}
+.course-reviews-name {
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+@keyframes swipe {
+    from {right: 15%;}
+    to {right: 5%;}
+    }
 }
