@@ -204,6 +204,12 @@ $(document).on("ready", function (e) {
         $("html, body").animate({ scrollTop: target }, 800);
 
     });
+    $('a.teacher-link').on("click", function () { 
+        $('a.teacher-link').removeClass('active');
+        $(this).addClass('active');
+        $('.teachers-items>div').fadeOut(300);
+        $('.teachers-items>div.'+$(this).attr('id')).fadeIn(700);
+    });
 
 
     $('.faq-button').on("click", function () {
@@ -216,13 +222,24 @@ $(document).on("ready", function (e) {
         }
     });
 
+    $('a.showFeed').on('click', function(){
+        if ($('p.'+$(this).attr('id')).hasClass('show')) {
+            $('p.'+$(this).attr('id')).removeClass('show')
+            $(this).text('Показать');
+        }
+        else {
+            $('p.'+$(this).attr('id')).addClass('show')
+            $(this).text('Скрыть');
+        }
+    });
 
-    $('.gallery-items').slick({
+
+    $('.gallery-items, .home-feedback-items').slick({
         arrows: false,
         dots: false,
         infinite: true,
         slidesToScroll: 1,
-        variableWidth: true,
+        
         mobileFirst: true,
         responsive: [{
             breakpoint: 700,
@@ -266,12 +283,39 @@ $(document).on("ready", function (e) {
             }
         }]
     });
-
-    
-
-
-
-
+    $('.course-name-slider').slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+    $('.home-teacher-slider').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+         {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                arrows: false
+            }
+        }]
+    });
 
 
 }); 
