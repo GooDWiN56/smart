@@ -1109,6 +1109,21 @@ footer .footer_wrap>div{
 .teacher-item{
     margin-bottom: 20px;
 }
+.teacher-head{
+    padding: 35px 5% 35px;
+}
+.teacher-head_wrap{
+    grid-template-columns: 100%;
+}
+.teacher-head-image{
+    
+    margin-bottom: 25px;
+}
+.teacher-head-image img{
+    width: 200px;
+}
+.teacher-head-group ul{
+    column-count: 2;}
 
 
 .feedback-page h2,
@@ -1126,6 +1141,44 @@ footer .footer_wrap>div{
     margin-bottom: 10px;
     grid-row-gap: 20px;
 }
+
+.news-page_wrap.inside,
+.stocks-page_wrap.inside{
+    display: block;
+}
+
+
+.filial-head{
+    padding: 35px 5%;
+}
+.filial-head_wrap{
+    grid-template-areas: 'head' 
+    'image'
+    'desc';
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+}
+.filial-head_wrap h2{margin-bottom: 25px;}
+.teacher-about-filial{
+    padding: 35px 5% 15px;
+}
+.teacher-about-filial_wrap{
+    display: block;
+}
+.teacher-about-filial-item{
+    margin-bottom: 20px;
+}
+.filial .course-test_wrap::after {
+    background-image: url(./../img/test-illust_group2.svg);
+    width: 100%;
+    height: 199px;
+    background-size: contain;
+    transform: translateY(0%);
+}
+.course-test.filial{
+    padding: 50px 5% 0;
+}
+
 
 }
 
