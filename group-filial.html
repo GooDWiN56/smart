@@ -26,6 +26,17 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFlVYWc4RsFwAa9wm9ubODoXurDzgLvQ"></script>
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // Находим плавающий блок и делаем его плавающим
+            $('#sticker').stick_in_parent({
+                // Отступ сверху
+                offset_top: 80
+            });
+        });
+    </script>
 
 
 </head>
@@ -147,7 +158,7 @@
         <div class="course-name group-filial">
             <div class="course-name_wrap">
                 <div class="course-name-desc">
-                    <h1 class="green" data-aos="fade-right" data-aos-duration="1000"><span class="orange">Разговорный</span><br />
+                    <h1 class="green" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"><span class="orange">Разговорный</span><br />
                         английский</h1>
                     <p>Курс позволит вам свободно общаться на английском, понимать собеседников и чувствовать
                         себясвободно в любой ситуации!</p>
@@ -176,23 +187,23 @@
 
                 </div>
                 <div class="course-learn-list">
-                    <div class="course-learn-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="400">
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-offset="400">
                         <img src="assets/image/group-filial/learn/1.svg" />
                         <p>Свободно общаться на английском</p>
                     </div>
-                    <div class="course-learn-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="400">
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-offset="400">
                         <img src="assets/image/group-filial/learn/2.svg" />
                         <p>Понимать носителей языка</p>
                     </div>
-                    <div class="course-learn-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="400">
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-offset="400">
                         <img src="assets/image/group-filial/learn/3.svg" />
                         <p>Грамотно строить предложения</p>
                     </div>
-                    <div class="course-learn-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="400">
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-offset="400">
                         <img src="assets/image/group-filial/learn/4.svg" />
                         <p>Ориентироваться в англоязычной среде</p>
                     </div>
-                    <div class="course-learn-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="400">
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-offset="400">
                         <img src="assets/image/group-filial/learn/5.svg" />
                         <p>Серфить в интернете на языке оригинала</p>
                     </div>
@@ -223,10 +234,10 @@
         <!-- Course test -->
         <div class="course-test group-filial" >
             <div class="course-test_wrap">
-                <h2 data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">Узнайте свой уровень! <br />
+                <h2 data-aos="fade-right" data-aos-once="true" data-aos-offset="200" data-aos-duration="1000">Узнайте свой уровень! <br />
                     Начните с 10 вопросов!
                 </h2>
-                <p data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500"><a class="button_red_full"
+                <p data-aos="fade-up" data-aos-once="true" data-aos-offset="250" data-aos-duration="1500"><a class="button_red_full"
                         href="https://mrqz.me/5f58e9d98b67550044b35333">Пройти тест</a></p>
             </div>
         </div>
@@ -234,23 +245,23 @@
         <!-- Course Skills -->
         <div class="course-skills group-filial">
             <div class="course-skills_wrap">
-                <h2 class="blue" data-aos="fade-right" data-aos-duration="1000">Курс включает в себя:</h2>
+                <h2 class="blue" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">Курс включает в себя:</h2>
                 <div class="course-skills-items">
-                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300"
+                    <div class="course-skills-item" data-aos-once="true" data-aos="fade-right" data-aos-offset="300"
                         data-aos-duration="1000">
                         <p><img src="./assets/image/group-filial/skills/1.svg" alt=""></p>
                         <p>Разговорную практику в группе: диалоги, ролевые игры, ситуации реального общения.</p>
                     </div>
-                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+                    <div class="course-skills-item" data-aos-once="true" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
                         <p><img src="./assets/image/group-filial/skills/2.svg" alt=""></p>
                         <p>ON-LINE платформу для самостоятельной работы: видео, аудио материалы, упражнения.</p>
                     </div>
-                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300"
+                    <div class="course-skills-item" data-aos-once="true" data-aos="fade-right" data-aos-offset="300"
                         data-aos-duration="1000">
                         <p><img src="./assets/image/group-filial/skills/3.svg" alt=""></p>
                         <p>Отчеты о прогрессе в личном кабинете, общение с преподавателем и одногруппниками.</p>
                     </div>
-                    <div class="course-skills-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-once="true" data-aos-offset="300" data-aos-duration="1500">
                         <p><img src="./assets/image/group-filial/skills/4.svg" alt=""></p>
                         <p>Развитие всех четырех языковых навыков: говорение, чтение, аудирование, письмо.</p>
                     </div>
@@ -261,19 +272,19 @@
         <!-- Course group description -->
         <div class="course-group-desc group-filial">
             <div class="course-group-desc_wrap">
-                <div class="course-group-desc-item" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="700" data-aos-offset="200">
                     <div>120</div>
                     <p>академических часа</p>
                 </div>
-                <div class="course-group-desc-item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-offset="200">
                     <div>12</div>
                     <p>разговорных тем</p>
                 </div>
-                <div class="course-group-desc-item" data-aos="fade-up" data-aos-duration="1300" data-aos-offset="200">
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1300" data-aos-offset="200">
                     <div>6-8</div>
                     <p>человек в группе</p>
                 </div>
-                <div class="course-group-desc-item" data-aos="fade-up" data-aos-duration="1600" data-aos-offset="200">
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1600" data-aos-offset="200">
                     <div>Офлайн</div>
                     <p>формат обучения</p>
                 </div>
@@ -282,20 +293,20 @@
 
         <!-- Course build learn -->
         <div class="course-build group-filial">
-            <h2 class="orange" data-aos="fade-right" data-aos-offset="300">Как мы строим обучение:</h2>
+            <h2 class="orange" data-aos="fade-right" data-aos-once="true" data-aos-offset="300">Как мы строим обучение:</h2>
             <div class="course-build_wrap">
-                <div class="course-build-item" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250" data-aos-duration="1000">
                     <img src="./assets/image/group-filial/build/1.svg" alt="">
                     <h4 class="red">Мы много работаем в группе</h4>
                     <p>чтобы сформировать такие навыки общения, как аудирование, говорение, чтение и письмо.</p>
                 </div>
-                <div class="course-build-item" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250" data-aos-duration="1000">
                     <img src="./assets/image/group-filial/build/2.svg" alt="">
                     <h4 class="red">У нас индивидуальный подход</h4>
                     <p>это значит, что мы следим за прогрессом каждого студента, а преподаватель всегда оставляет
                         обратную связь по каждому уроку.</p>
                 </div>
-                <div class="course-build-item" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250" data-aos-duration="1000">
                     <img src="./assets/image/group-filial/build/3.svg" alt="">
                     <h4 class="red">Это не просто курс, а настоящая игра!</h4>
                     <p>Работая в команде ты сможешь развить навыки общения, снять языковой барьер, и это все возможно в
@@ -307,12 +318,12 @@
         <!-- How work -->
         <div class="course-work group-filial">
             <div class="course-work_wrap">
-                <h2 class="green" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">Преподаватели
+                <h2 class="green" data-aos="fade-right" data-aos-once="true" data-aos-offset="200" data-aos-duration="1000">Преподаватели
                     курса</h2>
 
                 <div class="course-work-items">
 
-                    <div class="course-work-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                    <div class="course-work-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="300" data-aos-duration="1000">
                         <div class="course-work-photo"><img src="./assets/image/group-filial/work/1.png" alt="">
                         </div>
                         <div class="course-work-text">
@@ -325,7 +336,7 @@
                         </div>
                     </div>
 
-                    <div class="course-work-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1300">
+                    <div class="course-work-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="300" data-aos-duration="1300">
                         <div class="course-work-photo"><img src="./assets/image/group-filial/work/2.png" alt="">
                         </div>
                         <div class="course-work-text">
@@ -338,7 +349,7 @@
                     </div>
 
 
-                    <div class="course-work-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1600">
+                    <div class="course-work-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="300" data-aos-duration="1600">
                         <div class="course-work-photo"><img src="./assets/image/group-filial/work/3.png" alt="">
                         </div>
                         <div class="course-work-text">
@@ -359,7 +370,7 @@
         <!-- Course about school -->
         <div class="course-about_school group-filial">
             <div class="course-about_school_wrap">
-                <h2 data-aos="fade-right">Школа Smart Education это:</h2>
+                <h2 data-aos="fade-right" data-aos-once="true">Школа Smart Education это:</h2>
                 <div class="course-about_school-wrap">
                     <p><span>99%</span>Положительных отзывов в интернете</p>
                     <p><span>100%</span>Сертифицированных преподавателей</p>
@@ -376,7 +387,7 @@
         <!-- Sign up of course -->
         <div class="course-sign group-filial">
             <div class="course-sign_wrap">
-                <h2 data-aos="fade-right" data-aos-duration="1000" class="green">Оставьте заявку и получите <span class="orange">скидку 25%</span><br /> до 31 августа
+                <h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" class="green">Оставьте заявку и получите <span class="orange">скидку 25%</span><br /> до 31 августа
                     при разовой оплате всего курса</h2>
                 <img src='./assets/image/group-filial/form.svg' />
                 <form>
@@ -409,7 +420,7 @@
         <!-- Course reviews -->
         <div class="course-reviews">
             <div class="course-reviews_wrap">
-                <h2 data-aos="fade-right" data-aos-duration="1000" class="green">Что говорят наши клиенты</h2>
+                <h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" class="green">Что говорят наши клиенты</h2>
                 <div class="course-rewviews-slider">
                     <div>
                         <div class="course-reviews-item">

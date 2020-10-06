@@ -505,7 +505,7 @@ a.button_green:visited{
     color: #8EB400;
     text-decoration: none;
     display: inline-block;
-    padding: 15px 60px;
+    padding: 15px 40px;
     border: 3px solid #8EB400;
     box-sizing: border-box;
     border-radius: 20px;
@@ -520,7 +520,9 @@ a.button_green:visited{
 a.button_green_full,
 a.button_green_full:visited,
 a.button_red_full,
-a.button_red_full:visited{
+a.button_red_full:visited,
+a.button_orange_full,
+a.button_orange_full:visited{
     font-weight: bold;
     font-size: 14px;
     text-align: center;
@@ -535,8 +537,17 @@ a.button_red_full:visited{
     width: 100%;
 }
 a.button_red_full,
-a.button_red_full:visited{
+a.button_red_full:visited,
+a.button_orange_full:hover{
     background: #EC1C24;
+}
+a.button_orange_full,
+a.button_orange_full:visited{
+    background: #F5A300;
+    width: auto;
+    padding:15px 40px;
+    border-radius: 20px;
+    cursor: pointer;
 }
  a.button_green_full:hover,
  a.button_red_full:hover{
@@ -877,7 +888,7 @@ nav ul>li .menu-children li a.active:visited{
     line-height: 32px;
     font-weight: 700;
     text-decoration: none;
-    
+    height: 100%;
 }
 .fast-menu_wrap>div a:before{
     position: absolute;
@@ -886,7 +897,7 @@ nav ul>li .menu-children li a.active:visited{
     height: 100%;
     left: 0;
     top: 0;
-    background-position: center bottom;
+    background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -1203,11 +1214,9 @@ nav ul>li .menu-children li a.active:visited{
 }
 
 
-
-
 /* Course name */
 .course-name{
-    padding: 80px 5%;}
+    padding: 35px 5%;}
 .course-name_wrap{
     display: flex;
     justify-content: space-between;
@@ -1230,6 +1239,9 @@ nav ul>li .menu-children li a.active:visited{
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 45px;
+}
+.course-name-desc p a{
+    margin-right: 15px;
 }
 .course-name-desc p:last-child{
     margin-bottom: 0;
@@ -2758,7 +2770,7 @@ footer{
 
 /* Teachers page */
 .teachers-page{
-    padding: 90px 5%;
+    padding: 40px 5%;
 }
 .teachers-page h2{
     text-align: center;
@@ -2801,7 +2813,10 @@ footer{
 }
 
 .teacher-head{
-    padding: 50px 5% 70px;
+    padding: 40px 5% 40px;
+}
+.course-suit.teacher{
+    padding-bottom: 40px;
 }
 .teacher-head_wrap{
     display: grid;
@@ -2855,7 +2870,7 @@ footer{
 .feedback-page,
 .news-page,
 .stocks-page{
-    padding: 90px 5%;
+    padding: 40px 5%;
 }
 .feedback-page h2,
 .news-page h2,
@@ -2888,6 +2903,9 @@ footer{
 .stocks-page .home-stocks-item{
     margin-bottom: 25px;
     width: 49%;
+}
+.news-page .home-news-item{
+    background-color: #f5f5f5 !important;
 }
 
 .news-page_wrap.inside,
@@ -2932,13 +2950,13 @@ footer{
     display: grid;
     grid-template-areas: 'head image'
     'desc image';
-    grid-template-columns: 43% 53%;
+    grid-template-columns: 46% 50%;
     grid-column-gap: 4%;
     grid-template-rows: auto;
 }
 .filial-head_wrap h2{
     grid-area: head;
-    margin-bottom: 20px;
+    margin-bottom: -5%;
 }  
 .filial-head-image{
     grid-area: image;
@@ -2963,8 +2981,7 @@ footer{
     position: absolute;
     content: '';
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0%;
     background-repeat: no-repeat;
     background-position: center;
     width: 47px;
@@ -3029,4 +3046,5 @@ footer{
 
 .home-feedback.teacher{
     background-color: #fff;
+    padding: 0px 5% 40px;
 }
