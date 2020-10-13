@@ -427,6 +427,9 @@ input[type="checkbox"] + label{
     padding-left: 30px;
     margin-bottom: 15px;
 }
+input[type="checkbox"] + label{
+    font-weight: 300;
+}
 input[type="radio"] + label:before,
 input[type="checkbox"] + label:before{
     position: absolute;
@@ -1216,7 +1219,7 @@ nav ul>li .menu-children li a.active:visited{
 
 /* Course name */
 .course-name{
-    padding: 35px 5%;}
+    padding: 35px 5% 90px;}
 .course-name_wrap{
     display: flex;
     justify-content: space-between;
@@ -1325,13 +1328,14 @@ nav ul>li .menu-children li a.active:visited{
     margin-bottom: 60px;
 }
 .course-programm p{
-    margin-bottom: 60px;
+    margin-bottom: 17px;
 }
 .course-programm div p:last-child{margin-bottom: 0;}
 .course-programm p a,
 .course-programm p a:visited{
     width: auto;
     padding: 15px 50px;
+    margin-top: 40px;
 }
 .course-programm-video{
     border-radius: 20px;
@@ -1449,7 +1453,7 @@ nav ul>li .menu-children li a.active:visited{
     padding: 0px !important;
 }
 .slick-dots li button::before{
-    font-size: 18px !important;
+    font-size: 13px !important;
     opacity: 1 !important;
     color: #BDBDBD !important;
 }
@@ -2199,12 +2203,14 @@ nav ul>li .menu-children li a.active:visited{
 .faq-subscribe{
     text-align: center;
     padding-top: 45px;
+    padding-bottom: 90px;
 }
 
 
 /* Course reviews */
 .course-reviews{
-    padding: 100px 5%;
+    padding: 90px 5%;
+    background-color: #f5f5f5;
 }
 .course-reviews h2{
     margin-bottom: 60px;
@@ -2591,6 +2597,7 @@ nav ul>li .menu-children li a.active:visited{
     background: url(./../img/close.svg) no-repeat center;
     top: 25px;
     right: 45px;
+    z-index: 22;
 }
 .pop_window form .remember{
     text-align: center;
@@ -2608,6 +2615,10 @@ nav ul>li .menu-children li a.active:visited{
 .pop_window form a:hover{
     cursor: pointer;
     text-decoration: none;
+}
+.pop_window form input[type="checkbox"] + label{
+    font-size: 14px;
+    line-height: 16px;
 }
 
 /* Address school */
@@ -2809,18 +2820,22 @@ footer{
 }
 .teacher-item{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .teacher-head{
     padding: 40px 5% 40px;
 }
 .course-suit.teacher{
+    padding-top: 50px;
     padding-bottom: 40px;
+}
+.course-suit.teacher h2{
+    margin-bottom: 24px;
 }
 .teacher-head_wrap{
     display: grid;
-    grid-template-columns: 30% 66%;
+    grid-template-columns: 26% 70%;
     grid-column-gap: 4%;
 }
 .teacher-head_wrap img{
@@ -2854,6 +2869,7 @@ footer{
 .teacher-head-group ul li{
     padding-left: 15px;
     position: relative;
+    margin-bottom: 9px;
 }
 .teacher-head-group ul li::before{
     content: '';
@@ -2870,7 +2886,7 @@ footer{
 .feedback-page,
 .news-page,
 .stocks-page{
-    padding: 40px 5%;
+    padding: 40px 5% 90px;
 }
 .feedback-page h2,
 .news-page h2,
@@ -3037,7 +3053,7 @@ footer{
     width: 600px;
     height: 700px; 
     background-size: contain;
-    transform: translateY(-35%);
+    transform: translateY(-40%);
 
 }
 .course-suit.teacher p{
@@ -3046,5 +3062,5 @@ footer{
 
 .home-feedback.teacher{
     background-color: #fff;
-    padding: 0px 5% 40px;
+    padding: 40px 5% 40px;
 }

@@ -46,8 +46,8 @@
     padding-top: 100px;
 }
 .tkt-exam .course-programm_wrap{
-    grid-template-columns: 60% 28%;
-    grid-column-gap: 12%;
+    grid-template-columns: 60% 24%;
+    grid-column-gap: 16%;
 }
 
 
