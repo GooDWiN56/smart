@@ -1021,6 +1021,11 @@ nav ul>li .menu-children li a.active:visited{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+.teacher-item a,
+.teacher-item a:visited{
+    color: #1D1C1C;
+    text-decoration: none;
+}
 
 .home-news{
     padding: 90px 5%;
