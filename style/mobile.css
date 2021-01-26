@@ -35,7 +35,6 @@
     .desktop,
     .tkt-exam .course-programm-video,
     .course-programm-video img,
-    .course-feedback_wrap,
     .course-skills_wrap:after,
     .gallery h2::after,
     .course-age:after,
@@ -692,7 +691,21 @@
     line-height: 15px;
     margin-top: 45px;
 }
-
+.course-feedback_wrap{
+    grid-template-columns: 100%;
+}
+.course-feedback-item {
+    grid-template-areas: 'avatar' 'text' !important;
+    grid-template-columns: 100% !important;
+}
+.course-feedback-item_avatar{
+    padding: 0 10% 15px;
+    text-align: center;
+}
+.course-feedback-item img{
+    max-width: 100px;
+}
+.course-feedback-item_avatar
 /* How work */
 .course-work{
     padding: 50px 5%;
@@ -923,7 +936,7 @@ footer .footer_wrap>div{
 
 
 .group-filial .course-work-item{
-    width: 100%;
+    width: 100% !important;
 }
 .faq-subscribe {
     text-align: center;
@@ -951,7 +964,8 @@ footer .footer_wrap>div{
 .group-filial .course-test_wrap::after{
     position: absolute;
     width: 100%;
-    transform: translateY(-20%);
+    height: 360px;
+    transform: translateY(0%);
 }
 .course-reviews {
     padding: 50px 5%;

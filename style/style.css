@@ -1495,6 +1495,11 @@ nav ul>li .menu-children li a.active:visited{
 .course-test p a:visited{
     padding: 15px 80px;
     width: auto;
+    position: relative;
+    z-index: 22;
+}
+.course-test p a:hover{
+    background-color: #8EB400;
 }
 
 
@@ -2269,7 +2274,7 @@ nav ul>li .menu-children li a.active:visited{
 .course-sign_wrap:after{
     position: absolute;
     content: '';
-    bottom: -10%;
+    bottom: -20%;
     left:-3%;
     width: 566px;
     height: 348px;
