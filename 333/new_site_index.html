@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <title>{% block title %}{{title}}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/new_site/style/style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/new_site/style/tkt-exam.css" />
+
+    <link rel="stylesheet" type="text/css" href="/static/new_site/style/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="/static/new_site/font/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="/static/new_site/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/new_site/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/new_site/style/teenager-group.css" />
+    <link rel="stylesheet" type="text/css" href="/static/new_site/style/group-filial.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/static/new_site/js/inputmask.min.js"></script>
+    <script type="text/javascript" src="/static/new_site/slick/slick.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCScyv1c4lFG5BwoBTKfYWbKh4a2PzYCkk"></script>
+    <script src="/static/new_site/js/jquery.sticky-kit.min.js"></script>
+    <script>
+        let geoip_record = {};
+        geoip_record.city = {id: {{geoip_record.city.id}}, name: "{{geoip_record.city.name}}"};
+        geoip_record.altcity = {id: {{geoip_record.altcity.id}}, name: "{{geoip_record.altcity.name}}"};
+        {% if geoip_record.city.id == 2097 %}
+        var zoom = 11;
+        var myCenter = new google.maps.LatLng(55.751244, 37.618423);
+        var locations = [
+            ['Филиал Митинский', 55.847815, 37.359985],
+            ['Филиал Черемушки', 55.667464, 37.552789]
+        ];
+        {% else %}
+        var zoom = 12;
+        var myCenter = new google.maps.LatLng(56.319358, 44.021182);
+        var locations = [
+            ['Филиал Горьковский', 56.319453, 44.021203],
+            ['Филиал Ленинский', 56.293466, 43.933068]
+        ];
+
+        {% endif %}
+    </script>
+    <script type="text/javascript" src="/static/new_site/js/map.js"></script>
+    <script type="text/javascript" src="/static/new_site/js/main.js"></script>
+    <script src="//code-ya.jivosite.com/widget/XJqDgJhX11" async></script>
+    <script>
+        $(document).ready(function(){
+
+            // Находим плавающий блок и делаем его плавающим
+            $('#sticker').stick_in_parent({
+                // Отступ сверху
+                offset_top: 80
+            });
+        });
+    </script>
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TF9ZFL"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TF9ZFL');</script>
+<!-- Google Tag Manager -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter44163839 = new Ya.Metrika({
+                    id:44163839,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    ut:"noindex"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/44163839?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-97272429-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script>
+    (function(w, d, u, i, o, s, p) {
+        if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+        w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+        s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+        p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+    mgo({calltracking: {id: 12179, elements: [{"selector":".mgo-number-12179"}]}});
+</script>
+<script>
+    (function(w, d, u, i, o, s, p) {
+        if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+        w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+        s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+        p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+    mgo({calltracking: {id: 12360, elements: [{"selector":".mgo-number-12360"}]}});
+</script>
+<script>
+    (function(w, d, u, i, o, s, p) {
+        if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+        w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+        s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+        p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+    mgo({calltracking: {id: 12359, elements: [{"selector":".mgo-number-12359"}]}});
+</script>
+<script>
+    (function(w, d, u, i, o, s, p) {
+        if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+        w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+        s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+        p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+    mgo({calltracking: {id: 17311, elements: [{"selector":".mgo-number-17311"}]}});
+</script>
+<!-- Marquiz script start -->
+<script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init({
+            id: '5d07caff69e2e000443f472f',
+            autoOpen: false,
+            autoOpenFreq: 'once',
+            openOnExit: false
+        });
+    });
+</script>
+<!-- Marquiz script end -->
+<!-- Header -->
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?168",t.onload=function(){VK.Retargeting.Init("VK-RTRG-520820-7z9Vg"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-520820-7z9Vg" style="position:fixed; left:-999px;" alt=""/></noscript>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '356615632400059');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=356615632400059&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<div class="all">
+    <header>
+        <div class="head_wrap">
+            <div><a href="http://smart-education.ru/"><img src="/static/new_site/assets/image/logo.svg" /></a></div>
+            <div><img src="/static/new_site/assets/image/cambridge.png" /></div>
+
+            <div class="header-phone desktop">
+                {% if geoip_record.city.id == 2097 %}
+                <a href="tel:" class="mgo-number-12179"></a>
+                <a href="tel:" class="mgo-number-17311"></a>
+                {% else %}
+                <a href="tel:" class="mgo-number-12359"></a>
+                <a href="tel:" class="mgo-number-12360"></a>
+                {% endif %}
+            </div>
+
+
+            <div class="header-region desktop">
+                <div id="header-region-select" class="header-region-select">{{ geoip_record.city.name|safe }}</div>
+                <div id="header-region-change" class="header-region-change">
+                    <p id="header-region-change-q">Ваш город - {{ geoip_record.city.name|safe }}?</p>
+                    <div class="header-region-button">
+                        <a id="header-region-button-yes">Да</a>
+                        <a id="header-region-button-no">{{ geoip_record.altcity.name|safe }}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-user_link desktop">Личный кабинет</div>
+            <div class="burger-button mobile">
+                <input type="checkbox" id="burger" name="burger">
+                <label for="burger"><span></span></label>
+            </div>
+        </div>
+        <nav class="desktop">
+            <ul>
+                {% for item in menu %}
+                <li><a {% if item.tree_id == parent.tree_id %} class="active"{% endif %} href="{% if item.children.all %}#{% else %}/{{item.type_doc}}/{{item.slug}}/{% endif %}">{{ item.name_new_site }}</a>
+                    {% if item.children.all %}
+                        <ul class="menu-children">
+                            {% for children in item.children.all %}
+                                {% if children.is_active == 1  %}
+                                    {% if geoip_record.city.id == 2097 and children.is_for_msk == 1 or geoip_record.city.id == 1956 and children.is_for_nn == 1 %}
+                            <li><a {% if children.id == article.id %} class="active"{% endif %} href="/{{children.type_doc}}/{{ item.slug}}/{{children.slug}}/" class="b-head__menu__item__list__item-i">{{ children.name_new_site|safe}}</a></li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+
+<!--                <li><a {% if course == 4 or course == 9 %} class="active"{% endif %} href="#">Для детей и подростков</a>-->
+<!--                <ul class="menu-children">-->
+<!--                    <li><a href="/10/deti/deti-4-6-let/" {% if course == 4 %} class="active"{% endif %}>Английский в филиалах школы 3-17 лет</a></li>-->
+<!--                    <li><a href="/10/deti/anglijskij-onlajn-13-17-let/" {% if course == 9 %} class="active"{% endif %}>Английский онлайн, 13-17 лет</a></li>-->
+<!--                </ul>-->
+<!--                </li>-->
+<!--                <li><a {% if course == 2 %} class="active"{% endif %} href="#">Для взрослых</a>-->
+<!--                    <ul class="menu-children">-->
+<!--                        <li><a {% if course == 2 %} class="active"{% endif %} href="/10/vzroslye/razgovornyj-anglijskij/">Разговорный английский в филиалах школы</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+
+<!--                <li><a href="/10/vzroslye/12-dnevnyj-kurs-intensiv-razgovornogo-yazyka/">Онлайн обучение</a></li>-->
+<!--                <li><a href="/10/korporativnoe-obuchenie/korporativnoe-predlozhenie/">Корпоративное обучение</a></li>-->
+<!--                <li><a href="/6/o-centre/nashi-prepodavateli/">Преподавателям английского языка</a></li>-->
+<!--                <li><a href="#">О школе</a>-->
+<!--                    <ul class="menu-children">-->
+<!--                        <li><a href="/6/o-centre/nashi-prepodavateli/">Наши преподаватели</a></li>-->
+<!--                        <li><a href="/2/o-centre/otzyvy/">Отзывы о школе английского языка Smart Education</a></li>-->
+<!--                        <li><a href="/1/o-centre/novosti/">Новости</a></li>-->
+<!--                        <li><a href="/0/o-centre/svedeniya-ob-organizacii/">Сведения об образовательной организации</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+            </ul>
+        </nav>
+        <div class="mobile burger-menu" id="burger-menu">
+            <nav class="">
+                <ul>
+                    {% for item in menu %}
+                    <li><a {% if item.tree_id == parent.tree_id %} class="active"{% endif %} href="{% if item.children.all %}#{% else %}/{{item.type_doc}}/{{item.slug}}/{% endif %}">{{ item.name_new_site }}</a>
+                        {% if item.children.all %}
+                        <ul class="menu-children">
+                            {% for children in item.children.all %}
+                            {% if children.is_active == 1  %}
+                            {% if geoip_record.city.id == 2097 and children.is_for_msk == 1 or geoip_record.city.id == 1956 and children.is_for_nn == 1 %}
+                            <li><a {% if children.id == article.id %} class="active"{% endif %} href="/{{children.type_doc}}/{{ item.slug}}/{{children.slug}}/" class="b-head__menu__item__list__item-i">{{ children.name_new_site|safe}}</a></li>
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+
+
+
+<!--                    <li><a {% if course == 4 or course == 9 %} class="active"{% endif %} href="#">Для детей и подростков</a>-->
+<!--                        <ul class="menu-children">-->
+<!--                            <li><a href="/10/deti/deti-4-6-let/" {% if course == 4 %} class="active"{% endif %}>Английский в филиалах школы 3-17 лет</a></li>-->
+<!--                            <li><a href="/10/deti/anglijskij-onlajn-13-17-let/" {% if course == 9 %} class="active"{% endif %}>Английский онлайн, 13-17 лет</a></li>-->
+<!--&lt;!&ndash;                            <li><a href="#">Подготовка к международным экзаменам</a></li>&ndash;&gt;-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li><a {% if course == 2 %} class="active"{% endif %} href="#">Для взрослых</a>-->
+<!--                        <ul class="menu-children">-->
+<!--                            <li><a {% if course == 2 %} class="active"{% endif %} href="/10/vzroslye/razgovornyj-anglijskij/">Разговорный английский в филиалах школы</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li><a href="/10/vzroslye/12-dnevnyj-kurs-intensiv-razgovornogo-yazyka/">Онлайн обучение</a></li>-->
+<!--                    <li><a href="/10/korporativnoe-obuchenie/korporativnoe-predlozhenie/">Корпоративное обучение</a></li>-->
+<!--                    <li><a href="/6/o-centre/nashi-prepodavateli/">Преподавателям английского языка</a></li>-->
+<!--                    <li><a href="#">О школе</a>-->
+<!--                        <ul class="menu-children">-->
+<!--                            <li><a href="/6/o-centre/nashi-prepodavateli/">Наши преподаватели</a></li>-->
+<!--                            <li><a href="/2/o-centre/otzyvy/">Отзывы о школе английского языка Smart Education</a></li>-->
+<!--                            <li><a href="/1/o-centre/novosti/">Новости</a></li>-->
+<!--                            <li><a href="/0/o-centre/svedeniya-ob-organizacii/">Сведения об образовательной организации</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+                </ul>
+            </nav>
+            <div class="burger-bottom" >
+                <div class="header-region">
+                    <div id="header-region-select2" class="header-region-select">{{ geoip_record.city.name|safe }}</div>
+                    <div id="header-region-change2" class="header-region-change">
+                        <p id="header-region-change-q2">Ваш город - {{ geoip_record.city.name|safe }}?</p>
+                        <div class="header-region-button">
+                            <a id="header-region-button-yes2">Да</a>
+                            <a id="header-region-button-no2">{{ geoip_record.altcity.name|safe }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-user_link">Личный кабинет</div>
+                <div class="header-phone">
+                    {% if geoip_record.city.id == 2097 %}
+                    <a href="tel:" class="mgo-number-12179"></a>
+                    <a href="tel:" class="mgo-number-17311"></a>
+                    {% else %}
+                    <a href="tel:" class="mgo-number-12359"></a>
+                    <a href="tel:" class="mgo-number-12360"></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <!--Pop-up window-->
+    <div class="popup">
+        <div class="pop_bg"></div>
+        <div class="pop_window">
+            <a class="close"></a>
+            <form id="application">
+                <h3>Оставить заявку</h3>
+                <input type="hidden" name="course" class="course" value="{{course|default:1}}"/>
+                <input type="text" placeholder="Фамилия и Имя" />
+                <input type="tel" class="tel" placeholder="+7 (999) 999-99-99" />
+                <input type="email" class="email" placeholder="E-mail" />
+                {% if course != 9 %}
+                    {% if geoip_record.city.id == 2097 %}
+                    <input id="radio-5" type="radio"  name="radio" value="3" checked>
+                    <label for="radio-5">Москва, ул. Митинская, д. 40</label>
+
+                    <input id="radio-6" type="radio"  name="radio" value="4">
+                    <label for="radio-6">Москва, ул. Профсоюзная, д.43 к1</label>
+                    {% else %}
+                    <input id="radio-5" type="radio"  name="radio" value="1" checked>
+                    <label for="radio-5">Н. Новгород, ул. Горького, 218/22</label>
+
+                    <input id="radio-6" type="radio"  name="radio" value="2">
+                    <label for="radio-6">Н. Новгород, пр. Ленина, 17</label>
+                    {% endif %}
+                {% endif %}
+
+                <input id="check3" type="checkbox" name="check" value="check">
+                <label for="check3">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                    с
+                    Политикой конфиденциальности.</label>
+                <input type="hidden" name="extra" class="extra" value="" />
+                <input type="submit" value="Отправить" />
+            </form>
+            <form id="login">
+                <h3>Войти в систему</h3>
+                <input type="text" placeholder="Логин" />
+                <input type="password" placeholder="Пароль" />
+                <input id="check4" type="checkbox" name="check" value="check">
+                <label for="check4">Запомнить</label>
+                <input type="submit" value="Войти" />
+                <div class="remember"><a class="form_call" data-item="remember">ЗАБЫЛИ ПАРОЛЬ?</a></div>
+            </form>
+            <form id="remember">
+                <h3>Востановление пароля</h3>
+                <input type="text" placeholder="Логин" />
+                <input type="submit" value="Выслать пароль" />
+                <div class="remember"><a class="form_call" data-item="login">Вернуться</a></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // HH Integration
+        // $(document).ready(function() {
+            var URL_OF_SCHOOL = "https://smart-education.t8s.ru/Api/V1/AddStudyRequest";
+            var roistat = getCookie('roistat_visit') || '';
+            var url = decodeURI(location.href);
+            var utm = getUTM(url);
+
+            // if ( $('form').length ) {
+            //     $('form').on('click', 'input[type="button"]',function(){
+            //
+            //         var $form = $(this).parents('form');
+            //         var company = $form.find('input[id="company"]').val() || '';
+            //         company = (company) ? "\nНазвание компании: "+company : '';
+            //         var name  = $form.find('input[id="name"]').val()
+            //             || $form.find('input[id="name2"]').val()
+            //             || $form.find('input[id="name3"]').val()
+            //             || '';
+            //         var phone = $form.find('input[id="phone"]').val()
+            //             || $form.find('input[id="phone2"]').val()
+            //             || $form.find('input[id="phone3"]').val()
+            //             || '';
+            //         var mail  = $form.find('input[id="email"]').val()
+            //             || $form.find('input[id="email2"]').val()
+            //             || $form.find('input[id="email3"]').val()
+            //             || '';
+            //         var city  = $form.find('input[name="fil"]:checked').parent().text().trim() || '';
+            //         var agree  = $form.find('input[name="agree"]:checked').val()
+            //             || $form.find('input[name="agree2"]:checked').val()
+            //             || $form.find('input[name="agree3"]:checked').val()
+            //             || $form.find('input[id="agree"]:checked').val()
+            //             || $form.find('input[id="agree2"]:checked').val()
+            //             || $form.find('input[id="agree3"]:checked').val()
+            //             || '';
+            //         var desc = $('.b-page-heading__title').text().trim();
+            //
+            //         var data = {
+            //             fullName: name,
+            //             phone: phone,
+            //             eMail: mail,
+            //             type: 'Заявка',
+            //             school: city,
+            //             description: desc+company,
+            //             roistat: roistat,
+            //         };
+            //
+            //         data = pushUTMtoData(data);
+            //
+            //         if (Object.keys) {
+            //             showData(data);
+            //         }
+            //
+            //         if ( isValid(phone, name, mail, agree) ) {
+            //             sendRequest(data);
+            //         }
+            //     });
+            // }
+
+            function getCookie(name) {
+                var matches = document.cookie.match(new RegExp(
+                    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                ));
+                return matches ? decodeURIComponent(matches[1]) : undefined;
+            }
+
+            function getUTM(url) {
+                var utm = [];
+                var paramsStr = url.split('?');
+
+                if ( paramsStr[1] ){
+                    var paramsArr = paramsStr[1].split('&');
+
+                    for (var i = 0; i < paramsArr.length; i++) {
+                        var buff = paramsArr[i].split('=');
+                        utm[buff[0]] = buff[1];
+                    }
+                }
+
+                return utm;
+            }
+
+            function pushUTMtoData(data) {
+                if ( !jQuery.isEmptyObject(utm) ){
+                    data.utm_source   = (utm.utm_source)? utm.utm_source : '';
+                    data.utm_medium   = (utm.utm_medium)? utm.utm_medium : '';
+                    data.utm_campaign = (utm.utm_campaign)? utm.utm_campaign : '';
+                    data.utm_term     = (utm.utm_term)? utm.utm_term : '';
+                    data.utm_content  = (utm.utm_content)? utm.utm_content : '';
+                }
+
+                return data;
+            }
+
+            function sendRequest(requestData) {
+                $.ajax({
+                    url:          URL_OF_SCHOOL,
+                    data:         requestData,
+                    type:         "GET",
+                    crossDomain:  true,
+                    dataType:     "jsonp",
+                    success: function (result) {
+                        if (result.errorType) console.log("Ошибка. Тип: " + result.errorType + " Сообщение: " + result.errorMessage);
+                        else console.log("Успешно: " + result.id);
+                    },
+                    error: function (jqXhr) {
+                        console.log("Ошибка: " + jqXhr.statusText + " (" + jqXhr.readyState + ", " + jqXhr.status + ", " + jqXhr.responseText + ")");
+                    }
+
+                });
+            }
+
+            function showData(data){
+                for ( key in data ) {
+                    console.log(key + ': ' + data[key]);
+                }
+            }
+
+            function isValid(){
+                var validateState = true;
+
+                for (var i = 0; i < arguments.length; i++) {
+                    if ( arguments[i] === '' || arguments[i] === undefined || arguments[i] === false) {
+                        validateState = false;
+                    }
+                }
+
+                return validateState;
+            }
+        // });
+
+        $( "#application" ).submit(function( event ) {
+            return sendMessageToServer('application');
+        });
+
+        $( "#smart_bees" ).submit(function( event ) {
+            return sendMessageToServer('smart_bees');
+        });
+
+        $( "#pesonal_lesson" ).submit(function( event ) {
+            return sendMessageToServer('pesonal_lesson');
+        });
+
+        function appMitino () {
+            $('.popup').addClass('show');
+            $('.popup #application').show();
+            $( '#application input:radio' ).eq(0).prop('checked',true);
+            // sendMessageToServer('application');
+        }
+        function appCherem () {
+            $('.popup').addClass('show');
+            $('.popup #application').show();
+            $( '#application input:radio' ).eq(1).prop('checked',true);
+            // sendMessageToServer('application');
+        }
+        function appGork () {
+            $('.popup').addClass('show');
+            $('.popup #application').show();
+            $( '#application input:radio' ).eq(0).prop('checked',true);
+            // sendMessageToServer('application');
+        }
+        function appLenin () {
+            $('.popup').addClass('show');
+            $('.popup #application').show();
+            $( '#application input:radio' ).eq(1).prop('checked',true);
+            // sendMessageToServer('application');
+        }
+
+        function sendMessageToServer(formName='') {
+
+            if (formName !== '') {
+
+                if ( !$( `#${formName} input` ).eq(1).val() )
+                {
+                    alert("Введите имя");
+                    $( `#${formName} input` ).eq(1).focus()
+                    return false;
+                }
+
+                if ( !$( `#${formName} input` ).eq(2).val() )
+                {
+                    alert("Введите телефон");
+                    $( `#${formName} input` ).eq(2).focus()
+                    return false;
+                }
+
+                if ( !$( `#${formName} input` ).eq(3).val() )
+                {
+                    alert("Введите электронную почту");
+                    $( `#${formName} input` ).eq(3).focus()
+                    return false;
+                }
+
+                if ( !$( `#${formName} input:radio` ).eq(1) )
+                {
+                    alert("Пожалуйста, подтвердите свое согласие на обработку персональных данных");
+                    $( `#${formName} input:radio` ).focus()
+                    return false;
+                }
+
+                if ( !$( `#${formName} input:checkbox` ).is(':checked') )
+                {
+                    alert("Пожалуйста, подтвердите свое согласие на обработку персональных данных");
+                    $( `#${formName} input:checkbox` ).focus()
+                    return false;
+                }
+
+
+                $.post("/send_visit/", {
+                        name: $(`#${formName} input`).eq(1).val(),
+                        phone: $(`#${formName} input`).eq(2).val(),
+                        email: $(`#${formName} input`).eq(3).val(),
+                        fil: $(`#${formName} input:radio:checked`).val(),
+                        course: $(`#${formName} input[name=course]`).val() || 5,
+                        extra: $(`#${formName} input[name=extra]`).val()
+                    },
+                    function (data) {
+
+                        // prepare request to store data into extra CRM
+                        var dataToCrm = {
+                            fullName: $(`#${formName} input`).eq(1).val(),
+                            phone: $(`#${formName} input`).eq(2).val(),
+                            eMail: $(`#${formName} input`).eq(3).val(),
+                            type: 'Заявка',
+                            school: $("label[for='"+$(`#${formName} input:radio:checked`).attr('id')+"']").text() || 'Нет филиала, вероятно, онлайн',
+                            description: "{{title}}",
+                            roistat: roistat,
+                        };
+
+                        dataToCrm = pushUTMtoData(dataToCrm);
+
+                        if (Object.keys) {
+                            showData(dataToCrm);
+                        }
+
+                        if ( isValid(dataToCrm.phone, dataToCrm.fullName, dataToCrm.eMail) ) {
+                            sendRequest(dataToCrm);
+                        }
+                        // finish with extra CRM
+
+
+                        if (data.success == true) {
+                            window.location = "/send_success/";
+                        } else {
+                            alert("Извините, произошла ошибка при сохранении заявки. Пожалуйста, позвоните нам по указанным ниже на странице телефонам.");
+                        }
+
+                        return false;
+                    }
+                );
+            }
+            return false;
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div><img src='/static/new_site/assets/image/logo.svg' /></div>
+        <div class="footer-copy">
+            © Смарт Эдьюкейшн, 2007-{% now "Y" %}.<br>
+            <a href="https://smart-education.ru/0/politika-konfidencialnosti/politika-konfidencialnosti2/">Политика Конфиденциальности</a>
+        </div>
+        <div class="footer-right">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/smartednn" target="_blank"><img src="/static/new_site/img/fb.svg" /></a>
+                <a href="https://vk.com/smarteducation" target="_blank"><img src="/static/new_site/img/vk.svg" /></a>
+                <a href="https://www.instagram.com/smart_education_school/" target="_blank"><img
+                        src="/static/new_site/img/ins.svg" /></a>
+            </div>
+            <div class="footer-work">Made in <a href="">Le Design</a></div>
+        </div>
+    </footer>
+
+    <div class="bottom desktop">
+        <div class="bottom_wrap">
+            <div><img src="/static/new_site/assets/image/logo.svg" /></div>
+            <div class="bottom-phone">
+                {% if geoip_record.city.id == 2097 %}
+                <a href="tel:" class="mgo-number-12179"></a>
+                <a href="tel:" class="mgo-number-17311"></a>
+                {% else %}
+                <a href="tel:" class="mgo-number-12359"></a>
+                <a href="tel:" class="mgo-number-12360"></a>
+                {% endif %}
+            </div>
+            <div class="bottom-sign"><a class="button_green_full">Записаться</a></div>
+        </div>
+    </div>
+
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</div>
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-294364-h8c4i"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-294364-h8c4i" style="position:fixed; left:-999px;" alt=""/></noscript>
+<script type="text/javascript" src="https://consultsystems.ru/script/8336/" charset="utf-8"></script>
+<!-- Powered by Shvetsov Technologies https://shvetsov.tech/ -->
+<div class="mango-callback" data-settings='{"type":"", "id": "MTAwMTM3NTg=","autoDial" : "0", "lang" : "ru-ru", "host":"widgets.mango-office.ru/", "errorMessage": "В данный момент наблюдаются технические проблемы и совершение звонка невозможно"}'>
+</div>
+<script>!function(t){function e(){i=document.querySelectorAll(".button-widget-open");for(var e=0;e<i.length;e++)"true"!=i[e].getAttribute("init")&&(options=JSON.parse(i[e].closest('.'+t).getAttribute("data-settings")),i[e].setAttribute("onclick","alert('"+options.errorMessage+"(0000)'); return false;"))}function o(t,e,o,n,i,r){var s=document.createElement(t);for(var a in e)s.setAttribute(a,e[a]);s.readyState?s.onreadystatechange=o:(s.onload=n,s.onerror=i),r(s)}function n(){for(var t=0;t<i.length;t++){var e=i[t];if("true"!=e.getAttribute("init")){options=JSON.parse(e.getAttribute("data-settings"));var o=new MangoWidget({host:window.location.protocol+'//'+options.host,id:options.id,elem:e,message:options.errorMessage});o.initWidget(),e.setAttribute("init","true"),i[t].setAttribute("onclick","")}}}host=window.location.protocol+"//widgets.mango-office.ru/";var i=document.getElementsByClassName(t);o("link",{rel:"stylesheet",type:"text/css",href:host+"css/widget-button.css"},function(){},function(){},e,function(t){var headTag=document.querySelector('head');headTag.insertBefore(t,headTag.firstChild)}),o("script",{type:"text/javascript",src:host+"widgets/mango-callback.js"},function(){("complete"==this.readyState||"loaded"==this.readyState)&&n()},n,e,function(t){document.documentElement.appendChild(t)})}("mango-callback");</script>
+
+</body>
+</html>

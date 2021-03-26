@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSINESS АНГЛИЙСКИЙ</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/teenager-group.css" />
+    <link rel="stylesheet" type="text/css" href="style/group-filial.css" />
+    <link rel="stylesheet" type="text/css" href="style/business.css" />
+    <link rel="stylesheet" type="text/css" href="style/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFlVYWc4RsFwAa9wm9ubODoXurDzgLvQ"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Находим плавающий блок и делаем его плавающим
+            $('#sticker').stick_in_parent({
+                // Отступ сверху
+                offset_top: 80
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="all">
+
+        <!-- Header -->
+        <header>
+            <div class="head_wrap">
+                <div><img src="./assets/image/logo.svg" /></div>
+                <div><img src="./assets/image/cambridge.png" /></div>
+                <div class="header-phone desktop"><a href="tel:8495149-7021">8 (495) 149-7021</a><a
+                        href="tel:84992884203">8 (499) 288-4203</a></div>
+                <div class="header-region desktop">
+                    <div id="header-region-select" class="header-region-select">Москва</div>
+                    <div id="header-region-change" class="header-region-change">
+                        <p id="header-region-change-q">Ваш город - Москва?</p>
+                        <div class="header-region-button">
+                            <a id="header-region-button-yes">Да</a>
+                            <a id="header-region-button-no">Нижний Новгород</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-user_link desktop">Личный кабинет</div>
+                <div class="burger-button mobile">
+                    <input type="checkbox" id="burger" name="burger">
+                    <label for="burger"><span></span></label>
+                </div>
+
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li>
+                        <a href="#">Для детей и подростков</a>
+                        <ul class="menu-children">
+                            <li><a href="#">Английский в филиалах школы 3-17 лет</a></li>
+                            <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                            <li><a href="#">Подготовка к международным экзаменам</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Для взрослых</a>
+                        <ul class="menu-children">
+                            <li><a href="#" class="active">Разговорный английский в филиалах школы</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Корпоративное обучение</a></li>
+                    <li>
+                        <a href="#">О школе</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши филиалы</a>
+                    </li>
+                    <li>
+                        <a href="#">Преподавателям</a>
+                        <ul class="menu-children">
+                            <li><a href="#">Подготовка к международному экзамену ТКТ онлайн</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="mobile burger-menu" id="burger-menu">
+                <nav class="">
+                    <ul>
+                        <li>
+                            <a href="#">Для детей и подростков</a>
+                            <ul class="menu-children">
+                                <li><a href="#">Английский в филиалах школы 3-17 лет</a></li>
+                                <li><a href="#">Английский онлайн, 13-17 лет</a></li>
+                                <li><a href="#">Подготовка к международным экзаменам</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Для взрослых</a>
+                            <ul class="menu-children">
+                                <li><a href="#" class="active">Разговорный английский в филиалах школы</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Корпоративное обучение</a></li>
+                        <li>
+                            <a href="#">О школе</a>
+                        </li>
+                        <li>
+                            <a href="#">Наши филиалы</a>
+                        </li>
+                        <li>
+                            <a href="#">Преподавателям</a>
+                            <ul class="menu-children">
+                                <li><a href="#">Подготовка к международному экзамену ТКТ онлайн</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="burger-bottom">
+                    <div class="header-region">
+                        <div id="header-region-select2" class="header-region-select">Москва</div>
+                        <div id="header-region-change2" class="header-region-change">
+                            <p id="header-region-change-q2">Ваш город - Москва?</p>
+                            <div class="header-region-button">
+                                <a id="header-region-button-yes2">Да</a>
+                                <a id="header-region-button-no2">Нижний Новгород</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-user_link">Личный кабинет</div>
+                    <div class="header-phone"><a href="tel:8495149-7021">8 (495) 149-7021</a><a href="tel:84992884203">8
+                            (499) 288-4203</a></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Course name -->
+        <div class="course-name business">
+            <div class="course-name_wrap">
+                <div class="course-name-desc">
+                    <h1 class="green" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"><span
+                            class="orange">business</span><br />
+                        АНГЛИЙСКИЙ</h1>
+                    <p>Курс делового английского включает в себя такие направления, как: менеджмент, маркетинг, продажи,
+                        финансы и т.д.</p>
+                    <p>
+                        <a meta-item="toFirst" class="button_green">Записаться на курс</a>
+                    </p>
+                </div>
+                <div class="course-name-img">
+                    <img src="./assets/image/business/course-name.svg" alt="">
+
+                </div>
+            </div>
+            <div class="course-name-list">
+                <div class="course-name-list_wrap">
+                    <div class="course-name-list_item orange_bg" data-aos-once="true" data-aos="fade-up"
+                        data-aos-duration="500">
+                        <p>Ближайший курс</p>
+                        <h4>15 мая – 15 августа</h4>
+                        <a class="flowing-scroll" href="#sub">Записаться на курс</a>
+                    </div>
+                    <div class="course-name-list_item red_bg" data-aos-once="true" data-aos="fade-up"
+                        data-aos-duration="800">
+                        <p>Длительность</p>
+                        <h4>3 месяца =48 академических часов</h4>
+                        <a class="flowing-scroll" href="#after">Что я получу</a>
+                    </div>
+                    <div class="course-name-list_item blue_bg" data-aos-once="true" data-aos="fade-up"
+                        data-aos-duration="1100">
+                        <p>Формат обучения</p>
+                        <h4>ОНЛАЙН</h4>
+                        <a class="flowing-scroll" href="#online">Узнать особенности</a>
+                    </div>
+                    <div class="course-name-list_item green_bg" data-aos-once="true" data-aos="fade-up"
+                        data-aos-duration="1400">
+                        <p>Уровень курса</p>
+                        <h4>Знание английского pre-intermediate и выше</h4>
+                        <a class="flowing-scroll" href="#build">Процесс обучения</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course learn -->
+        <div class="course-learn">
+            <div class="course-learn_wrap">
+                <div class="airSticky_stop-block">
+                    <h2 id="sticker" class="orange" style="position: -webkit-sticky;position: sticky;">ВЫ ОВЛАДЕЕТЕ
+                        ОСНОВНЫМИ НАВЫКАМИ, НЕОБХОДИМЫМИ ДЛЯ УСПЕШНОЙ ПРОФЕССИОНАЛЬНОЙ ДЕЯТЕЛЬНОСТИ:
+                    </h2>
+
+                </div>
+                <div class="course-learn-list">
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500"
+                        data-aos-offset="400">
+                        <img src="./assets/image/business/learn/1.svg" />
+                        <p>Ведение переговоров</p>
+                    </div>
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500"
+                        data-aos-offset="400">
+                        <img src="./assets/image/business/learn/2.svg" />
+                        <p>Деловая переписка и общение по телефону</p>
+                    </div>
+                    <div class="course-learn-item" data-aos="fade-left" data-aos-once="true" data-aos-duration="500"
+                        data-aos-offset="400">
+                        <img src="./assets/image/business/learn/3.svg" />
+                        <p>Презентация групповых и индивидуальных проектов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Business plus course -->
+        <div class="gray-plus">
+            <div class="wrap flex">
+                <div class="gray-plus-item">
+                    <img src="./assets/image/business/plus/1.svg">
+                    <h3 class="red">БЫСТРО</h3>
+                    <p>Никакой «воды»: только рабочая бизнес-лексика</p>
+                </div>
+                <div class="gray-plus-item">
+                    <img src="./assets/image/business/plus/2.svg">
+                    <h3 class="red">АКТУАЛЬНО</h3>
+                    <p>Реальные бизнес кейсы из мировой практики</p>
+                </div>
+                <div class="gray-plus-item">
+                    <img src="./assets/image/business/plus/3.svg">
+                    <h3 class="red">УДОБНО</h3>
+                    <p>Онлайн-формат – где бы вы не находились</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign up of course -->
+        <div id="sub" class="course-sign group-filial">
+            <div class="course-sign_wrap">
+                <h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" class="green">Бесплатный первый
+                    урок завтра в 19:15 МСК<br>
+                    <span class="orange">Successful negotiations: key steps that lead to result.</span>
+                </h2>
+                <img src='./assets/image/business/form.jpg' />
+                <form>
+                    <p>Регистрируйтесь на урок прямо сейчас и получите PDF-план из 12 шагов в переговорах с самыми
+                        рабочими фразами на английском!</p>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <div class="moscow">
+                        <input id="radio-3m" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                        <label for="radio-3m">Москва, ул. Митинская, д. 40</label>
+                        <input id="radio-4m" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                        <label for="radio-4m">Москва, ул. Профсоюзная, д.43 к1</label>
+                    </div>
+                    <div class="novgorod">
+                        <input id="radio-3n" type="radio" name="radio" value="Нижний Новогород, ул. Горького, д. 218/22"
+                            checked>
+                        <label for="radio-3n">Нижний Новогород, ул. Горького, д. 218/22</label>
+                        <input id="radio-4n" type="radio" name="radio" value="Нижний Новогород, пр. Ленина, д. 17">
+                        <label for="radio-4n">Нижний Новогород, пр. Ленина, д. 17</label>
+                    </div>
+                    <input id="check-2" type="checkbox" name="check" value="check">
+                    <label for="check-2">Я подтверждаю свое согласие на обработку моих персональных данных в
+                        соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+        </div>
+
+        <!--After course-->
+        <div id="after" class="after-course">
+            <div class="wrap flex">
+                <div>
+                    <h2 class="green">После <span class="orange"> месяцев обучения</span><br>
+                        ты сможешь:</h2>
+                    <div class="after-course-list">
+                        <div class="after-course-item">
+                            <img src="./assets/image/business/after/1.svg">
+                            <p>Устроиться на работу в международную компанию</p>
+                        </div>
+                        <div class="after-course-item">
+                            <img src="./assets/image/business/after/2.svg">
+                            <p>Презентовать свои проекты или идеи</p>
+                        </div>
+                        <div class="after-course-item">
+                            <img src="./assets/image/business/after/3.svg">
+                            <p>Вести деловую переписку на английском</p>
+                        </div>
+                        <div class="after-course-item">
+                            <img src="./assets/image/business/after/4.svg">
+                            <p>Участвовать в переговорах по телефону и онлайн</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/image/business/superman.svg" data-aos="fade-up-left" data-aos-offset="700"
+                    data-aos-duration="1000" class="superman">
+            </div>
+        </div>
+
+        <!-- Course Skills -->
+        <div id="online" class="course-skills business">
+            <div class="course-skills_wrap">
+                <h2 class="orange" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">Особенности
+                    бизнес-курса ОНЛАЙН</h2>
+                <div class="course-skills-items">
+                    <div class="course-skills-item" data-aos-once="true" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-duration="1000">
+                        <p><img src="./assets/image/business/skills/1.svg" alt=""></p>
+                        <h4 class="blue">УРОКИ ОТ БИЗНЕС-ПРАКТИКОВ</h4>
+                        <p>Преподаватели курса — эффективные менеджеры в сфере управления, имеющие международные
+                            сертификаты BEC Higher и CPE.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos-once="true" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-duration="1500">
+                        <p><img src="./assets/image/business/skills/2.svg" alt=""></p>
+                        <h4 class="blue">ЗАНЯТИЯ В ГРУППЕ ОНЛАЙН</h4>
+                        <p>На занятиях вы cможете взаимодействовать с преподавателем и другими участниками.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos-once="true" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-duration="1000">
+                        <p><img src="./assets/image/business/skills/3.svg" alt=""></p>
+                        <h4 class="blue">ДОМАШНИЕ ЗАДАНИЯ ОНЛАЙН</h4>
+                        <p>После каждого урока вы сможете закрепить свои знания, мы подготовили все необходимые
+                            материалы и тесты.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1500">
+                        <p><img src="./assets/image/business/skills/4.svg" alt=""></p>
+                        <h4 class="blue">УЧЕБНАЯ ПЛАТФОРМА</h4>
+                        <p>Курс построен на удобной учебной платформе с личным кабинетом.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1500">
+                        <p><img src="./assets/image/business/skills/5.svg" alt=""></p>
+                        <h4 class="blue">ОБРАТНАЯ СВЯЗЬ</h4>
+                        <p>Постоянная поддержка кураторов и ответы на ваши вопросы.</p>
+                    </div>
+                    <div class="course-skills-item" data-aos="fade-right" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1500">
+                        <p><img src="./assets/image/business/skills/6.svg" alt=""></p>
+                        <h4 class="blue">ВИДЕО-УРОКИ</h4>
+                        <p>Вы сможете заниматься в удобном для вас месте и в любое подходящее время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course group description -->
+        <div class="course-group-desc business">
+            <div class="course-group-desc_wrap">
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="700"
+                    data-aos-offset="200">
+                    <div>18</div>
+                    <p>занятий в группе онлайн</p>
+                </div>
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+                    data-aos-offset="200">
+                    <div>6</div>
+                    <p>видео-уроков от бизнес-экспертов</p>
+                </div>
+                <div class="course-group-desc-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1300"
+                    data-aos-offset="200">
+                    <div>12</div>
+                    <p>ключевых бизнес-тем</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Course build learn -->
+        <div id="build" class="course-build group-filial">
+            <h2 class="orange" data-aos="fade-right" data-aos-once="true" data-aos-offset="300">Как мы строим обучение:
+            </h2>
+            <div class="course-build_wrap">
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250"
+                    data-aos-duration="1000">
+                    <img src="./assets/image/business/build/1.svg" alt="">
+                    <h4 class="red">МЫ МНОГО РАБОТАЕМ В ГРУППЕ</h4>
+                    <p>Чтобы сформировать такие навыки общения, как аудирование, говорение, чтение и письмо.</p>
+                </div>
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250"
+                    data-aos-duration="1000">
+                    <img src="./assets/image/business/build/2.svg" alt="">
+                    <h4 class="red">У НАС ИНДИВИДУАЛЬНЫЙ ПОДХОД</h4>
+                    <p>Это значит, что мы следим за прогрессом каждого студента, а преподаватель всегда оставляет
+                        обратную связь по каждому уроку.</p>
+                </div>
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250"
+                    data-aos-duration="1000">
+                    <img src="./assets/image/business/build/3.svg" alt="">
+                    <h4 class="red">ЭТО НЕ ПРОСТО КУРС, А НАСТОЯЩАЯ БИЗНЕС ИГРА!</h4>
+                    <p>Работая в команде ты сможешь развить свое целеполагание, лидерские качества, отточишь свои умения
+                        договариваться и применишь все свои новые знания на практике.</p>
+                </div>
+                <div class="course-build-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="250"
+                    data-aos-duration="1000">
+                    <img src="./assets/image/business/build/4.svg" alt="">
+                    <h4 class="red">САМЫЙ АКТИВНЫЙ УЧАСТНИК</h4>
+                    <p>Получит индивидуальный урок с нашим экспертом в бизнес-английском и cкидку 50% на оплату любого
+                        курса в SE.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course rates -->
+        <div class="course-rates business">
+            <div class="course-rates_wrap">
+                <h2 class="green" data-aos="fade-right" data-aos-once="true" data-aos-duration="700"
+                    data-aos-offset="300">Тарифы</h2>
+                <div class="course-rates-items">
+                    <div class="course-rates-item red_bg" data-aos-once="true" data-aos="zoom-in" data-aos-offset="300"
+                        data-aos-duration="1000">
+                        <h3>Старт</h3>
+                        <h3><span>1 499 ₽</span> за курс</h3>
+                        <div>Вместо 2500 ₽ до 5 мая</div>
+                        <p>6 Видео-уроков с заданиями</p>
+                        <p>Домашние задания онлайн</p>
+                        <p>Итоговое тестирование</p>
+                        <a data-item="Старт">Хочу этот тариф</a>
+                    </div>
+                    <div class="course-rates-item green_bg" data-aos-once="true" data-aos="zoom-in"
+                        data-aos-offset="300" data-aos-duration="1500">
+                        <h3>Оптимальный</h3>
+                        <h3><span>10 800 ₽</span> за курс</h3>
+                        <div>до 5 мая вместо 15 000 ₽</div>
+                        <p>18 занятий в группе онлайн</p>
+                        <p>6 Видео-уроков с заданиями</p>
+                        <p>Домашние задания онлайн</p>
+                        <p>Итоговое тестирование</p>
+                        <p>Общий чат с участниками</p>
+                        <p>Проверка заданий преподавателем</p>
+                        <a data-item="Оптимальный">Хочу этот тариф</a>
+                    </div>
+                    <div class="course-rates-item blue_bg" data-aos-once="true" data-aos="zoom-in" data-aos-offset="300"
+                        data-aos-duration="2000">
+                        <h3>VIP</h3>
+                        <h3><span>15 900 ₽</span> за курс</h3>
+                        <div>до 5 мая вместо 20 000 ₽</div>
+                        <p>6 индивидуальных занятий с преподавателями курса</p>
+                        <p>Видео-уроки с заданиями</p>
+                        <p>Домашние задания онлайн</p>
+                        <p>Итоговое тестирование</p>
+                        <p>18 занятий в группе онлайн</p>
+                        <p>Общий чат с участниками</p>
+                        <p>Проверка заданий преподавателем</p>
+                        <p>Индивидуальная проработка навыков</p>
+                        <a data-item="Супер">Хочу этот тариф</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How work -->
+        <div class="course-work group-filial">
+            <div class="course-work_wrap">
+                <h2 class="green" data-aos="fade-right" data-aos-once="true" data-aos-offset="200"
+                    data-aos-duration="1000">Преподаватели
+                    курса</h2>
+
+                <div class="course-work-items">
+
+                    <div class="course-work-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1000">
+                        <div class="course-work-photo"><img src="./assets/image/group-filial/work/1.png" alt="">
+                        </div>
+                        <div class="course-work-text">
+                            <div class="course-work-name">ЯНА НЕМЧИНОВА</div>
+                            <div class="course-work-post">Исполнительный директор<br />
+                                Smart Education</div>
+                            <p><span>Международные сертификаты:</span><br />Cambridge English: Advanced
+                                (CAE)<br />Cambridge Teaching Knowledge Test
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="course-work-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1300">
+                        <div class="course-work-photo"><img src="./assets/image/group-filial/work/2.png" alt="">
+                        </div>
+                        <div class="course-work-text">
+                            <div class="course-work-name">ИРИНА БАРКАНОВА</div>
+                            <div class="course-work-post">Академический директор<br />
+                                Smart Education</div>
+                            <p><span>Международные сертификаты:</span><br />Cambridge English: Advanced
+                                (CAE)<br />Cambridge
+                                Teaching Knowledge Test</p>
+                        </div>
+                    </div>
+
+
+                    <div class="course-work-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1600">
+                        <div class="course-work-photo"><img src="./assets/image/group-filial/work/3.png" alt="">
+                        </div>
+                        <div class="course-work-text">
+                            <div class="course-work-name">ИЛЬЯ АГАФОНОВ</div>
+                            <div class="course-work-post">Старший корпоративный преподаватель<br />
+                                Smart Education</div>
+                            <p><span>Международный сертификат:</span><br />Cambridge Teaching Knowledge
+                                Test<br /><span>Лучший корпоративный тренер 2016</span></p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Course about school -->
+        <div class="course-about_school">
+            <div class="course-about_school_wrap">
+                <h2 data-aos="fade-right" data-aos-once="true" data-aos-offset="200" data-aos-duration="1000">Школа
+                    Smart Education это:</h2>
+                <div class="course-about_school-wrap">
+                    <p data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="1000">
+                        <span>99%</span>Положительных отзывов в интернете</p>
+                    <p data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="1500">
+                        <span>100%</span>Сертифицированных преподавателей</p>
+                    <p data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="1500"><span>12
+                            лет</span>Успешкой работы в образовании</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Feedback form -->
+
+        <div class="feedback business">
+            <div class="feedback_wrap">
+                <h2 class="green">Остались вопросы?</h2>
+                <form>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <div class="moscow">
+                        <input id="radio-fm" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                        <label for="radio-fm">Москва, ул. Митинская, д. 40</label>
+                        <input id="radio-fm2" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                        <label for="radio-fm2">Москва, ул. Профсоюзная, д.43 к1</label>
+                    </div>
+                    <div class="novgorod">
+                        <input id="radio-fn" type="radio" name="radio" value="Нижний Новогород, ул. Горького, д. 218/22"
+                            checked>
+                        <label for="radio-fn">Нижний Новогород, ул. Горького, д. 218/22</label>
+                        <input id="radio-fn2" type="radio" name="radio" value="Нижний Новогород, пр. Ленина, д. 17">
+                        <label for="radio-fn2">Нижний Новогород, пр. Ленина, д. 17</label>
+                    </div>
+                    <input id="check2" type="checkbox" name="check" value="check">
+                    <label for="check2">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+        </div>
+
+
+        <!--Pop-up window-->
+        <div class="popup">
+            <div class="pop_bg"></div>
+            <div class="pop_window">
+                <a class="close"></a>
+                <form id="application">
+                    <h3>Оставить заявку</h3>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <div class="moscow">
+                        <input id="radio-am" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                        <label for="radio-am">Москва, ул. Митинская, д. 40</label>
+                        <input id="radio-am2" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                        <label for="radio-am2">Москва, ул. Профсоюзная, д.43 к1</label>
+                    </div>
+                    <div class="novgorod">
+                        <input id="radio-an" type="radio" name="radio" value="Нижний Новогород, ул. Горького, д. 218/22"
+                            checked>
+                        <label for="radio-an">Нижний Новогород, ул. Горького, д. 218/22</label>
+                        <input id="radio-an2" type="radio" name="radio" value="Нижний Новогород, пр. Ленина, д. 17">
+                        <label for="radio-an2">Нижний Новогород, пр. Ленина, д. 17</label>
+                    </div>
+                    <input id="check3" type="checkbox" name="check" value="check">
+                    <label for="check3">Я подтверждаю свое согласие на обработку моих персональных данных в соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form id="rates">
+                    <h3>Оставить заявку</h3>
+                    <input type="text" placeholder="Фамилия и Имя" />
+                    <input type="tel" placeholder="+7 (999) 999-99-99" />
+                    <input type="email" placeholder="E-mail" />
+                    <div class="moscow">
+                        <input id="radio-rm" type="radio" name="radio" value="Москва, ул. Митинская, д. 40" checked>
+                        <label for="radio-rm">Москва, ул. Митинская, д. 40</label>
+                        <input id="radio-rm2" type="radio" name="radio" value="Москва, ул. Профсоюзная, д.43 к1">
+                        <label for="radio-rm2">Москва, ул. Профсоюзная, д.43 к1</label>
+                    </div>
+                    <div class="novgorod">
+                        <input id="radio-rn" type="radio" name="radio" value="Нижний Новогород, ул. Горького, д. 218/22"
+                            checked>
+                        <label for="radio-rn">Нижний Новогород, ул. Горького, д. 218/22</label>
+                        <input id="radio-rn2" type="radio" name="radio" value="Нижний Новогород, пр. Ленина, д. 17">
+                        <label for="radio-rn2">Нижний Новогород, пр. Ленина, д. 17</label>
+                    </div>
+                    <input id="check-r" type="checkbox" name="check" value="check">
+                    <label for="check-r">Я подтверждаю свое согласие на обработку моих персональных данных в
+                        соответствии
+                        с
+                        Политикой конфиденциальности.</label>
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form id="login">
+                    <h3>Войти в систему</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="password" placeholder="Пароль" />
+                    <input id="check4" type="checkbox" name="check" value="check">
+                    <label for="check4">Запомнить</label>
+                    <input type="submit" value="Войти" />
+                    <div class="remember"><a class="form_call" data-item="remember">ЗАБЫЛИ ПАРОЛЬ?</a></div>
+                </form>
+                <form id="remember">
+                    <h3>Востановление пароля</h3>
+                    <input type="text" placeholder="Логин" />
+                    <input type="submit" value="Выслать пароль" />
+                    <div class="remember"><a class="form_call" data-item="login">Вернуться</a></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer_wrap">
+                <div><img src='./assets/image/logo.svg' /></div>
+                <div class="footer-copy">
+                    © Смарт Эдьюкейшн, 2007-2020<br>
+                    <a href="#">Политика Конфиденциальности</a>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/smartednn" target="_blank"><img src="./img/fb.svg" /></a>
+                        <a href="https://vk.com/smarteducation" target="_blank"><img src="./img/vk.svg" /></a>
+                        <a href="https://www.instagram.com/smart_education_school/" target="_blank"><img
+                                src="./img/ins.svg" /></a>
+                    </div>
+                    <div class="footer-work">Made in <a href="">Le Design</a></div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

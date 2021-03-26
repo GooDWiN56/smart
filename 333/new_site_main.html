@@ -1,0 +1,297 @@
+{% extends "new_site_index.html" %}
+
+
+{% block content %}
+
+
+<!-- Course name -->
+<div class="course-name home-slider">
+    <div class="course-name-slider">
+        <div>
+            <div class="course-name_wrap">
+                <div class="course-name-desc" >
+                    <h1 class="green" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">АНГЛИЙСКИЙ ДЛЯ&nbsp;ДЕТЕЙ И ПОДРОСТКОВ</h1>
+                    <h2 class="orange" data-aos="fade-right" data-aos-once="true" data-aos-duration="1500">По методике Кембриджского Университета</h2>
+                    <p>2 недели бесплатных занятий до 31 января</p>
+                    <p><a meta-item="toFirst" class="button_orange_full"  data-item="4">Отправить заявку</a> <a meta-item="toFirst" href="/10/deti/deti-4-6-let/" class="button_green">Подробнее</a></p>
+                </div>
+                <div class="course-name-img">
+                    <picture>
+                        <source
+                                srcset="/static/new_site/assets/image/children-group/course-name@2.png 2x, /static/new_site/assets/image/children-group/course-name.png 1x"
+                                type="image/png">
+                        <img src="/static/new_site/assets/image/children-group/course-name.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div>
+                    <div class="course-name_wrap">
+                        <div class="course-name-desc">
+                            <h1 class="green" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"><span class="orange">Разговорный</span><br />
+                                английский</h1>
+                            <p>Курс позволит вам свободно общаться на английском, понимать собеседников и чувствовать
+                                себясвободно в любой ситуации!</p>
+                            <p>
+                                <a meta-item="toFirst" href="/10/vzroslye/razgovornyj-anglijskij/" class="button_green">Записаться на курс</a>
+                            </p>
+                        </div>
+                        <div class="course-name-img">
+                            <picture>
+                                <source
+                                    srcset="/static/new_site/assets/image/group-filial/course-name@2.png 2x, /static/new_site/assets/image/group-filial/course-name.png 1x"
+                                    type="image/png">
+                                <img src="/static/new_site/assets/image/group-filial/course-name.png" alt="">
+                            </picture>
+                            
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+<!-- Fast menu-->
+<div class="fast-menu">
+    <div class="fast-menu_wrap">
+        <div class="red_bg" data-aos="fade-up" data-aos-once="true" data-aos-duration="700" data-aos-offset="200">
+            <a href="/10/deti/deti-4-6-let/">Английский для детей 3-17 лет</a>
+        </div>
+        <div class="green_bg" data-aos="fade-up" data-aos-once="true" data-aos-duration="1400" data-aos-offset="200">
+            <a href="/10/vzroslye/razgovornyj-anglijskij/">Разговорный английский</a>
+        </div>
+        <div class="blue_bg" data-aos="fade-up" data-aos-once="true" data-aos-duration="700" data-aos-offset="200">
+            <a href="/10/vzroslye/12-dnevnyj-kurs-intensiv-razgovornogo-yazyka/">Английский онлайн</a>
+        </div>
+        <div class="orange_bg" data-aos="fade-up" data-aos-once="true" data-aos-duration="1400" data-aos-offset="200">
+            <a href="/0/deti/mezhdunarodnye-ekzameny/">Международные экзамены</a>
+        </div>
+    </div>
+</div>
+
+<!-- Homepage sign course -->
+<div class="home-sign">
+    <div class="home-sign_wrap">
+        <h2 class="green" data-aos="fade-right" data-aos-once="true" data-aos-offset="200">Запишись на <span class="red">бесплатный</span><br />открытый урок!</h2>
+        <ul>
+            <li data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="500"><span>1</span>Определим уровень знания языка</li>
+            <li data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="800" ><span>2</span>Составим программу обучения с учетом интересов и целей</li>
+            <li data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="1200"><span>3</span>Продемонстрируем методику Кембриджского университета</li>
+            <li data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="1500"><span>4</span>Познакомим с группой и преподавателем</li>
+        </ul>
+        <div class="home-sign-filial">
+            {% if geoip_record.city.id == 2097 %}
+            <div class="moscow">
+                <div class="home-sign-item " data-aos="fade-up" data-aos-once="true" data-aos-offset="200">
+                    <div class="home-sign-item-photo cher"></div>
+                    <div class="home-sign-item-text">
+                        <h4>Филиал <span>Черемушки</span></h4>
+                        <a class="button_red_full" href="javascript:void(0);" onclick="appCherem()">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="moscow">
+                <div class="home-sign-item " data-aos="fade-up" data-aos-once="true" data-aos-offset="200">
+                    <div class="home-sign-item-photo mit"></div>
+                    <div class="home-sign-item-text">
+                        <h4>Филиал <span>Митинский</span></h4>
+                        <a class="button_red_full" href="javascript:void(0);" onclick="appMitino()">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="novgorod">
+                <div class="home-sign-item " data-aos="fade-up" data-aos-once="true" data-aos-offset="200">
+                    <div class="home-sign-item-photo gor"></div>
+                    <div class="home-sign-item-text">
+                        <h4>Филиал <span>Горьковский</span></h4>
+                        <a class="button_red_full" href="javascript:void(0);" onclick="appGork()">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="novgorod">
+                <div class="home-sign-item " data-aos="fade-up" data-aos-once="true" data-aos-offset="200">
+                    <div class="home-sign-item-photo len"></div>
+                    <div class="home-sign-item-text">
+                        <h4>Филиал <span>Ленинский</span></h4>
+                        <a class="button_red_full" href="javascript:void(0);" onclick="appLenin()">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Slider Teacher  -->
+<div class="home-teacher">
+    <div class="home-teacher-wrap">
+        <h2 class="green">Преподаватели</h2>
+        <div class="home-teacher-slider">
+            {% for item in pedag_all %}
+            <div class="home-teacher-item" data-aos="fade-up" data-aos-once="true" data-aos-offset="200" data-aos-duration="500">
+                {% if item.src %}
+                <img src="/media/{{ item.src }}" />
+                {% endif %}
+                <h4 class="red">{{ item.name|striptags }}</h4>
+                <p>{{ item.description|striptags }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Home news -->
+<div class="home-news">
+    <div class="home-news_wrap">
+        <h2 class="green">Новости</h2>
+        <div class="home-news-items">
+
+            {% for item in news_all %}
+            <div class="home-news-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="500" data-aos-offset="200">
+                <a href="/{{ item.type_doc }}/{{ news.parent.slug }}/{{ news.slug }}/{{ item.slug }}/">
+                    {% if item.src %}
+                    <div class="home-news-item_img">
+                        <img src="/media/{{ item.src }}" />
+                    </div>
+                    {% endif %}
+                    <div class="home-news-item_cont">
+                        <span>{{ item.date|date:"d.m.Y" }}</span>
+                        <h4>{{ item.name }}</h4>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="in-section">
+            <a class="button_green" href="/1/o-centre/novosti/">Все новости</a>
+        </div>
+    </div>
+</div>
+
+<!-- Subscribe VK -->
+<div class="subscribe-vk">
+    <div class="subscribe-vk_wrap">
+        <div>
+            Предупреждаем: может быть лингвистически опасно! Развивается привыкание к изучению английского!
+        </div>
+        <div>
+            <a href="https://vk.com/smarteducation" target="_blank">Подписаться на новости</a>
+        </div>
+    </div>
+</div>
+
+<!-- Stocks homepage -->
+<div class="home-stocks">
+    <div class="home-stocks_wrap">
+        <h2 class="green">Акции</h2>
+        <div class="home-stocks-items">
+
+            {% for item in akcii_all %}
+            <div class="home-stocks-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="700" data-aos-offset="200">
+                <a href="/{{ item.type_doc }}/{{ akcii.parent.slug }}/{{ akcii.slug }}/{{ item.slug }}/">
+                    {% if item.src %}
+                    <div class="home-stock-img">
+                        <img src="/media/{{ item.src }}" />
+                    </div>
+                    {% endif %}
+                    <div class="home-stock-content">
+                        <span>{{ item.date|date:"d.m.Y" }}</span>
+                        <h4>{{ item.name }}</h4>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="in-section">
+            <a class="button_green" href="/5/o-centre/akcii/">Все акции</a>
+        </div>
+    </div>
+</div>
+
+<!-- Homepage feedback-->
+<div class="home-feedback">
+    <div class="home-feedback_wrap">
+        <h2 class="green" data-aos="fade-right" data-aos-once="true" data-aos-offset="200">Отзывы выпускников курса</h2>
+        <div class="home-feedback-items">
+            {% for item in resp_all %}
+            <div class="home-feedback-item" data-aos="fade-up" data-aos-once="true" data-aos-duration="700" data-aos-offset="200">
+                {% if item.src %}
+                <div class="home-feedback-ava">
+                    <img src="/media/{{ item.src }}" />
+                </div>
+                {% endif %}
+                <div class="home-feedback-text">
+                    <div class="mob_name">
+                        <h4>{{ item.name|safe }}</h4>
+                        <span>{{ item.description }}</span>
+                    </div>
+                    <p class="hfeed{{ forloop.counter }}">{{ item.text|striptags|safe }}</p>
+                    <a class="showFeed" id="hfeed{{ forloop.counter }}">Показать</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="in-section">
+            <a class="button_green" href="/2/o-centre/otzyvy/">Все отзывы</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Address school -->
+
+<!-- Address school -->
+<div class="adress">
+    <div class="adress-tabs mobile">
+        <a class="active" name='list'>Списком</a>
+        <a name='map'>На карте</a>
+    </div>
+    <div id="map" class="arderss-mobile"></div>
+    <div id="list" class="adress-desc arderss-mobile">
+        <h3>Адреса школ</h3>
+
+        {% if geoip_record.city.id == 2097 %}
+        <div class="adress-desc_item">
+            <h4>Филиал Митинский</h4>
+            <div class="adress-desc_adres">
+                Митино<br />
+                ул. Митинская, д. 40
+            </div>
+            <div class="adress-desc_link"><a class="button_green" href="javascript:void(0);" onclick="appMitino()">Оставить заявку</a></div>
+        </div>
+
+        <div class="adress-desc_item">
+            <h4>Филиал Черёмушки</h4>
+            <div class="adress-desc_adres">
+                Новые Черёмушки<br />
+                ул. Профсоюзная, д. 43к1
+            </div>
+            <div class="adress-desc_link"><a class="button_green" href="javascript:void(0);" onclick="appCherem()">Оставить заявку</a></div>
+        </div>
+        {% else %}
+        <div class="adress-desc_item">
+            <h4>Филиал Горьковский</h4>
+            <div class="adress-desc_adres">
+                Горьковская<br />
+                ул. Горького 218/22
+            </div>
+            <div class="adress-desc_link"><a class="button_green" href="javascript:void(0);" onclick="appGork()">Оставить заявку</a></div>
+        </div>
+
+        <div class="adress-desc_item">
+            <h4>Филиал Ленинский</h4>
+            <div class="adress-desc_adres">
+                Ленинская<br />
+                пр. Ленина, 17
+            </div>
+            <div class="adress-desc_link"><a class="button_green" href="javascript:void(0);" onclick="appLenin()">Оставить заявку</a></div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
+

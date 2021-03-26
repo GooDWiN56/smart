@@ -35,6 +35,7 @@
     .desktop,
     .tkt-exam .course-programm-video,
     .course-programm-video img,
+    .course-feedback_wrap,
     .course-skills_wrap:after,
     .gallery h2::after,
     .course-age:after,
@@ -46,9 +47,6 @@
     .course-advantages-other,
     .teenager .course-work_wrap::after{
         display: none;
-    }
-    .flex{
-        display: block;
     }
     header {
         display: block;
@@ -214,9 +212,9 @@
         padding: 15px 5% 45px;
     }
     .course-name_wrap{
-        
+
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
         'image'
         'content';
     }
@@ -243,7 +241,7 @@
         position: absolute;
         width: 60px;
         height: 105px;
-        background: url(./../img/course-name-ill.svg) no-repeat center;
+        background: url(/static/new_site/img/course-name-ill.svg) no-repeat center;
         top: -10px;
         right: 25px;
     }
@@ -267,7 +265,7 @@
         display: grid;
         grid-template-columns: 48% 48% ;
         grid-column-gap: 4%;
-        
+
     }
     .course-name-list_item{
         padding: 20px 15px 20px;
@@ -307,7 +305,7 @@
         display: block;
         width: 100%;
         height: 200px;
-        background: url(./../img/test-illust.svg) no-repeat center;
+        background: url(/static/new_site/img/test-illust.svg) no-repeat center;
         top: auto;
         right: auto;
         transform: translateY(0%);
@@ -391,7 +389,7 @@
     content: '';
     position: absolute;
     width: 111.96px;
-    height: 85.35px;    
+    height: 85.35px;
     top: 50%;
     right: 0;
     transform: translatey(-50%);
@@ -426,7 +424,7 @@
 }
 .course-about_school-wrap{
     display: block;
-    
+
 }
 .course-about_school-wrap p{
     width: 100%;
@@ -440,7 +438,7 @@
     font-weight: 800;
     font-size: 44px;
     line-height: 55px;
-    
+
 }
 /* Course Skills */
 .course-skills{
@@ -448,7 +446,7 @@
     background: #F5F5F5;
 }
 .course-skills_wrap{
-    
+
     position: relative;
 }
 .course-skills h2 {
@@ -559,7 +557,7 @@
     z-index: 222;
     right: 15px;
     transform: translateY(-50%) rotate(180deg);
-    background: url(./../img/arrow_w.svg) no-repeat center;
+    background: url(/static/new_site/img/arrow_w.svg) no-repeat center;
 }
 .course-age-tabs a:first-child{
     border-left:none;
@@ -636,7 +634,7 @@
     position: absolute;
     content: '';
     top: -5px;
-    left: -11% !important; 
+    left: -11% !important;
     width: 24px;
     height: 24px;
 }
@@ -654,7 +652,7 @@
 .course-sign_wrap{
     position: relative;
     display: block;
-    
+
 }
 .feedback_wrap::after,
 .course-sign_wrap:after{
@@ -686,7 +684,7 @@
     width: 92px;
     height: 57px;
     top: -57px;
-    background-image: url(./../img/sign_bird.svg);
+    background-image: url(/static/new_site/img/sign_bird.svg);
 }
 .feedback input[type="checkbox"] + label,
 .course-sign_wrap input[type="checkbox"] + label{
@@ -694,28 +692,14 @@
     line-height: 15px;
     margin-top: 45px;
 }
-.course-feedback_wrap{
-    grid-template-columns: 100%;
-}
-.course-feedback-item {
-    grid-template-areas: 'avatar' 'text' !important;
-    grid-template-columns: 100% !important;
-}
-.course-feedback-item_avatar{
-    padding: 0 10% 15px;
-    text-align: center;
-}
-.course-feedback-item img{
-    max-width: 100px;
-}
-.course-feedback-item_avatar
+
 /* How work */
 .course-work{
     padding: 50px 5%;
 }
 .course-work_wrap{
     position: relative;
-    
+
 }
 .course-work_wrap::before{
     position: absolute;
@@ -734,7 +718,7 @@
     width: 300px;
     height: 80px;
     background-position: right center;
-    background-image: url(./../img/work-illustr3.svg);
+    background-image: url(/static/new_site/img/work-illustr3.svg);
     background-size: contain;
 }
 .course-work_wrap h2{
@@ -746,7 +730,7 @@
     display: block;
 }
 .course-work-column {
-    
+
     width: 100%;
 }
 .course-work-column:last-child{
@@ -784,7 +768,7 @@
     padding: 50px 5% 50px;
 }
 .course-advantages{
-    
+
     position: relative;
 }
 .course-advantages h2 {
@@ -804,7 +788,7 @@
     content: '';
     width: 18.06px;
     height: 12px;
-    background: url(./../img/arrow.svg) no-repeat center;
+    background: url(/static/new_site/img/arrow.svg) no-repeat center;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
@@ -939,7 +923,7 @@ footer .footer_wrap>div{
 
 
 .group-filial .course-work-item{
-    width: 100% !important;
+    width: 100%;
 }
 .faq-subscribe {
     text-align: center;
@@ -966,9 +950,8 @@ footer .footer_wrap>div{
 }
 .group-filial .course-test_wrap::after{
     position: absolute;
-    width: 100% !important;
-    height: 360px !important;
-    transform: translateY(0%) !important;
+    width: 100%;
+    transform: translateY(-20%);
 }
 .course-reviews {
     padding: 50px 5%;
@@ -983,7 +966,7 @@ footer .footer_wrap>div{
 .group-filial .feedback_wrap::after {
     width: 231px !important;
     height: 270px !important;
-    background-image: url(./../img/feedback-illustr_group.svg);
+    background-image: url(/static/new_site/img/feedback-illustr_group.svg);
     bottom: -280px !important;
     left: 10%;
     position: absolute !important;
@@ -1017,7 +1000,7 @@ footer .footer_wrap>div{
     position: relative;
     padding: 50px 5%;
     padding-bottom: 300px;
-    
+
 }
 .course-exam-them {
     padding: 50px 5%;
@@ -1088,7 +1071,7 @@ footer .footer_wrap>div{
     content: '';
     width: 20px;
     height: 24px;
-    background: url(./../img/swipe.svg) no-repeat center;
+    background: url(/static/new_site/img/swipe.svg) no-repeat center;
     right: 20%;
     top: 0;
     animation: swipe  1.3s infinite ease-in-out;
@@ -1112,7 +1095,7 @@ footer .footer_wrap>div{
         overflow: hidden !important;
         padding-top: 15px;
     }
-    
+
     .fast-menu_wrap{
         display: block;
     }
@@ -1130,7 +1113,7 @@ footer .footer_wrap>div{
     .fast-menu {
         padding: 0px 5% 30px;
     }
-    
+
     .home-sign {
         padding: 45px 5%;
     }
@@ -1212,7 +1195,7 @@ footer .footer_wrap>div{
         line-height: 16px;
     }
     .home-feedback-text h4 {
-        
+
         line-height: 18px;
         margin-bottom: 6px;
     }
@@ -1275,7 +1258,7 @@ footer .footer_wrap>div{
     grid-template-columns: 100%;
 }
 .teacher-head-image{
-    
+
     margin-bottom: 25px;
 }
 .teacher-head-image img{
@@ -1311,7 +1294,7 @@ footer .footer_wrap>div{
     padding: 35px 5%;
 }
 .filial-head_wrap{
-    grid-template-areas: 'head' 
+    grid-template-areas: 'head'
     'image'
     'desc';
     grid-template-columns: 100%;
@@ -1340,7 +1323,7 @@ footer .footer_wrap>div{
 .teacher-head-group ul li{
     font-size: 14px;
     line-height: 16px;
-    
+
 }
 .course-suit.teacher {
     padding-top: 40px !important;
@@ -1349,7 +1332,7 @@ footer .footer_wrap>div{
     margin-bottom: 25px !important;
 }
 .filial .course-test_wrap::after {
-    background-image: url(./../img/test-illust_group2.svg);
+    background-image: url(/static/new_site/img/test-illust_group2.svg);
     width: 100%;
     height: 199px;
     background-size: contain;

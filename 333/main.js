@@ -1,65 +1,9 @@
 $(document).on("ready", function (e) {
 
-    myCenter = new google.maps.LatLng(55.751537, 37.617845);
-    locations = [
-        ['Филиал Митинский', 55.847815, 37.359985],
-        ['Филиал Черемушки', 55.667464, 37.552789]
-    ];
-    function initialize() {
-        var mapProp = {
-            center: myCenter,
-            disableDefaultUI: true,
-            zoom: 10,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        var map = new google.maps.Map(document.getElementById("map"), mapProp);
-
-
-
-
-        var marker, i;
-        var markers = new Array();
-
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map
-            });
-
-            markers.push(marker);
-
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-        }
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-    let ageShow = true
 
     $(window).on("scroll", function () {
         $(window).scrollTop() > 50 ? $('header').addClass('fixed') : $('header').removeClass('fixed');
-
-        if (($(window).scrollTop() > ($('.course-age-tabs').offset().top - $(window).height()/1.5)) && ageShow ){
-                setTimeout(function(){$(".course-age-tabs a:nth-child(1)").removeClass('active')}, 0);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(2)").addClass('active')}, 0);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(2)").removeClass('active')}, 1000);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(3)").addClass('active')}, 1000);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(3)").removeClass('active')}, 2000);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(4)").addClass('active')}, 2000);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(4)").removeClass('active')}, 3000);
-                setTimeout(function(){$(".course-age-tabs a:nth-child(1)").addClass('active')}, 3000);
-              ageShow = false;
-        }
     });
-
-    if($(window).width()>1280){
-        $('.adress-desc').css('left', ($(window).width() - 1280) / 2 )
-    }
 
     $('a.tabs_link').on('click', function () {
         e.preventDefault();
@@ -99,7 +43,7 @@ $(document).on("ready", function (e) {
 
     let r = false;
     $('div#header-region-select, a#header-region-button-yes').on("click", function (e) {
-
+        Cookies.set('city_id', geoip_record.city.id );
         if (!r) {
             $('#header-region-change').addClass('show')
             r = true;
@@ -111,7 +55,7 @@ $(document).on("ready", function (e) {
     });
 
     $('div#header-region-select2, a#header-region-button-yes2').on("click", function (e) {
-
+        Cookies.set('city_id', geoip_record.city.id);
         if (!r) {
             $('#header-region-change2').addClass('show')
             r = true;
@@ -121,47 +65,27 @@ $(document).on("ready", function (e) {
             r = false;
         }
     });
-    let city = false
 
     $('a#header-region-button-no').on("click", function () {
+        Cookies.set('city_id', geoip_record.altcity.id);
+        location.reload();
         let s = $('div#header-region-select').html();
         let c = $('a#header-region-button-no').html();
         $('div#header-region-select').html(c);
         $('a#header-region-button-no').html(s);
         $('#header-region-change').removeClass('show');
-        if (city) {
-            $(".moscow").show();
-            $(".novgorod").hide();
-            myCenter = new google.maps.LatLng(55.751537, 37.617845);
-            locations = [
-                ['Филиал Митинский', 55.847815, 37.359985],
-                ['Филиал Черемушки', 55.667464, 37.552789]
-            ];
-            initialize();
-            city = false;
-        }
-        else {
-            $(".novgorod").show();
-            $(".moscow").hide();
-            myCenter = new google.maps.LatLng(56.294653, 43.961265);
-            locations = [
-                ['Филиал Горьковский', 56.319453, 44.021203],
-                ['Филиал Ленинский', 56.293466, 43.933068]
-            ];
-            initialize();
-            city = true;
-        }
         r = false;
         $('#header-region-change-q').text('Ваш город - ' + c + '?');
 
     });
     $('a#header-region-button-no2').on("click", function () {
+        Cookies.set('city_id', geoip_record.altcity.id);
+        location.reload();
         let s = $('div#header-region-select2').html();
         let c = $('a#header-region-button-no2').html();
         $('div#header-region-select2').html(c);
         $('a#header-region-button-no2').html(s);
         $('#header-region-change2').removeClass('show');
-
         r = false;
         $('#header-region-change-q2').text('Ваш город - ' + c + '?');
 
@@ -170,13 +94,22 @@ $(document).on("ready", function (e) {
         $(this).is(':checked') ? $('#burger-menu').addClass('active') : $('#burger-menu').removeClass('active');
     });
 
-    $('.course-name-desc a, .bottom-sign a, .course-programm p a, a.subscrive-form').on('click', function () {
+    $('.bottom-sign a, .course-programm p a, a.subscrive-form').on('click', function () {
         $('.popup').addClass('show');
         $('.popup #application').show();
     });
-    $('.header-user_link').on('click', function () {
+    $('.course-name-desc a:first').on('click', function () {
         $('.popup').addClass('show');
-        $('.popup #login').show();
+        if ($(this).attr('data-item')) {
+            $('#application .course').val($(this).attr('data-item'));
+        };
+        $('.popup #application').show();
+    });
+
+    $('.header-user_link').on('click', function () {
+        document.location.href="https://smart-education.t8s.ru";
+        // $('.popup').addClass('show');
+        // $('.popup #login').show();
     });
     $('a.form_call').on('click', function () {
         $('.popup form').fadeOut(200);
@@ -189,8 +122,10 @@ $(document).on("ready", function (e) {
 
     $('.course-rates-item a').on('click', function () {
         $('.popup').addClass('show');
-        $('.popup #rates').show();
-        $('.popup #rates h3').html('Ваш тариф:<br />' + $(this).attr('data-item'));
+        $('.popup #application').show();
+        $( '#application .extra').val($(this).attr('data-item'));
+
+        $('.popup #application h3').html('Ваш тариф:<br />' + $(this).attr('data-item'));
     });
 
 
@@ -199,12 +134,12 @@ $(document).on("ready", function (e) {
     $('.course-name-desc a').on("click", function () {
 
         var get_id = $(this).attr("meta-item");
-        var target = $("#" + get_id).offset().top;
+        // var target = $("#" + get_id).offset().top;
 
-        $("html, body").animate({ scrollTop: target }, 800);
+        // $("html, body").animate({ scrollTop: target }, 800);
 
     });
-    $('a.teacher-link').on("click", function () { 
+    $('a.teacher-link').on("click", function () {
         $('a.teacher-link').removeClass('active');
         $(this).addClass('active');
         $('.teachers-items>div').fadeOut(300);
@@ -239,7 +174,7 @@ $(document).on("ready", function (e) {
         dots: false,
         infinite: true,
         slidesToScroll: 1,
-        
+
         mobileFirst: true,
         responsive: [{
             breakpoint: 700,
@@ -317,17 +252,19 @@ $(document).on("ready", function (e) {
         }]
     });
 
-    $('.flowing-scroll').on( 'click', function(){ 
-        var el = $(this);
-        var dest = el.attr('href'); // получаем направление
-        if(dest !== undefined && dest !== '') { // проверяем существование
-            $('html').animate({ 
-                scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-            }, 500 // скорость прокрутки
-            );
+    $(".tel").inputmask({"mask": "+7 (999) 999-9999"});
+    $(".email").inputmask({
+        mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+        greedy: false,
+        onBeforePaste: function (pastedValue, opts) {
+            pastedValue = pastedValue.toLowerCase();
+            return pastedValue.replace("mailto:", "");
+        },
+        definitions: {
+            '*': {
+                validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                casing: "lower"
+            }
         }
-        return false;
     });
-
-
-}); 
+});

@@ -1,0 +1,90 @@
+.tkt-exam .course-name-img{
+    width: 45%;
+}
+.tkt-exam .course-name-img::before,
+.tkt-exam .course-name-img:after{
+    display: none;
+}
+.tkt-exam .course-name-desc h1{
+    text-transform: uppercase;
+}
+
+
+.tkt-exam .course-skills_wrap:after{display: none;}
+.tkt-exam .course-skills-items{
+    grid-template-columns: 30.66% 30.66% 30.66%;
+}
+.tkt-exam .course-skills-item p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #004A76;
+    margin-bottom: 20px;
+}
+.tkt-exam .course-skills-item li{
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1D1C1C;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.tkt-exam .course-skills-item li::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #004A76;
+}
+
+
+.tkt-exam.course-programm{
+    padding-top: 100px;
+}
+.tkt-exam .course-programm_wrap{
+    grid-template-columns: 60% 24%;
+    grid-column-gap: 16%;
+}
+
+
+.tkt-exam .course-group-desc-item div{
+    font-size: 28px;
+}
+
+
+.course-suit.tkt-exam{
+    background-color: #f5f5f5;
+    padding: 80px 5% 60px;
+    margin-bottom: 85px;
+}
+.course-suit.tkt-exam h2{
+    width: 55%;
+}
+.tkt-exam .course-suit-wrap{
+    margin-bottom: 0;
+}
+
+.tkt-exam .course-rates-items::after{display: none;}
+.tkt-exam .course-rates-item h3:last-of-type{
+    font-weight: 500; 
+    font-size: 18px;
+    line-height: 22px;
+}
+.tkt-exam .course-rates-item p{
+    position: relative;
+    padding-left: 20px;
+}
+.tkt-exam .course-rates-item p::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
