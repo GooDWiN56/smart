@@ -1324,6 +1324,7 @@ footer .footer_wrap>div{
 }
 .teacher-about-filial_wrap{
     display: block;
+    height: auto;
 }
 .teacher-about-filial-item{
     margin-bottom: 55px;
@@ -1378,6 +1379,30 @@ footer .footer_wrap>div{
 }
 .pop_window a.close{
     right: 5%;
+}
+.filial-gallery {
+    padding: 90px 5% 0px;
+}
+.filial-gallery .wrap{
+    display: block;
+}
+.filial-suit-gallery-item{
+    height: 300px !important;
+}
+.teacher-about-filial-item-wrap {
+    width: 100%;
+}
+.teacher-about-filial-item {
+    position: relative;
+    width: 120%;
+    margin-left: -10%;
+    height: auto;
+    border-radius: 500px;
+    background: rgba(245, 245, 245, .85);
+}
+.teacher-about-filial.left .teacher-about-filial_wrap::after,
+.teacher-about-filial.left .teacher-about-filial_wrap::before{
+    display: none;
 }
 
 }

@@ -234,7 +234,7 @@ $(document).on("ready", function (e) {
     });
 
 
-    $('.gallery-items, .home-feedback-items').slick({
+    $('.gallery-items, .home-feedback-items, .filial-gallery .wrap, .filial-teacher-slider, .filial-suit-gallery').slick({
         arrows: false,
         dots: false,
         infinite: true,

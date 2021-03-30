@@ -593,6 +593,7 @@ nav ul,
 .fast-menu_wrap,
 .home-sign_wrap,
 .home-teacher-wrap,
+.filial-teacher-wrap
 .home-news_wrap,
 .subscribe-vk_wrap,
 .home-stocks_wrap,
@@ -1004,7 +1005,8 @@ nav ul>li .menu-children li a.active:visited{
     width: auto;
 }
 
-.home-teacher{
+.home-teacher,
+.filial-teacher{
     padding: 95px 5%;
     text-align: center;
 }
@@ -1015,6 +1017,7 @@ nav ul>li .menu-children li a.active:visited{
     padding: 0 20px;
 }
 .home-teacher-item img,
+.filial-teacher-item img,
 .teacher-item img{
     display: block;
     width: 90%;
@@ -2981,14 +2984,19 @@ footer{
     display: grid;
     grid-template-areas: 'head image'
     'desc image';
-    grid-template-columns: 46% 50%;
+    grid-template-columns: 41% 55%;
     grid-column-gap: 4%;
     grid-template-rows: auto;
 }
 .filial-head_wrap h2{
     grid-area: head;
-    margin-bottom: -5%;
+    text-transform: uppercase;
 }  
+.filial-head_wrap h2 span{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    }
 .filial-head-image{
     grid-area: image;
 }
@@ -2999,14 +3007,14 @@ footer{
     grid-area: desc;
 }
 .filial-head-desc ul{
-    display: grid;
-    grid-template-columns: 49% 49%;
     margin-bottom: 30px;
+    padding-top: 40px;
 }
 .filial-head-desc ul li{
     position: relative;
     padding-left: 50px;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 .filial-head-desc ul li::before{
     position: absolute;
@@ -3035,29 +3043,187 @@ footer{
     margin-bottom: 5px;
 }
 .teacher-about-filial{
-    padding: 90px 5%;
-    background: #F5F5F5;
+    padding: 0px 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+    margin-top: 55px;
+}
+.teacher-about-filial.mitinskaya{
+    background-image: url(./../img/filial/mit.jpg);
+}
+.teacher-about-filial.cheremushki{
+    background-image: url(./../img/filial/cherem.jpg);
+}
+.teacher-about-filial.gorkovski{
+    background-image: url(./../img/filial/gor.jpg);
+}
+.teacher-about-filial.leninski{
+    background-image: url(./../img/filial/lenin.jpg);
 }
 .teacher-about-filial_wrap{
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-column-gap: 4%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 670px;
+}
+.teacher-about-filial-item-wrap{
+    position: relative;
+    height: 100%;
+    width: 48%;
+}
+.teacher-about-filial_wrap::before{
+    position: absolute;
+    top: -100px;
+    content: "";
+    width: 320px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.teacher-about-filial.left .teacher-about-filial_wrap::before{
+    right: 0;
+    background-image: url(./../img/filial/before_left.svg);
+}
+.teacher-about-filial.right .teacher-about-filial_wrap::before{
+    left: 0;
+    background-image: url(./../img/filial/before_right.svg);
+}
+.teacher-about-filial_wrap::after{
+    position: absolute;
+    bottom: -18px;
+    content: "";
+    width: 454px;
+    height: 231px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.teacher-about-filial.left .teacher-about-filial_wrap::after{
+    left: 0;
+    background-image: url(./../img/filial/after_left.svg);
+}
+.teacher-about-filial.right .teacher-about-filial_wrap::after{
+    right: 0;
+    background-image: url(./../img/filial/after_right.svg);
+}
+
+.teacher-about-filial-item{
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    border-radius: 300px;
+    background: rgba(245, 245, 245, .85);
+}
+.teacher-about-filial.left .teacher-about-filial_wrap .teacher-about-filial-item-wrap:first-child .teacher-about-filial-item{
+    top: -100px;
+    left: 0;
+}
+.teacher-about-filial.left .teacher-about-filial_wrap .teacher-about-filial-item-wrap:last-child .teacher-about-filial-item{
+    bottom: -100px;
+    right: 0;
+}
+/* .teacher-about-filial.left .teacher-about-filial_wrap .teacher-about-filial-item-wrap:last-child{
+    overflow: hidden;
+}
+.teacher-about-filial.right .teacher-about-filial_wrap .teacher-about-filial-item-wrap:first-child{
+    overflow: hidden;
+} */
+.teacher-about-filial.right .teacher-about-filial_wrap .teacher-about-filial-item-wrap:first-child .teacher-about-filial-item{
+    bottom: -100px;
+    left: 0;
+}
+.teacher-about-filial.right .teacher-about-filial_wrap .teacher-about-filial-item-wrap:last-child .teacher-about-filial-item{
+    top: -100px;
+    right: 0;
 }
 .teacher-about-filial-head{
+    padding-right: 120px;
     display: grid;
     grid-template-columns: 150px auto;
     grid-column-gap: 5%;
     align-items: center;
     margin-bottom: 30px;
 }
-.teacher-about-filial-head img{width: 100%;border-radius: 50%;}
+.teacher-about-filial-head img{width: 100%;border-radius: 50%;height: auto;}
+.teacher-about-filial-item p{
+    padding: 0 60px 60px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D1C1C;
+}
+.teacher-about-filial-item p b{
+    font-weight: 700;
+}
 
 .course-suit.filial h2{
     text-align: center;
 }
-
-
-
+.filial-teacher h2{
+    margin-bottom: 45px;
+}
+.filial-teacher-slider{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-column-gap: 2%;
+    grid-row-gap: 30px;
+}
+.filial-teacher-item h4{
+    text-transform: uppercase;
+}
+.filial-gallery{
+    padding: 135px 5% 0px;
+}
+.filial-gallery .wrap{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 2%;
+    grid-row-gap: 25px;
+}
+.filial-gallery img{
+    width: 100%;
+    height: auto;
+}
+.filial-suit-gallery{
+    display: grid;
+    grid-template-areas: 
+    'item1 item2 item2'
+    'item3 item2 item2'
+    'item4 item5 item6'
+    'item4 item7 item6';
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 2%;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-row-gap: 25px ;
+}
+.filial-suit-gallery-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px ;
+}
+.filial-suit-gallery-item.item1{
+    grid-area: item1;
+}
+.filial-suit-gallery-item.item2{
+    grid-area: item2;
+}
+.filial-suit-gallery-item.item3{
+    grid-area: item3;
+}
+.filial-suit-gallery-item.item4{
+    grid-area: item4;
+}
+.filial-suit-gallery-item.item5{
+    grid-area: item5;
+}
+.filial-suit-gallery-item.item6{
+    grid-area: item6;
+}
+.filial-suit-gallery-item.item7{
+    grid-area: item7;
+}
 
 .course-test.filial{
 
