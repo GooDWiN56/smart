@@ -21,6 +21,42 @@
     position: relative;
     padding-bottom: 100px;
 }
+.course-name-list_item.blue_bg h4{
+    position: relative;
+    padding-left: 20px;
+}
+.course-name-list_item.blue_bg h4::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: #8EB400;
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+
+    25% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    85% {
+        opacity: .5;
+    }
+    90% {
+        opacity: 0;
+    }
+  }
 .course-name-list_item a,
 .course-name-list_item a:visited{
     position: absolute;
@@ -64,8 +100,8 @@
 }
 .course-learn_wrap h2 {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 34px;
+    line-height: 38px;
 }
 .gray-plus{
     padding: 55px 5%;
@@ -94,7 +130,7 @@
 
 .after-course{
     padding: 55px 5%;
-    background: #f5f5f5 url(./../img/big-ben.svg) no-repeat 60% bottom;
+    background: #f5f5f5 url(/static/new_site/img/big-ben.svg) no-repeat 60% bottom;
     background-size: 250px;
 }
 .after-course .wrap>div{
@@ -223,13 +259,16 @@
     background: #8EB400;
 }
 .business input[type="checkbox"]:checked + label:before {
-    background-image: url(./../img/arrow_g.svg);
+    background-image: url(/static/new_site/img/arrow_g.svg);
 }
 .business input[type="text"], 
 .business input[type="tel"], 
 .business input[type="email"], 
 .business input[type="password"]{
     border: 1px solid #b3b8bc;
+}
+.course-group-desc-item p{
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 600px){

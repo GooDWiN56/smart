@@ -1,12 +1,12 @@
 .teenager .course-name-img::before{
     width: 120.15px;
     height: 96.34px;
-    background: url(./../img/course-name-ill_teenager.svg) no-repeat center;
+    background: url(/static/new_site/img/course-name-ill_teenager.svg) no-repeat center;
     top: -20px;
     right: 0px;
 }
 .course-name-img:after{
-    bottom: 35%;
+    bottom: 30%;
     left: -105px;
 }
 
@@ -40,7 +40,7 @@
     top: 50%;
     right: -65%;
     transform: translatey(-50%);
-    background: url(./../img/video-illustr.svg) no-repeat center;
+    background: url(/static/new_site/img/video-illustr.svg) no-repeat center;
 }
 .teenager .course-advantages-list,
 .course-age.teenager {
@@ -67,7 +67,7 @@
     top: -6%;
     width: 273px;
     height: 247px;
-    background: url(./../img/age_teenager-illustr.svg) no-repeat center;
+    background: url(/static/new_site/img/age_teenager-illustr.svg) no-repeat center;
 }
 .teenager .tab-item-about_attantion{
     background: #fff;

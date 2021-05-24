@@ -130,14 +130,14 @@
     background: #8EB400;
 }
 .group-filial .course-sign_wrap input[type="checkbox"]:checked + label:before{
-    background-image: url(./../img/arrow_g.svg);
+    background-image: url(/static/new_site/img/arrow_g.svg);
 }
 
 
 .group-filial .feedback_wrap::after{
     width: 360px;
     height: 390px;
-    background-image: url(./../img/feedback-illustr_group.svg);
+    background-image: url(/static/new_site/img/feedback-illustr_group.svg);
     bottom: -3%;
     left: 10%;
 }
@@ -151,7 +151,7 @@
     overflow: hidden;
 }
 .group-filial .course-test_wrap::after{
-    background-image: url(./../img/test-illust_group.svg);
+    background-image: url(/static/new_site/img/test-illust_group.svg);
     width: 600px;
     height: 700px; 
     background-size: contain;
