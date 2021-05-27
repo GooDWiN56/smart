@@ -3278,3 +3278,13 @@ footer{
     background-color: #fff;
     padding: 40px 5% 40px;
 }
+.schema-filial{
+    text-align: center;
+    background: #ecedee;
+}
+.schema-filial img{
+    width: 100%;
+    max-width: 1280px;
+    display: block;
+    margin: 0 auto;
+}
