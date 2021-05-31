@@ -1330,6 +1330,7 @@
     }
     .teacher-about-filial_wrap{
         display: block;
+        height: auto;
     }
     .teacher-about-filial-item{
         margin-bottom: 55px;
