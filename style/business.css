@@ -272,8 +272,12 @@
 }
 
 @media only screen and (max-width: 600px){
+    .course-name-desc {
+        width: 100%;
+        margin-right: 0%;
+    }
     .course-name-desc h1 span {
-        font-size: 50px;
+        font-size: 35px;
     }
     .course-name-list_wrap{
         display: block !important;

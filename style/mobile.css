@@ -236,7 +236,8 @@
         margin-bottom: 25px;
     }
     .course-name-img img{
-        width: 80%;
+        width: 85%;
+        margin: 0 auto;
     }
     .course-name-img::before{
         content: '';
