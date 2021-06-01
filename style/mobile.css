@@ -1413,6 +1413,18 @@
     .filial .course-test_wrap form input{
         width: 100%;
     }
+    .teacher-about-filial-item-wrap:first-child .teacher-about-filial-item {
+        top: -100px;
+        left: 0;
+        
+    }
+    .teacher-about-filial.left .teacher-about-filial_wrap .teacher-about-filial-item-wrap:first-child .teacher-about-filial-item{
+        margin-bottom: -100px;
+    }
+    .teacher-about-filial-item-wrap:last-child .teacher-about-filial-item {
+        bottom: -100px;
+        right: 0;
+    }
 }
 
 
