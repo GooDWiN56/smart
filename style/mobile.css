@@ -1425,6 +1425,10 @@
         bottom: -100px;
         right: 0;
     }
+    .filial .course-test_wrap form{
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 

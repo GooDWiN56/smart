@@ -3248,24 +3248,35 @@ footer{
 }
 
 .course-test.filial{
-
+    padding: 60px 5%;
     overflow: hidden;
 }
+.filial .course-test_wrap h2{
+    width: 100%;
+}
+.filial .course-test_wrap h2 br{
+    display: none;
+}
 .filial .course-test_wrap::after{
-    background-image: url(./../img/test-illust_group2.svg);
-    width: 600px;
-    height: 700px;
+    background-image: url(./../img/feedback-illustr-form.svg);
+    width: 48%;
+    height: 100%;
     background-size: contain;
-    transform: translateY(-15%);
+    transform: translateY(0%);
     z-index: 0;
-
+    left: 0;
+    top: auto;
+    bottom: -15%;
 }
 .filial .course-test_wrap form{
     position: relative;
     z-index: 1;
+    display: block;
+    width: 50%;
+    margin-left: 50%;
 }
 .filial .course-test_wrap form input{
-    width: 24%;
+    width: 100%;
 }
 .filial .course-test_wrap form input[type="submit"]{
     padding: 21px 0;
